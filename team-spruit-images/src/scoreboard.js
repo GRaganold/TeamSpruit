@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react"
-import { Box, Button, Center,  Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
+import { Box, Button, Center, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./CurlingStone.png"
 import html2canvas from "html2canvas"
+import { styleThemes } from "./StyleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -28,7 +29,6 @@ export default function Results() {
 		SpielName: "",
 		gameType: "",
 		Time: "",
-
 		OurScore: "",
 		OpponentScore: "",
 		Opponent: "",
@@ -62,100 +62,7 @@ export default function Results() {
 			[label]: newValue,
 		}))
 	}
-	const lightgray = "lightgray"
-	const orange = "#fd8050"
-	const white = "#fdfdfe"
-	const green = "#00aa86"
-	const greenGrey = "#bee1d3"
-	const blueGrey = "#388389"
-	const blue = "#1ab7ce"
-	const charcoal = "#303030"
-	const yellow = "#FFF200"
 
-	const styleThemes = {
-		blue: {
-			backgroundColor: blue,
-			color: "white",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-		blueGrey: {
-			backgroundColor: blueGrey,
-			color: "white",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-		charcoal: {
-			backgroundColor: charcoal,
-			color: "white",
-			textShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-		green: {
-			backgroundColor: green,
-			color: white,
-			textShadow: "2px 2px black",
-			finalColor: blue,
-			finalColorShadow: `3px 3px ${yellow}`,
-			gameTypeColor: yellow,
-			teamNameBannerBG: orange,
-			teamNameBannerColor: "#fd8050",
-		},
-		greenGrey: {
-			backgroundColor: greenGrey,
-			color: "white",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-		lightgrey: {
-			backgroundColor: lightgray,
-			color: "white",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-		orange: {
-			backgroundColor: orange,
-			color: "white",
-			textShadow: "2px 2px black",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-
-		white: {
-			backgroundColor: white,
-			color: "black",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
-		},
-
-		// Add more themes as needed
-	}
 
 	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
 
@@ -170,6 +77,9 @@ export default function Results() {
 		gameTypeColor: selectedTheme.gameTypeColor, //      boxStyle.gameTypeColor
 		teamNameBannerBG: selectedTheme.teamNameBannerBG, //      boxStyle.teamNameBannerBG
 		teamNameBannerColor: selectedTheme.teamNameBannerColor, //      boxStyle.teamNameBannerColor
+		teamNameBannerShadow: selectedTheme.teamNameBannerShadow, // box.StyleteamNameBannerShadow
+		scoreColor: selectedTheme.scoreColor, // boxStyle.scoreColor
+		scoreColorShadow: selectedTheme.scoreColorShadow, // box.Style.scoreColorShadow
 	}
 
 	const handleStyleThemeChange = event => {
@@ -198,14 +108,7 @@ export default function Results() {
 				<HStack spacing={6} key={i}>
 					<Input type="text" w="75px" value={formData[`us${i}`]} onChange={e => handleInputChange(`us${i}`, e.target.value)} />
 					<Text mb="8px">{i}</Text>
-					<Input
-						type="text"
-						// value={inputValues.opponentScore}
-						// onChange={e => handleInputChange("opponentScore", e.target.value)}
-						w="75px"
-						value={formData[`them${i}`]}
-						onChange={e => handleInputChange(`them${i}`, e.target.value)}
-					/>
+					<Input type="text" w="75px" value={formData[`them${i}`]} onChange={e => handleInputChange(`them${i}`, e.target.value)} />
 				</HStack>
 			)
 		}
@@ -218,8 +121,13 @@ export default function Results() {
 			for (let i = 1; i <= 8; i++) {
 				inputPairs.push(
 					<VStack key={i} spacing={1} textShadow={"2px 2px black"}>
-						<Text mb="8px" fontSize={"2xl"}>{formData[`us${i}`] || "X"}</Text>
-						<Text mb="8px" fontSize={"2xl"}>{formData[`them${i}`] || "X"}</Text>
+						<Text mb="8px" fontSize={"2xl"}>
+							{formData[`us${i}`] || "X"}
+						</Text>
+						<Text fontSize={"xl"}>{i}</Text>
+						<Text mb="8px" fontSize={"2xl"}>
+							{formData[`them${i}`] || "X"}
+						</Text>
 					</VStack>
 				)
 			}
@@ -229,17 +137,56 @@ export default function Results() {
 		return (
 			<>
 				<HStack>
-					{renderInputs()}
-					{formData.usEE && formData.themEE ? <>
-					
-						<VStack key={9}  spacing={1} textShadow={"2px 2px black"}>
-						<Text mb="8px" fontSize={"2xl"}>{formData.usEE}</Text>
-						<Text mb="8px" fontSize={"2xl"}>{formData.themEE}</Text>
+					<VStack key={9} spacing={1} textShadow={"2px 2px black"}>
+						<Text mb="8px" pr={8} fontSize={"2xl"}>
+							Spruit/Spruit
+						</Text>
+						<Text mb="32px" pr={8}></Text>						
+						<Text mb="8px" pr={8} fontSize={"2xl"}>
+							{formData.Opponent}
+						</Text>{" "}
 					</VStack>
-					
-					
-					
-					</> : <></>}
+					{renderInputs()}
+					{formData.usEE && formData.themEE ? (
+						<>
+							<VStack key={9} spacing={1} textShadow={"2px 2px black"}>
+								<Text mb="8px" fontSize={"2xl"}>
+									{formData.usEE}
+								</Text>
+								<Text>EE </Text>
+								<Text mb="8px" fontSize={"2xl"}>
+									{formData.themEE}
+								</Text>
+							</VStack>
+						</>
+					) : (
+						<></>
+					)}
+					<VStack key={9} spacing={1} textShadow={"2px 2px black"} mt={"-10px"}>
+						{parseInt(formData.OurScore) > parseInt(formData.OpponentScore) ? (
+							<>
+								<Text fontSize={"4xl"} textDecor={"underline"} color={boxStyle.scoreColor} pl={8} textShadow={boxStyle.scoreColorShadow} pr={16}>
+									{formData.OurScore}
+								</Text>
+								<Text mb="8px" pr={8}></Text>								
+								<Text fontSize={"4xl"} color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow}>
+									{formData.OpponentScore}
+								</Text>
+								<Text mb="8px" pr={8} fontSize={"2xl"}></Text>
+							</>
+						) : (
+							<>
+								<Text fontSize={"4xl"} pl={8} color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow} pr={16}>
+									{formData.OurScore}
+								</Text>
+								<Text mb="24px" pr={8}></Text>								
+								<Text fontSize={"4xl"} textDecor={"underline"} pl={8} color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow}>
+									{formData.OpponentScore}
+								</Text>
+							</>
+						)}
+
+					</VStack>
 				</HStack>
 			</>
 		)
@@ -330,7 +277,7 @@ export default function Results() {
 									</Center>
 								</HStack>
 							</Flex>
-							<Flex alignItems="flex-end" justify={"flex-end"} textAlign={"right"} pr={3} >
+							<Flex alignItems="flex-end" justify={"flex-end"} textAlign={"right"} pr={3}>
 								<br />
 								<Box h="150px">
 									<Text fontSize={"3xl"}> {formData.Date}</Text>
@@ -359,35 +306,15 @@ export default function Results() {
 									Final Score
 								</Heading>
 							</Box>
-							<br />	
-							<Flex bg={boxStyle.teamNameBannerBG} justify={"space-evenly"} minH="100px">
-								<Box textAlign={"center"} mt={"-10px"}>
-									<Text fontSize={"2xl"} 
-									textShadow={"2px 2px black"}>
-										Spruit/Spruit
-									</Text>
-									<Text fontSize={"4xl"} textShadow={"2px 2px black"}>
-										{formData.OurScore} 
-										
-									</Text>
-								</Box>
-								<Box textAlign={"center"} mt={"-10px"}>
+							<br />						
+							<Flex justify={"center"}  bg={boxStyle.teamNameBannerBG}>
+								<Box textAlign={"center"} mt={"-20px"}color={boxStyle.teamNameBannerColor} textShadow={boxStyle.teamNameBannerShadow}>
 									<BoxScoreResult />
 								</Box>
-								
-							
-								<Box textAlign={"center"}mt={"-10px"} >
-									<Text fontSize={"2xl"} textShadow={"2px 2px black"} >
-										{formData.Opponent}
-										
-									</Text>								
-									<Text fontSize={"4xl"} textShadow={"2px 2px black"}> {formData.OpponentScore} </Text>
-								</Box>
+								<br/>
 							</Flex>
-
 							<br />
-							<br />				
-							
+							<br />
 						</Box>
 
 						<Image src={sponsorBanner} h="140px" w="full" />

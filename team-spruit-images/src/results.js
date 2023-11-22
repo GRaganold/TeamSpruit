@@ -3,6 +3,7 @@ import { Box, Button, Center, Circle, Flex, HStack, Heading, Image, Input, Selec
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./CurlingStone.png"
 import html2canvas from "html2canvas"
+import { styleThemes } from "./StyleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -44,125 +45,7 @@ export default function Results() {
 			[label]: newValue,
 		}))
 	}
-	const lightgray = "lightgray"
-	const orange = "#fd8050"
-	const white = "#fdfdfe"
-	const green = "#00aa86"
-	const greenGrey = "#bee1d3"
-	const blueGrey = "#388389"
-	const blue = "#1ab7ce"
-	const charcoal = "#303030"
-	const yellow = "#ffd71f"
 
-	const styleThemes = {
-		blueGrey: {
-			backgroundColor: blueGrey,
-			color: white,
-			textShadow: `1px 1px ${charcoal}`,
-			finalColor: orange,
-			finalColorShadow: `3px 3px ${blue}`,
-			gameTypeColor: yellow,
-			teamNameBannerBG: orange,
-			teamNameBannerColor: white,
-			teamNameBannerShadow: `2px 2px ${charcoal}`,
-			scoreColor: white,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-		blue: {
-			backgroundColor: blue,
-			color: white,
-			textShadow: `1px 1px ${charcoal}`,
-			finalColor: yellow,
-			finalColorShadow: `3px 3px ${orange}`,
-			gameTypeColor: orange,
-			teamNameBannerBG: white,
-			teamNameBannerColor: orange,
-			teamNameBannerShadow: `1px px ${charcoal}`,
-			scoreColor: white,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-		charcoal: {
-			backgroundColor: charcoal,
-			color: "white",
-			textShadow: `1px 1px ${blue}`,
-			finalColor: green,
-			finalColorShadow: `3px 3px ${orange}`,
-			gameTypeColor: yellow,
-			teamNameBannerBG: orange,
-			teamNameBannerColor: white,
-			teamNameBannerShadow: `2px 2px ${charcoal}`,
-			scoreColor: white,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-		green: {
-			backgroundColor: green,
-			color: white,
-			textShadow: `2px 2px ${charcoal}`,
-			finalColor: yellow,
-			finalColorShadow: `3px 3px ${charcoal}`,
-			gameTypeColor: yellow,
-			teamNameBannerBG: orange,
-			teamNameBannerColor: white,
-			teamNameBannerShadow: `2px 2px ${charcoal}`,
-			scoreColor: white,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-		greenGrey: {
-			backgroundColor: greenGrey,
-			color: white,
-			textShadow: `2px 2px ${green}`,
-			finalColor: yellow,
-			finalColorShadow: `3px 3px ${charcoal}`,
-			gameTypeColor: "#00aa86",
-			teamNameBannerBG: green,
-			teamNameBannerColor: white,
-			teamNameBannerShadow: `2px 2px ${charcoal}`,
-			scoreColor: white,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-		lightgrey: {
-			backgroundColor: lightgray,
-			color: white,
-			textShadow: `2px 2px ${green}`,
-			finalColor: green,
-			finalColorShadow: `3px 3px ${yellow}`,
-			gameTypeColor: green,
-			teamNameBannerBG: white,
-			teamNameBannerColor: charcoal,
-			teamNameBannerShadow: `0px 0px ${orange}`,
-			scoreColor: charcoal,
-			scoreColorShadow: `0px 0px ${orange}`,
-		},
-		orange: {
-			backgroundColor: orange,
-			color: white,
-			textShadow: `2px 2px ${charcoal}`,
-			finalColor: green,
-			finalColorShadow: `3px 3px ${charcoal}`,
-			gameTypeColor: green,
-			teamNameBannerBG: green,
-			teamNameBannerColor: white,
-			teamNameBannerShadow: `2px 2px ${charcoal}`,
-			scoreColor: white,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-
-		white: {
-			backgroundColor: white,
-			color: green,
-			textShadow: `2px 2px ${charcoal}`,
-			finalColor: orange,
-            finalColorShadow: `3px 3px ${charcoal}`,
-			gameTypeColor: charcoal,
-			teamNameBannerBG: charcoal,
-			teamNameBannerColor: white,
-			teamNameBannerShadow: `2px 2px ${charcoal}`,
-			scoreColor: green,
-			scoreColorShadow: `2px 2px ${charcoal}`,
-		},
-
-		// Add more themes as needed
-	}
 
 	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
 
@@ -354,7 +237,7 @@ export default function Results() {
 
 								<Flex w="100%" justify="space-around" color={boxStyle.color} mt={"-25px"}>
 									
-                                    {formData.OurScore > formData.OpponentScore? (<>
+                                    {parseInt(formData.OurScore) > parseInt(formData.OpponentScore)? (<>
                                         <Text fontSize={"4xl"} 
                                         textDecor={"underline"}
                                         color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow} pr={16}>
