@@ -1,24 +1,5 @@
 import React, { useState, useRef } from "react"
-import {
-	Accordion,
-	AccordionButton,
-	AccordionIcon,
-	AccordionItem,
-	AccordionPanel,
-	Box,
-	Button,
-	Center,
-	Circle,
-	Flex,
-	HStack,
-	Heading,
-	Image,
-	Input,
-	Select,
-	Stack,
-	Text,
-	VStack,
-} from "@chakra-ui/react"
+import { Box, Button, Center, Circle, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./CurlingStone.png"
 import html2canvas from "html2canvas"
@@ -47,14 +28,14 @@ export default function Results() {
 		SpielName: "",
 		gameType: "",
 		Time: "",
-		isFinal: false,
+		isFinal: "false",
 		OurScore: "",
 		OpponentScore: "",
 		Opponent: "",
 		Date: "",
 		UpNextDate: "",
 		UpNextOpponent: "",
-		ImageTitle: "",
+		ImageTitle: "noTitle",
 	})
 
 	const handleInputChange = (label, newValue) => {
@@ -70,68 +51,135 @@ export default function Results() {
 	const greenGrey = "#bee1d3"
 	const blueGrey = "#388389"
 	const blue = "#1ab7ce"
+	const charcoal = "#303030"
+	const yellow = "#ffd71f"
 
 	const styleThemes = {
-		lightgrey: {
-			backgroundColor: lightgray,
+		blueGrey: {
+			backgroundColor: blueGrey,
+			color: white,
+			textShadow: `1px 1px ${charcoal}`,
+			finalColor: orange,
+			finalColorShadow: `3px 3px ${blue}`,
+			gameTypeColor: yellow,
+			teamNameBannerBG: orange,
+			teamNameBannerColor: white,
+			teamNameBannerShadow: `2px 2px ${charcoal}`,
+			scoreColor: white,
+			scoreColorShadow: `2px 2px ${charcoal}`,
+		},
+		blue: {
+			backgroundColor: blue,
+			color: white,
+			textShadow: `1px 1px ${charcoal}`,
+			finalColor: yellow,
+			finalColorShadow: `3px 3px ${orange}`,
+			gameTypeColor: orange,
+			teamNameBannerBG: white,
+			teamNameBannerColor: orange,
+			teamNameBannerShadow: `1px px ${charcoal}`,
+			scoreColor: white,
+			scoreColorShadow: `2px 2px ${charcoal}`,
+		},
+		charcoal: {
+			backgroundColor: charcoal,
 			color: "white",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
+			textShadow: `1px 1px ${blue}`,
+			finalColor: green,
+			finalColorShadow: `3px 3px ${orange}`,
+			gameTypeColor: yellow,
+			teamNameBannerBG: orange,
+			teamNameBannerColor: white,
+			teamNameBannerShadow: `2px 2px ${charcoal}`,
+			scoreColor: white,
+			scoreColorShadow: `2px 2px ${charcoal}`,
 		},
 		green: {
-			backgroundColor: "#00aa86",
-			color: "white",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
+			backgroundColor: green,
+			color: white,
+			textShadow: `2px 2px ${charcoal}`,
+			finalColor: yellow,
+			finalColorShadow: `3px 3px ${charcoal}`,
+			gameTypeColor: yellow,
+			teamNameBannerBG: orange,
+			teamNameBannerColor: white,
+			teamNameBannerShadow: `2px 2px ${charcoal}`,
+			scoreColor: white,
+			scoreColorShadow: `2px 2px ${charcoal}`,
 		},
-
-		white: {
-			backgroundColor: "#fdfdfe",
-			color: "black",
-			colorShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
+		greenGrey: {
+			backgroundColor: greenGrey,
+			color: white,
+			textShadow: `2px 2px ${green}`,
+			finalColor: yellow,
+			finalColorShadow: `3px 3px ${charcoal}`,
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: green,
+			teamNameBannerColor: white,
+			teamNameBannerShadow: `2px 2px ${charcoal}`,
+			scoreColor: white,
+			scoreColorShadow: `2px 2px ${charcoal}`,
 		},
-		black: {
-			backgroundColor: "#000000",
-			color: "white",
-			textShadow: "2px 2px teal",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
+		lightgrey: {
+			backgroundColor: lightgray,
+			color: white,
+			textShadow: `2px 2px ${green}`,
+			finalColor: green,
+			finalColorShadow: `3px 3px ${yellow}`,
+			gameTypeColor: green,
+			teamNameBannerBG: white,
+			teamNameBannerColor: charcoal,
+			teamNameBannerShadow: `0px 0px ${orange}`,
+			scoreColor: charcoal,
+			scoreColorShadow: `0px 0px ${orange}`,
 		},
 		orange: {
 			backgroundColor: orange,
-			color: "white",
-			textShadow: "2px 2px black",
-			finalColor: "#00aa86",
-			finalColorShadow: "#000000",
-			teamNameBannerBG: "#000",
-			teamNameBannerColor: "#fd8050",
+			color: white,
+			textShadow: `2px 2px ${charcoal}`,
+			finalColor: green,
+			finalColorShadow: `3px 3px ${charcoal}`,
+			gameTypeColor: green,
+			teamNameBannerBG: green,
+			teamNameBannerColor: white,
+			teamNameBannerShadow: `2px 2px ${charcoal}`,
+			scoreColor: white,
+			scoreColorShadow: `2px 2px ${charcoal}`,
 		},
+
+		white: {
+			backgroundColor: white,
+			color: green,
+			textShadow: `2px 2px ${charcoal}`,
+			finalColor: orange,
+            finalColorShadow: `3px 3px ${charcoal}`,
+			gameTypeColor: charcoal,
+			teamNameBannerBG: charcoal,
+			teamNameBannerColor: white,
+			teamNameBannerShadow: `2px 2px ${charcoal}`,
+			scoreColor: green,
+			scoreColorShadow: `2px 2px ${charcoal}`,
+		},
+
 		// Add more themes as needed
 	}
 
-	const [selectedThemeChoice, setSelectedThemeChoice] = useState("lightgrey") // Corrected theme name
+	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
 
 	const selectedTheme = selectedThemeChoice ? styleThemes[selectedThemeChoice] : {}
 
 	const boxStyle = {
-		backgroundColor: selectedTheme.backgroundColor,
-		color: selectedTheme.color,
-		textShadow: selectedTheme.textShadow,
-		finalColor: selectedTheme.finalColor,
-		finalColorShadow: selectedTheme.finalColorShadow,
-		teamNameBannerBG: selectedTheme.teamNameBannerBG,
-		teamNameBannerColor: selectedTheme.teamNameBannerColor,
+		backgroundColor: selectedTheme.backgroundColor, //  boxStyle.backgroundColor
+		color: selectedTheme.color, // boxStyle.color
+		textShadow: selectedTheme.textShadow, // boxStyle.textShadow
+		finalColor: selectedTheme.finalColor, //      boxStyle.finalColor
+		finalColorShadow: selectedTheme.finalColorShadow, //      boxStyle.finalColorShadow
+		gameTypeColor: selectedTheme.gameTypeColor, //      boxStyle.gameTypeColor
+		teamNameBannerBG: selectedTheme.teamNameBannerBG, //      boxStyle.teamNameBannerBG
+		teamNameBannerColor: selectedTheme.teamNameBannerColor, //      boxStyle.teamNameBannerColor
+		teamNameBannerShadow: selectedTheme.teamNameBannerShadow, // box.StyleteamNameBannerShadow
+		scoreColor: selectedTheme.scoreColor, // boxStyle.scoreColor
+		scoreColorShadow: selectedTheme.scoreColorShadow, // box.Style.scoreColorShadow
 	}
 
 	const handleStyleThemeChange = event => {
@@ -155,25 +203,9 @@ export default function Results() {
 
 	return (
 		<>
-			<Box p={3}>
+			<Box p={3} fontFamily="monospace">
 				<Stack w="400px">
-					<HStack>
-						<Text> Theme </Text>
-						<Select
-							value={selectedThemeChoice}
-							onChange={handleStyleThemeChange} // Fix the function name here
-							mb={4}
-							placeholder="Select option"
-						>
-							<option value="lightgrey">Light Gray</option>
-							<option value="orange">Orange</option>
-							<option value="white">White</option>
-							<option value="black">Black</option>
-							<option value="green">Green</option>
-						</Select>
-					</HStack>
 					<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title" />
-
 					<NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name" />
 					<NameInput onInputChange={handleInputChange} label="Date" placeholder="Friday, October 20" />
 					<HStack>
@@ -188,7 +220,7 @@ export default function Results() {
 					<NameInput onInputChange={handleInputChange} label="Time" placeholder="Enter Time" />
 					<HStack>
 						<Text> Is this a Final Score? </Text>
-						<Select value={formData.isFinal} onChange={e => handleInputChange("isFinal", e.target.value)} mb={4} placeholder="Select option">
+						<Select value={formData.isFinal} onChange={e => handleInputChange("isFinal", e.target.value)} mb={4}>
 							<option value="false">No</option>
 							<option value="true">Yes</option>
 						</Select>
@@ -198,136 +230,174 @@ export default function Results() {
 					<NameInput onInputChange={handleInputChange} label="OpponentScore" placeholder="Enter Opponent Score" />
 
 					<NameInput onInputChange={handleInputChange} label="UpNextDate" placeholder="Enter Next Date and time" />
-					<NameInput onInputChange={handleInputChange} label="UpNext" placeholder="Enter Next Opponent" />
+					<NameInput onInputChange={handleInputChange} label="UpNextOpponent" placeholder="Enter Next Opponent" />
+
+					<HStack>
+						<Text> Theme </Text>
+						<Select
+							value={selectedThemeChoice}
+							onChange={handleStyleThemeChange} // Fix the function name here
+							mb={4}
+							placeholder="Select option"
+						>
+							<option value="blueGrey">Blue Gray</option>
+							<option value="blue">Blue</option>
+							<option value="charcoal">Charcoal</option>
+							<option value="green">Green</option>
+							<option value="greenGrey">Green Gray</option>
+							<option value="lightgrey">Light Gray</option>
+							<option value="orange">Orange</option>
+							<option value="white">White</option>
+						</Select>
+					</HStack>
 				</Stack>
 				<br />
+
 				<Button m="6" colorScheme="orange" onClick={convertToJpg}>
 					Convert to JPG
 				</Button>
 
-				<Accordion allowToggle w="auto">
-					<AccordionItem>
-						<h2>
-							<AccordionButton>
-								<Box as="span" flex="1" textAlign="left">
-									Preview
+				<Text>Note this preview is not 100% accurate and will center the text on conversion</Text>
+
+				<Box>
+					<Box
+						ref={divRef}
+						style={{
+							height: "700px",
+							width: "700px",
+							border: "1px solid #000",
+						}}
+						bg={boxStyle.backgroundColor}
+						color={boxStyle.color}
+					>
+						<Box h="558px" pt={1}>
+							<Flex justify="flex-end" w="100%" pb={6} pr={2}>
+								<HStack pb={5}>
+									<Center>
+										<Heading color={boxStyle.color} fontWeight="bold" textShadow={boxStyle.textShadow} fontSize="4xl" mt={3} pr={3}>
+											{formData.SpielName}
+										</Heading>
+										<Image src={CurlingStone} h="85px" />
+									</Center>
+								</HStack>
+							</Flex>
+							<Flex alignItems="flex-end" justify={"flex-end"} textAlign={"right"} pr={3}>
+								<br />
+								<Box h="150px">
+									<Text fontSize={"3xl"}> {formData.Date}</Text>
+									<Heading fontSize={"4xl"} color={boxStyle.gameTypeColor}>
+										{formData.gameType}
+									</Heading>
+									<Text fontSize={"2xl"}> {formData.Time}</Text>
 								</Box>
-								<AccordionIcon />
-							</AccordionButton>
-						</h2>
-						<AccordionPanel pb={4}>
-							<Text>Note this preview is not 100% accurate and will center the text on conversion</Text>
+							</Flex>
 
-							<Box>
-								<Box
-									ref={divRef}
-									style={{
-										height: "700px",
-										width: "700px",
-										border: "1px solid #000",
-									}}
-									bg={boxStyle.backgroundColor}
-									color={boxStyle.color}
-								>
-									<Box h="558px" pt={1}>
-										<Flex justify="flex-end" w="100%" pb={6} pr={2}>
-											<HStack pb={5}>
-												<Center>
-													<Heading color={boxStyle.color} fontWeight="bold" textShadow={boxStyle.textShadow} fontSize="4xl" mt={3} pr={3}>
-														{formData.SpielName}
-													</Heading>
-													<Image src={CurlingStone} h="65px" />
-												</Center>
-											</HStack>
-										</Flex>
-										<Flex alignItems="flex-end" justify={"flex-end"} textAlign={"right"} pr={3}>
-											<br />
-											<Box h="150px">
-												<Text fontSize={"3xl"}> {formData.Date}</Text>
-												<Heading fontSize={"4xl"}> {formData.gameType}</Heading>
-												<Text fontSize={"2xl"}> {formData.Time}</Text>
-											</Box>
-										</Flex>
-
-										{formData.isFinal === "true" ? (
-											<>
-												<Box>
-													<Heading
-														h="5px"
-														alignContent={"left"}
-														justifyContent={"left"}
-														textAlign={"left"}
-														fontSize={"6xl"}
-														position={"relative"}
-														Color="black"
-														pl={9}
-														top={"-175px"}
-														style={{ transform: "rotate(-10deg)" }}
-													>
-														Final <br />
-														Score
-													</Heading>
-												</Box>
-											</>
-										) : (
-											<>
-												<Box>
-													<Heading
-														h="5px"
-														alignContent={"left"}
-														justifyContent={"left"}
-														textAlign={"left"}
-														fontSize={"6xl"}
-														position={"relative"}
-														Color="black"
-														pl={9}
-														style={{ transform: "rotate(-10deg)" }}
-													></Heading>
-												</Box>
-											</>
-										)}
-										<VStack spacing={0}>
-											<HStack spacing={0} textAlign={"center"} w="100%">
-												<Flex w="350px" bg={boxStyle.teamNameBannerBG} zIndex={1} mr="-25px" h={"50px"} alignItems="center" justifyContent="center" textAlign={"top"}>
-													<Text fontSize={"2xl"} h="100%">
-														Spruit/Spruit
-													</Text>
-												</Flex>
-												<Circle zIndex={5} w={"100px"} h={"100px"} bg={boxStyle.teamNameBannerBG} alignItems="center" justifyContent="center" textAlign={"top"}>
-													<Text fontSize={"5xl"} fontWeight={"bold"} h="110%">
-														VS
-													</Text>
-												</Circle>
-												<Flex w="350px" bg={boxStyle.teamNameBannerBG} zIndex={1} ml="-15px" h={"50px"} alignItems="center" justifyContent="center" textAlign={"top"}>
-													<Text fontSize={"2xl"} h="100%">
-														{formData.Opponent}
-													</Text>
-												</Flex>
-											</HStack>
-
-											<Flex w="100%" justify="space-evenly" color={boxStyle.color}>
-												<Box fontSize={"3xl"}>{formData.OurScore} </Box>
-												<Box></Box>
-												<Box fontSize={"3xl"}>{formData.OpponentScore}</Box>
-											</Flex>
-										</VStack>
-
-										{formData.UpNext ? (
-											<>
-												<Text> Next Game: {formData.UpNextDate} </Text>
-												<Text> {formData.UpNextOpponent} </Text>
-											</>
-										) : (
-											<></>
-										)}
+							{formData.isFinal === "true" ? (
+								<>
+									<Box>
+										<Heading
+											h="5px"
+											alignContent={"left"}
+											justifyContent={"left"}
+											textAlign={"left"}
+											fontSize={"6xl"}
+											position={"relative"}
+											Color="black"
+											pl={9}
+											top={"-200px"}
+											style={{ transform: "rotate(-10deg)" }}
+											color={boxStyle.finalColor}
+											textShadow={boxStyle.finalColorShadow}
+										>
+											Final <br />
+											Score
+										</Heading>
 									</Box>
+								</>
+							) : (
+								<>
+									<Box>
+										<Heading
+											h="5px"
+											alignContent={"left"}
+											justifyContent={"left"}
+											textAlign={"left"}
+											fontSize={"6xl"}
+											position={"relative"}
+											Color="black"
+											pl={9}
+											style={{ transform: "rotate(-10deg)" }}
+										></Heading>
+									</Box>
+								</>
+							)}
+							<VStack spacing={0}>
+								<HStack spacing={0} textAlign={"center"} w="100%">
+									<Flex w="350px" bg={boxStyle.teamNameBannerBG} zIndex={1} mr="-25px" h={"50px"} alignItems="center" justifyContent="center" textAlign={"top"}>
+										<Text 
+                                        
+                                        fontSize={"2xl"} h="100%" mt={"-10px"} color={boxStyle.teamNameBannerColor} textShadow={boxStyle.teamNameBannerShadow}>
+											Spruit/Spruit
+										</Text>
+									</Flex>
+									<Circle zIndex={5} w={"100px"} h={"100px"} bg={boxStyle.teamNameBannerBG} alignItems="center" justifyContent="center" textAlign={"top"}>
+										<Text fontSize={"5xl"} fontWeight={"900"} h="110%" mt={"-5px"} color={boxStyle.teamNameBannerColor} textShadow={boxStyle.teamNameBannerShadow}>
+											VS
+										</Text>
+									</Circle>
+									<Flex w="350px" bg={boxStyle.teamNameBannerBG} zIndex={0} ml="-15px" h={"50px"} alignItems="center" justifyContent="center" textAlign={"top"}>
+										<Text fontSize={"2xl"} h="100%" mt={"-10px"} color={boxStyle.teamNameBannerColor} textShadow={boxStyle.teamNameBannerShadow}>
+											{formData.Opponent}
+										</Text>
+									</Flex>
+								</HStack>
 
-									<Image src={sponsorBanner} h="140px" w="full" />
+								<Flex w="100%" justify="space-around" color={boxStyle.color} mt={"-25px"}>
+									
+                                    {formData.OurScore > formData.OpponentScore? (<>
+                                        <Text fontSize={"4xl"} 
+                                        textDecor={"underline"}
+                                        color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow} pr={16}>
+										{formData.OurScore}
+									</Text>
+
+									<Text fontSize={"4xl"} color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow}>
+										{formData.OpponentScore}
+									</Text>
+                                    
+                                    </>) : (<><Text fontSize={"4xl"} color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow} pr={16}>
+										{formData.OurScore}
+									</Text>
+
+									<Text fontSize={"4xl"} 
+                                    textDecor={"underline"}
+                                    color={boxStyle.scoreColor} textShadow={boxStyle.scoreColorShadow}>
+										{formData.OpponentScore}
+									</Text></>)}
+                                    
+								</Flex>
+							</VStack>
+
+							<br />
+							<br />
+							{formData.UpNextDate ? (
+								<Box pl={2} spacing={0}>
+									<Text fontSize={"2xl"} color={boxStyle.gameTypeColor} fontWeight={"bold"}>
+										Next Game:
+									</Text>
+									<Text fontSize={"2xl"}>
+										{formData.UpNextDate} VS {formData.UpNextOpponent}
+									</Text>
 								</Box>
-							</Box>
-						</AccordionPanel>
-					</AccordionItem>
-				</Accordion>
+							) : (
+								<></>
+							)}
+						</Box>
+
+						<Image src={sponsorBanner} h="140px" w="full" />
+					</Box>
+				</Box>
+
 				<br />
 				<br />
 			</Box>

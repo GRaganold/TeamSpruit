@@ -8,8 +8,9 @@ const theme = extendTheme(withDefaultColorScheme({ colorScheme: "blue" }), {
 	styles: {
 		global: {
 			p: {
-				fontFamily: "sans-serif",
+				fontFamily: "monospace",
 			},
+			
 			colors: {
 				orange: "#fd8050",
 				white: "#fdfdfe",

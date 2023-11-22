@@ -1,137 +1,215 @@
-/* eslint-disable no-unused-vars */
-import { Box, Button, Flex, HStack, Image, Input, Stack, Text, VStack } from "@chakra-ui/react"
-import React, { useRef, useState } from "react"
-import html2canvas from "html2canvas"
-import sponsorBanner from "./SponsorBanner.png"
+import React, { useState, useRef } from "react"
+import { Box, Button, Center,  Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
+import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./CurlingStone.png"
+import html2canvas from "html2canvas"
 
-export default function Scoreboard() {
+function NameInput({ onInputChange, label, placeholder }) {
+	const [value, setValue] = useState("")
+
+	const handleChange = event => {
+		const newValue = event.target.value
+		setValue(newValue)
+		onInputChange(label, newValue) // Call the callback function with the new value and label
+	}
+
+	return (
+		<>
+			<HStack>
+				<Text mb="8px">{label}:</Text>
+				<Input value={value} onChange={handleChange} placeholder={placeholder} size="sm" w="400px" />
+			</HStack>
+		</>
+	)
+}
+
+export default function Results() {
+	const [formData, setFormData] = useState({
+		SpielName: "",
+		gameType: "",
+		Time: "",
+
+		OurScore: "",
+		OpponentScore: "",
+		Opponent: "",
+		Date: "",
+		UpNextDate: "",
+		UpNextOpponent: "",
+		ImageTitle: "noTitle",
+		us1: "",
+		us2: "",
+		us3: "",
+		us4: "",
+		us5: "",
+		us6: "",
+		us7: "",
+		us8: "",
+		usEE: "",
+		them1: "",
+		them2: "",
+		them3: "",
+		them4: "",
+		them5: "",
+		them6: "",
+		them7: "",
+		them8: "",
+		themEE: "",
+	})
+
+	const handleInputChange = (label, newValue) => {
+		setFormData(prevFormData => ({
+			...prevFormData,
+			[label]: newValue,
+		}))
+	}
+	const lightgray = "lightgray"
+	const orange = "#fd8050"
+	const white = "#fdfdfe"
+	const green = "#00aa86"
+	const greenGrey = "#bee1d3"
+	const blueGrey = "#388389"
+	const blue = "#1ab7ce"
+	const charcoal = "#303030"
+	const yellow = "#FFF200"
+
+	const styleThemes = {
+		blue: {
+			backgroundColor: blue,
+			color: "white",
+			colorShadow: "2px 2px teal",
+			finalColor: "#00aa86",
+			finalColorShadow: "#000000",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+		blueGrey: {
+			backgroundColor: blueGrey,
+			color: "white",
+			colorShadow: "2px 2px teal",
+			finalColor: "#00aa86",
+			finalColorShadow: "#000000",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+		charcoal: {
+			backgroundColor: charcoal,
+			color: "white",
+			textShadow: "2px 2px teal",
+			finalColor: "#00aa86",
+			finalColorShadow: "#000000",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+		green: {
+			backgroundColor: green,
+			color: white,
+			textShadow: "2px 2px black",
+			finalColor: blue,
+			finalColorShadow: `3px 3px ${yellow}`,
+			gameTypeColor: yellow,
+			teamNameBannerBG: orange,
+			teamNameBannerColor: "#fd8050",
+		},
+		greenGrey: {
+			backgroundColor: greenGrey,
+			color: "white",
+			colorShadow: "2px 2px teal",
+			finalColor: "#00aa86",
+			finalColorShadow: "#000000",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+		lightgrey: {
+			backgroundColor: lightgray,
+			color: "white",
+			colorShadow: "2px 2px teal",
+			finalColor: "#00aa86",
+			finalColorShadow: "#000000",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+		orange: {
+			backgroundColor: orange,
+			color: "white",
+			textShadow: "2px 2px black",
+			finalColor: "#00aa86",
+			finalColorShadow: "#000000",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+
+		white: {
+			backgroundColor: white,
+			color: "black",
+			colorShadow: "2px 2px teal",
+			finalColor: "#00aa86",
+			gameTypeColor: "#00aa86",
+			teamNameBannerBG: "#000",
+			teamNameBannerColor: "#fd8050",
+		},
+
+		// Add more themes as needed
+	}
+
+	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
+
+	const selectedTheme = selectedThemeChoice ? styleThemes[selectedThemeChoice] : {}
+
+	const boxStyle = {
+		backgroundColor: selectedTheme.backgroundColor, //  boxStyle.backgroundColor
+		color: selectedTheme.color, // boxStyle.color
+		textShadow: selectedTheme.textShadow, // boxStyle.textShadow
+		finalColor: selectedTheme.finalColor, //      boxStyle.finalColor
+		finalColorShadow: selectedTheme.finalColorShadow, //      boxStyle.finalColorShadow
+		gameTypeColor: selectedTheme.gameTypeColor, //      boxStyle.gameTypeColor
+		teamNameBannerBG: selectedTheme.teamNameBannerBG, //      boxStyle.teamNameBannerBG
+		teamNameBannerColor: selectedTheme.teamNameBannerColor, //      boxStyle.teamNameBannerColor
+	}
+
+	const handleStyleThemeChange = event => {
+		setSelectedThemeChoice(event.target.value)
+	}
+
 	const divRef = useRef(null)
-	const [inputValues, setInputValues] = useState('')
-const [SpielName, setSpielName] = useState('');
-const [Opponent, setOpponent] = useState('');
-const [ourScore, setOurScore] = useState(''); // Adjusted the setter function name
-const [opponentScore, setOpponentScore] = useState('');
-const [jpgTitle, setJpgTitle] = useState(''); // Adjusted the setter function name
-const [us1, setUs1] = useState(''); // Adjusted the setter function name
-const [us2, setUs2] = useState(''); // Adjusted the setter function name
-const [us3, setUs3] = useState(''); // Adjusted the setter function name
-const [us4, setUs4] = useState(''); // Adjusted the setter function name
-const [us5, setUs5] = useState(''); // Adjusted the setter function name
-const [us6, setUs6] = useState(''); // Adjusted the setter function name
-const [us7, setUs7] = useState(''); // Adjusted the setter function name
-const [us8, setUs8] = useState(''); // Adjusted the setter function name
-const [usEE, setUsEE] = useState(''); // Adjusted the setter function name
-const [them1, setThem1] = useState(''); // Adjusted the setter function name
-const [them2, setThem2] = useState(''); // Adjusted the setter function name
-const [them3, setThem3] = useState(''); // Adjusted the setter function name
-const [them4, setThem4] = useState(''); // Adjusted the setter function name
-const [them5, setThem5] = useState(''); // Adjusted the setter function name
-const [them6, setThem6] = useState(''); // Adjusted the setter function name
-const [them7, setThem7] = useState(''); // Adjusted the setter function name
-const [them8, setThem8] = useState(''); // Adjusted the setter function name
-const [themEE, setThemEE] = useState(''); // Adjusted the setter function name
-
-	
-
 	const convertToJpg = () => {
-		const scale = 2 // Adjust the scale factor as needed
-
 		// Use html2canvas to capture the content of the div with scaling
-		html2canvas(divRef.current, { scale }).then(canvas => {
+		html2canvas(divRef.current).then(canvas => {
 			// Convert the canvas to a data URL representing a JPEG image
 			const dataUrl = canvas.toDataURL("image/jpeg")
 
 			// Create a link element and trigger a download of the image
 			const link = document.createElement("a")
 			link.href = dataUrl
-			link.download = `${inputValues.jpgTitle}.jpg`
+			link.download = `${formData.ImageTitle}.jpg`
 			link.click()
 		})
 	}
 
-    const handleInputChange = (inputName, value) => {
-        setInputValues((prevValues) => ({
-          ...prevValues,
-          [inputName]: isNaN(value) ? value : parseInt(value, 10),
-        }));
-      };
-
-	function BoxScoreInput() {
-		const renderInputs4 = () => {
-			const inputPairs = []
-			for (let i = 1; i <= 4; i++) {
-				inputPairs.push(
-					<VStack spacing={1} key={i}>
-						<Input type="number" w="50px" value={inputValues[`us${i}`]} onChange={e => handleInputChange(`us${i}`, e.target.value)} />
-						<Text mb="8px">{i}</Text>
-						<Input
-							type="number"
-							// value={inputValues.opponentScore}
-							// onChange={e => handleInputChange("opponentScore", e.target.value)}
-							w="50px"
-							value={inputValues[`them${i}`]}
-							onChange={e => handleInputChange(`them${i}`, e.target.value)}
-						/>
-					</VStack>
-				)
-			}
-			return inputPairs
-		}
-		const renderInputs5 = () => {
-			const inputPairs = []
-			for (let i = 5; i <= 8; i++) {
-				inputPairs.push(
-					<VStack spacing={1} key={i}>
-						<Input type="number" w="50px" value={inputValues[`us${i}`]} onChange={e => handleInputChange(`us${i}`, e.target.value)} />
-						<Text mb="8px">{i}</Text>
-						<Input
-							type="number"
-							// value={inputValues.opponentScore}
-							// onChange={e => handleInputChange("opponentScore", e.target.value)}
-							w="50px"
-							value={inputValues[`them${i}`]}
-							onChange={e => handleInputChange(`them${i}`, e.target.value)}
-						/>
-					</VStack>
-				)
-			}
-			return inputPairs
-		}
-		return (
-			<>
-				<HStack>
-					<VStack spacing={1}>
-						<Text mb="8px">Us </Text>
-						<Text mb="8px">End </Text>
-						<Text mb="8px">Opponent </Text>
-					</VStack>
-
-					{renderInputs4()}
+	const renderInputs4 = () => {
+		const inputPairs = []
+		for (let i = 1; i <= 8; i++) {
+			inputPairs.push(
+				<HStack spacing={6} key={i}>
+					<Input type="text" w="75px" value={formData[`us${i}`]} onChange={e => handleInputChange(`us${i}`, e.target.value)} />
+					<Text mb="8px">{i}</Text>
+					<Input
+						type="text"
+						// value={inputValues.opponentScore}
+						// onChange={e => handleInputChange("opponentScore", e.target.value)}
+						w="75px"
+						value={formData[`them${i}`]}
+						onChange={e => handleInputChange(`them${i}`, e.target.value)}
+					/>
 				</HStack>
-				<HStack>
-					<VStack spacing={1}>
-						<Text mb="8px">Us </Text>
-						<Text mb="8px">End </Text>
-						<Text mb="8px">Opponent </Text>
-					</VStack>
-
-					{renderInputs5()}
-					<VStack spacing={1}>
-						<Input type="text" w="50px" value={inputValues[`usEE`]} onChange={e => handleInputChange(`usEE`, e.target.value)} />
-						<Text mb="8px">EE</Text>
-						<Input
-							type="text"
-							// value={inputValues.opponentScore}
-							// onChange={e => handleInputChange("opponentScore", e.target.value)}
-							w="50px"
-							value={inputValues[`themEE`]}
-							onChange={e => handleInputChange(`themEE`, e.target.value)}
-						/>{" "}
-					</VStack>
-				</HStack>
-			</>
-		)
+			)
+		}
+		return inputPairs
 	}
 
 	function BoxScoreResult() {
@@ -139,9 +217,9 @@ const [themEE, setThemEE] = useState(''); // Adjusted the setter function name
 			const inputPairs = []
 			for (let i = 1; i <= 8; i++) {
 				inputPairs.push(
-					<VStack key={i} spacing={1}>
-						<Text mb="8px">{inputValues[`us${i}`]}</Text>
-						<Text mb="8px">{inputValues[`them${i}`]}</Text>
+					<VStack key={i} spacing={1} textShadow={"2px 2px black"}>
+						<Text mb="8px" fontSize={"2xl"}>{formData[`us${i}`] || "X"}</Text>
+						<Text mb="8px" fontSize={"2xl"}>{formData[`them${i}`] || "X"}</Text>
 					</VStack>
 				)
 			}
@@ -152,93 +230,170 @@ const [themEE, setThemEE] = useState(''); // Adjusted the setter function name
 			<>
 				<HStack>
 					{renderInputs()}
-					{inputValues.usEE && inputValues.themEE ? <>{inputValues.usEE}</> : <>{inputValues.themEE}</>}
+					{formData.usEE && formData.themEE ? <>
+					
+						<VStack key={9}  spacing={1} textShadow={"2px 2px black"}>
+						<Text mb="8px" fontSize={"2xl"}>{formData.usEE}</Text>
+						<Text mb="8px" fontSize={"2xl"}>{formData.themEE}</Text>
+					</VStack>
+					
+					
+					
+					</> : <></>}
 				</HStack>
 			</>
 		)
 	}
 
-	function Inputs() {
-		return (
-			<>
-				<Box>
-					<Stack spacing={5}>
-						<HStack spacing={5}>
-							<Text mb="8px">JPG Title: </Text>
-							<Input type="text" value={inputValues.jpgTitle} onChange={e => handleInputChange("jpgTitle", e.target.value)} w="400px" placeholder="Spiel Name" />
-						</HStack>
-						<HStack spacing={5}>
-							<Text mb="8px">Spiel Name: </Text>
-							<Input type="text" value={inputValues.SpielName} onChange={e => handleInputChange("SpielName", e.target.value)} w="400px" placeholder="Spiel Name" />
-						</HStack>
-						<HStack spacing={5}>
-							<Text mb="8px">Opponent: </Text>
-							<Input type="text" value={inputValues.Opponent} onChange={e => handleInputChange("Opponent", e.target.value)} w="400px" placeholder="Opponent" />
-						</HStack>
-						<HStack spacing={5}>
-							<Text mb="8px">Our Score: </Text>
-							<Input type="number" value={inputValues.ourScore} onChange={e => handleInputChange("ourScore", e.target.value)} w="400px" placeholder="Our Score:" />{" "}
-						</HStack>
-						<HStack spacing={5}>
-							<Text mb="8px">Opponent Score: </Text>
-							<Input type="number" value={inputValues.opponentScore} onChange={e => handleInputChange("opponentScore", e.target.value)} w="400px" placeholder="Opponent score" />
-						</HStack>
-						<BoxScoreInput />
-					</Stack>
-				</Box>
-			</>
-		)
-	}
 	return (
 		<>
 			<Box p={3}>
-				<Inputs />
+				<Stack w="400px">
+					<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title" />
+					<NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name" />
+					<NameInput onInputChange={handleInputChange} label="Date" placeholder="Friday, October 20" />
+					<HStack>
+						<Text> Game Type </Text>
+						<Select value={formData.gameType} onChange={e => handleInputChange("gameType", e.target.value)} placeholder="Enter Game Type">
+							<option value="Round Robin">Round Robin</option>
+							<option value="Quarter Finals">Quarter Finals</option>
+							<option value="Semi Finals">Semi Finals</option>
+							<option value="Finals">Finals</option>
+						</Select>
+					</HStack>
+					<NameInput onInputChange={handleInputChange} label="Time" placeholder="Enter Time" />
+					<NameInput onInputChange={handleInputChange} label="OurScore" placeholder="Enter Our Score" />
+					<NameInput onInputChange={handleInputChange} label="Opponent" placeholder="Enter Opponent " />
+					<NameInput onInputChange={handleInputChange} label="OpponentScore" placeholder="Enter Opponent Score" />
 
-				<Button onClick={convertToJpg} m="6" colorScheme="orange">
+					<NameInput onInputChange={handleInputChange} label="UpNextDate" placeholder="Enter Next Date and time" />
+					<NameInput onInputChange={handleInputChange} label="UpNextOpponent" placeholder="Enter Next Opponent" />
+
+					<VStack>
+						<HStack spacing={10}>
+							<Text> Us </Text>
+							<Text> Them</Text>/
+						</HStack>
+						{renderInputs4()}
+						<HStack spacing={4}>
+							<Input type="text" w="75px" value={formData[`usEE`]} onChange={e => handleInputChange(`usEE`, e.target.value)} />
+							<Text mb="8px">EE</Text>
+							<Input type="text" w="75px" value={formData[`themEE`]} onChange={e => handleInputChange(`themEE`, e.target.value)} />{" "}
+						</HStack>
+					</VStack>
+					<HStack>
+						<Text> Theme </Text>
+						<Select
+							value={selectedThemeChoice}
+							onChange={handleStyleThemeChange} // Fix the function name here
+							mb={4}
+							placeholder="Select option"
+						>
+							<option value="blueGrey">Blue Gray</option>
+							<option value="blue">Blue</option>
+							<option value="charcoal">Charcoal</option>
+							<option value="green">Green</option>
+							<option value="greenGrey">Green Gray</option>
+							<option value="lightgrey">Light Gray</option>
+							<option value="orange">Orange</option>
+							<option value="white">White</option>
+						</Select>
+					</HStack>
+				</Stack>
+				<br />
+
+				<Button m="6" colorScheme="orange" onClick={convertToJpg}>
 					Convert to JPG
 				</Button>
 
-				<Box w="100vw">
+				<Text>Note this preview is not 100% accurate and will center the text on conversion</Text>
+
+				<Box>
 					<Box
 						ref={divRef}
 						style={{
-							height: "470px",
-							width: "394px",
-							border: "1px solid #000", // Optional: Add a border to visualize the div
+							height: "700px",
+							width: "700px",
+							border: "1px solid #000",
 						}}
-						bg="red"
+						bg={boxStyle.backgroundColor}
+						color={boxStyle.color}
 					>
-						<Box h="320px">
-							<Flex justify={"flex-end"} w="100%">
-								<HStack>
-									<Text color="white" fontWeight={"bold"} textShadow="2px 2px #000000" fontSize={"lg"}>
-										SpielName: {inputValues.SpielName}
-									</Text>
-									<Image src={CurlingStone} h="35px" />
+						<Box h="558px" pt={1}>
+							<Flex justify="flex-end" w="100%" pb={6} pr={2}>
+								<HStack pb={5}>
+									<Center>
+										<Heading color={boxStyle.color} fontWeight="bold" textShadow={boxStyle.textShadow} fontSize="4xl" mt={3} pr={3}>
+											{formData.SpielName}
+										</Heading>
+										<Image src={CurlingStone} h="85px" />
+									</Center>
 								</HStack>
+							</Flex>
+							<Flex alignItems="flex-end" justify={"flex-end"} textAlign={"right"} pr={3} >
+								<br />
+								<Box h="150px">
+									<Text fontSize={"3xl"}> {formData.Date}</Text>
+									<Heading fontSize={"4xl"} color={boxStyle.gameTypeColor}>
+										{formData.gameType}
+									</Heading>
+									<Text fontSize={"2xl"}> {formData.Time}</Text>
+								</Box>
+							</Flex>
+
+							<Box>
+								<Heading
+									h="5px"
+									alignContent={"left"}
+									justifyContent={"left"}
+									textAlign={"left"}
+									fontSize={"6xl"}
+									position={"relative"}
+									Color="black"
+									pl={9}
+									top={"-175px"}
+									style={{ transform: "rotate(-10deg)" }}
+									color={boxStyle.finalColor}
+									textShadow={boxStyle.finalColorShadow}
+								>
+									Final Score
+								</Heading>
+							</Box>
+							<br />	
+							<Flex bg={boxStyle.teamNameBannerBG} justify={"space-evenly"} minH="100px">
+								<Box textAlign={"center"} mt={"-10px"}>
+									<Text fontSize={"2xl"} 
+									textShadow={"2px 2px black"}>
+										Spruit/Spruit
+									</Text>
+									<Text fontSize={"4xl"} textShadow={"2px 2px black"}>
+										{formData.OurScore} 
+										
+									</Text>
+								</Box>
+								<Box textAlign={"center"} mt={"-10px"}>
+									<BoxScoreResult />
+								</Box>
+								
+							
+								<Box textAlign={"center"}mt={"-10px"} >
+									<Text fontSize={"2xl"} textShadow={"2px 2px black"} >
+										{formData.Opponent}
+										
+									</Text>								
+									<Text fontSize={"4xl"} textShadow={"2px 2px black"}> {formData.OpponentScore} </Text>
+								</Box>
 							</Flex>
 
 							<br />
-							<br />
-							<br />
-							<Flex w="100%" bg="yellow" justify={"space-evenly"}>
-								<Box>
-									<p> Spruit/Spruit</p>
-									<Text> {inputValues.ourScore}</Text>
-								</Box>
-								<Box>
-									<p> VS </p>
-								</Box>
-								<Box>
-									<p>{inputValues.Opponent}</p>
-									<p>{inputValues.opponentScore}</p>
-								</Box>
-							</Flex>
-							<BoxScoreResult />
+							<br />				
+							
 						</Box>
-						<Image src={sponsorBanner} />
+
+						<Image src={sponsorBanner} h="140px" w="full" />
 					</Box>
 				</Box>
+
 				<br />
 				<br />
 			</Box>
