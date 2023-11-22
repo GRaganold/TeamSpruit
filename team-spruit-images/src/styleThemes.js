@@ -1,5 +1,5 @@
 
-export const lightgray = "lightgray"
+export const lightgray = "#a7a8ac"
 export const orange = "#fd8050"
 export const white = "#fdfdfe"
 export const green = "#00aa86"
@@ -82,8 +82,8 @@ export const styleThemes = {
         finalColor: green,
         finalColorShadow: `3px 3px ${yellow}`,
         gameTypeColor: green,
-        teamNameBannerBG: white,
-        teamNameBannerColor: charcoal,
+        teamNameBannerBG: green,
+        teamNameBannerColor: white,
         teamNameBannerShadow: `0px 0px ${orange}`,
         scoreColor: charcoal,
         scoreColorShadow: `0px 0px ${orange}`,
