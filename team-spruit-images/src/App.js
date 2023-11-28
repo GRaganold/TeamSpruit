@@ -10,9 +10,9 @@ function App() {
 			 */}
 			<Tabs isFitted variant="enclosed">
 				<TabList>
-					<Tab>Pre Competition Schedule</Tab>
-					<Tab>Game & Results</Tab>
-					<Tab>BoxScore Results</Tab>					
+					<Tab _selected={{ color: 'white', bg: 'blue.500' }}>Pre Competition Schedule</Tab>
+					<Tab  _selected={{ color: 'white', bg: 'blue.500' }}>Game & Results</Tab>
+					<Tab  _selected={{ color: 'white', bg: 'blue.500' }}>BoxScore Results</Tab>					
 				</TabList>
 				<TabPanels>
 					<TabPanel>

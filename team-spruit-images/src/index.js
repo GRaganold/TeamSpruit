@@ -8,7 +8,7 @@ const theme = extendTheme(withDefaultColorScheme({ colorScheme: "blue" }), {
 	styles: {
 		global: {
 			p: {
-				fontFamily: "monospace",
+				fontFamily: "Sans-Serif",
 			},
 			
 			colors: {

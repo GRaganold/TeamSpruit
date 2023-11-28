@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react"
-import { Box, Button, Flex, HStack, Heading, Image, Input, Select, Spacer, Stack, Text, VStack } from "@chakra-ui/react"
+import React, { useState, useRef, useEffect } from "react"
+import { Box, Button, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./CurlingStone.png"
 import html2canvas from "html2canvas"
-import { styleThemes, white } from "./StyleThemes"
+import { styleThemes } from "./StyleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -41,6 +41,33 @@ export default function PreCompSchedule() {
 			},
 		],
 	})
+	const handleClearAll = () => {
+		// Clear all form data
+		setFormData({
+			SpielName: "",
+			Time: "",
+			Date: "",
+			ImageTitle: "noTitle",
+			opponentFields: [
+				{
+					day: "",
+					hour: "",
+					minute: "",
+					amPm: "",
+					opponent: "",
+					gameType: "",
+				},
+			],
+		})
+	}
+
+	useEffect(() => {
+		// Load data from local storage on component mount
+		const storedFormData = JSON.parse(localStorage.getItem("formData"))
+		if (storedFormData) {
+			setFormData(storedFormData)
+		}
+	}, [])
 
 	const handleInputChange = (label, newValue) => {
 		setFormData(prevFormData => ({
@@ -48,6 +75,11 @@ export default function PreCompSchedule() {
 			[label]: newValue,
 		}))
 	}
+
+	useEffect(() => {
+		// Save form data to local storage whenever it changes
+		localStorage.setItem("formData", JSON.stringify(formData))
+	}, [formData])
 
 	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
 
@@ -62,9 +94,10 @@ export default function PreCompSchedule() {
 		gameTypeColor: selectedTheme.gameTypeColor, //      boxStyle.gameTypeColor
 		teamNameBannerBG: selectedTheme.teamNameBannerBG, //      boxStyle.teamNameBannerBG
 		teamNameBannerColor: selectedTheme.teamNameBannerColor, //      boxStyle.teamNameBannerColor
-		teamNameBannerShadow: selectedTheme.teamNameBannerShadow, // box.StyleteamNameBannerShadow
+		teamNameBannerShadow: selectedTheme.teamNameBannerShadow, // boxStyle.teamNameBannerShadow
 		scoreColor: selectedTheme.scoreColor, // boxStyle.scoreColor
-		scoreColorShadow: selectedTheme.scoreColorShadow, // box.Style.scoreColorShadow
+		scoreColorShadow: selectedTheme.scoreColorShadow, // boxStyle.scoreColorShadow
+		WebkitTextStrokeColor: selectedTheme.WebkitTextStrokeColor,
 	}
 
 	const handleStyleThemeChange = event => {
@@ -102,15 +135,16 @@ export default function PreCompSchedule() {
 	}
 	const DisplayInputRoundRobin = () => {
 		return (
-			<Box fontFamily="monospace">
+			<Box fontFamily="sans-serif">
 				{inputFields &&
 					inputFields
 						.filter(field => field.gameType === "Round Robin")
 						.map((field, index) => (
 							<>
-									<Text fontSize={"xl"} bg={boxStyle.teamNameBannerBG} w="60%" h="50px" mt={-2} key={index} textAlign={"top"} pl={2} color={boxStyle.teamNameBannerColor}>
-										{field.day} {field.hour}:{field.minute}{field.amPm} VS {field.opponent}
-									</Text>								
+								<Text fontSize={"xl"} bg={boxStyle.teamNameBannerBG} w="60%" h="50px" mt={-2} key={index} textAlign={"top"} pl={2} color={boxStyle.teamNameBannerColor}>
+									{field.day} {field.hour}:{field.minute}
+									{field.amPm} VS {field.opponent}
+								</Text>
 								<Box h={3}> </Box>
 							</>
 						))}
@@ -120,16 +154,17 @@ export default function PreCompSchedule() {
 
 	const DisplayInputPlayoffs = () => {
 		return (
-			<Box fontFamily="monospace">
+			<Box fontFamily="sans-serif">
 				{inputFields &&
 					inputFields
 						.filter(field => field.gameType === "Playoffs")
 						.map((field, index) => (
-							<>                           
-									<Text fontSize={"xl"} bg={boxStyle.teamNameBannerBG} w="60%" h="50px" mt={-2} key={index} textAlign={"top"} pl={2} color={boxStyle.teamNameBannerColor}>
-									 {field.day} {field.hour}:{field.minute}{field.amPm}  {field.opponent} *
-									</Text>							
-								<Box h={3}> </Box>								
+							<>
+								<Text fontSize={"xl"} bg={boxStyle.teamNameBannerBG} w="60%" h="50px" mt={-2} key={index} textAlign={"top"} pl={2} color={boxStyle.teamNameBannerColor}>
+									{field.day} {field.hour}:{field.minute}
+									{field.amPm} {field.opponent} *
+								</Text>
+								<Box h={3}> </Box>
 							</>
 						))}
 			</Box>
@@ -141,26 +176,32 @@ export default function PreCompSchedule() {
 
 	return (
 		<>
-			<Box p={3} fontFamily="monospace">
+			<Box p={3} fontFamily="sans-serif">
 				<Stack w="400px">
-					<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title" />
-					<NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name" />
+					<Button colorScheme="orange" onClick={handleClearAll}>
+						New Event
+					</Button>
+					<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title" value={formData.ImageTitle} />
+					<NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name" value={formData.SpielName} />
 					<NameInput onInputChange={handleInputChange} label="Date" placeholder="Friday, October 20" />
-					
+
 					<VStack>
 						<HStack>
 							<label htmlFor="opponentCount">Select Opponent Count:</label>
 							<Select id="opponentCount" onChange={handleOpponentCountChange} value={opponentCount}>
-								{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(count => (
+								{[1, 2, 3, 4, 5, 6, 7].map(count => (
 									<option key={count} value={count}>
 										{count}
 									</option>
 								))}
 							</Select>
 						</HStack>
-
+						
 						{inputFields.map((_, index) => (
-							<VStack key={index} spacing={4} fontFamily="monospace">
+							<>
+								
+							<VStack key={index} spacing={4} fontFamily="sans-serif" pb={1}>
+								<Box w="100%" textAlign={"center"} color="#fdfdfe"> <Text fontWeight={"bold"} bg="#00aa86">Game #{index+1}</Text></Box>
 								<HStack>
 									<label htmlFor={`day-${index}`}>Day:</label>
 									<Select w="100px" id={`day-${index}`} onChange={e => handleInputChangeOpponent(index, "day", e.target.value)} value={inputFields[index].day} placeholder="---">
@@ -202,9 +243,10 @@ export default function PreCompSchedule() {
 									<option value="Round Robin">Round Robin</option>
 								</Select>
 							</VStack>
+							</>
 						))}
 					</VStack>
-                    <HStack>
+					<HStack>
 						<Text> Theme </Text>
 						<Select
 							value={selectedThemeChoice}
@@ -260,20 +302,46 @@ export default function PreCompSchedule() {
 							</Flex>
 
 							<Box w="100%">
-								<Text  fontSize={"2xl"}  mt={"-20px"} pl={2} color={boxStyle.color} textShadow={boxStyle.textShadow} fontWeight={"bold"}> Round Robin</Text>
-                                <Box pb={5}> </Box>
+								<Heading
+									fontSize={"2xl"}
+									mt={"-20px"}
+									pl={2}
+									style={{
+										color: ` ${boxStyle.scoreColor}`,
+										fontFamily: "sans-serif",
+										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+									}}
+									fontWeight={"bold"}
+								>
+									Round Robin
+								</Heading>
+								<Box pb={5}> </Box>
 								<DisplayInputRoundRobin />
 								<br />
-								<Text fontSize={"2xl"}  mt={"-10px"} pl={2} color={boxStyle.color} textShadow={boxStyle.textShadow} fontWeight={"bold"}> Playoffs</Text>
-                                <Box pb={5}> </Box>
-                                
+								<Heading
+									fontSize={"2xl"}
+									mt={"-10px"}
+									pl={2}
+									style={{
+										color: ` ${boxStyle.scoreColor}`,
+										fontFamily: "sans-serif",
+										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+									}}
+									fontWeight={"bold"}
+								>
+									Playoffs
+								</Heading>
+								<Box pb={5}> </Box>
+
 								<DisplayInputPlayoffs />
-                                
 							</Box>
-                            <Flex justify={"flex-end"} align={"flex-start"} pr={110} textAlign={"start"} mt={"-30px"}>
-                            <Text fontSize={"xs"}  color={boxStyle.teamNameBannerColor}> * Pending Qualification </Text></Flex>
+							<Flex justify={"flex-end"} align={"flex-start"} pr={110} textAlign={"start"} mt={"-30px"}>
+								<Text fontSize={"xs"} color={boxStyle.teamNameBannerColor}>								
+									* Pending Qualification
+								</Text>
+							</Flex>
 						</Box>
-                        
+
 						<Image src={sponsorBanner} h="100px" w="full" />
 					</Box>
 				</Box>
