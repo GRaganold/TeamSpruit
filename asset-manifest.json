@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.js": "/TeamSpruit/static/js/main.4c386cb1.js",
-    "static/media/CurlingStone.png": "/TeamSpruit/static/media/CurlingStone.e5c8eaed89c654ba4445.png",
+    "main.js": "/TeamSpruit/static/js/main.eb6709ec.js",
     "static/media/Curling_stone.svg-removebg-preview.png": "/TeamSpruit/static/media/Curling_stone.svg-removebg-preview.0d14056b2c8891e59bbe.png",
     "static/media/SponsorBanner2.jpg": "/TeamSpruit/static/media/SponsorBanner2.00a8c0a6004805913402.jpg",
     "index.html": "/TeamSpruit/index.html",
-    "main.4c386cb1.js.map": "/TeamSpruit/static/js/main.4c386cb1.js.map"
+    "main.eb6709ec.js.map": "/TeamSpruit/static/js/main.eb6709ec.js.map"
   },
   "entrypoints": [
-    "static/js/main.4c386cb1.js"
+    "static/js/main.eb6709ec.js"
   ]
 }
