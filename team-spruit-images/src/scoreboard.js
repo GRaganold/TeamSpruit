@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import { Box, Button, Center,  Flex,  HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
+import { Box, Button, Center, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
@@ -26,112 +26,110 @@ function NameInput({ onInputChange, label, placeholder }) {
 
 export default function Results() {
 	const [formData, setFormData] = useState({
-		...JSON.parse(localStorage.getItem("formData")) ||{
-		SpielName: "",
-		gameType: "",
-		Time: "",
-		OurScore: "",
-		OpponentScore: "",
-		Opponent: "",
-		Date: "",
-		UpNextDate: "",
-		UpNextOpponent: "",
-		ImageTitle: "noTitle",
-		us1: "",
-		us2: "",
-		us3: "",
-		us4: "",
-		us5: "",
-		us6: "",
-		us7: "",
-		us8: "",
-		usEE: "",
-		them1: "",
-		them2: "",
-		them3: "",
-		them4: "",
-		them5: "",
-		them6: "",
-		them7: "",
-		them8: "",
-		themEE: "",
-	},
-});
+		...(JSON.parse(localStorage.getItem("formData")) || {
+			SpielName: "",
+			gameType: "",
+			Time: "",
+			OurScore: "",
+			OpponentScore: "",
+			Opponent: "",
+			Date: "",
+			UpNextDate: "",
+			UpNextOpponent: "",
+			ImageTitle: "noTitle",
+			us1: "",
+			us2: "",
+			us3: "",
+			us4: "",
+			us5: "",
+			us6: "",
+			us7: "",
+			us8: "",
+			usEE: "",
+			them1: "",
+			them2: "",
+			them3: "",
+			them4: "",
+			them5: "",
+			them6: "",
+			them7: "",
+			them8: "",
+			themEE: "",
+		}),
+	})
 
 	const [isComponentReady, setIsComponentReady] = useState(false)
 
 	const handleInputChange = (label, newValue) => {
-		setFormData((prevFormData) => ({
-		  ...prevFormData,
-		  [label]: newValue,
-		}));
-	  };
-	
+		setFormData(prevFormData => ({
+			...prevFormData,
+			[label]: newValue,
+		}))
+	}
 
-	  const handleClearAll = () => {
+	const handleClearAll = () => {
 		// Clear all form data
 		setFormData({
-		  SpielName: "",
-		  gameType: "",
-		  Time: "",
-		  OurScore: "",
-		  OpponentScore: "",
-		  Opponent: "",
-		  Date: "",
-		  UpNextDate: "",
-		  UpNextOpponent: "",
-		  ImageTitle: "noTitle",
-		  us1: "",
-		  us2: "",
-		  us3: "",
-		  us4: "",
-		  us5: "",
-		  us6: "",
-		  us7: "",
-		  us8: "",
-		  usEE: "",
-		  them1: "",
-		  them2: "",
-		  them3: "",
-		  them4: "",
-		  them5: "",
-		  them6: "",
-		  them7: "",
-		  them8: "",
-		  themEE: "",
-		});
-	  };
+			SpielName: "",
+			gameType: "",
+			Time: "",
+			OurScore: "",
+			OpponentScore: "",
+			Opponent: "",
+			Date: "",
+			UpNextDate: "",
+			UpNextOpponent: "",
+			ImageTitle: "noTitle",
+			us1: "",
+			us2: "",
+			us3: "",
+			us4: "",
+			us5: "",
+			us6: "",
+			us7: "",
+			us8: "",
+			usEE: "",
+			them1: "",
+			them2: "",
+			them3: "",
+			them4: "",
+			them5: "",
+			them6: "",
+			them7: "",
+			them8: "",
+			themEE: "",
+		})
+	}
 
-	  const handleResetScoreBoard = () => {
+	const handleResetScoreBoard = () => {
 		// Reset all us fields to an empty string
-		const resetUsFields = {};
+		const resetUsFields = {}
 		for (let i = 1; i <= 8; i++) {
-		  resetUsFields[`us${i}`] = "";
+			resetUsFields[`us${i}`] = ""
 		}
-	  
+
 		// Reset all them fields to an empty string
-		const resetThemFields = {};
+		const resetThemFields = {}
 		for (let i = 1; i <= 8; i++) {
-		  resetThemFields[`them${i}`] = "";
+			resetThemFields[`them${i}`] = ""
 		}
-	  
+
 		// Reset usEE, Opponent and themEE fields
-		resetUsFields["usEE"] = "";
-		resetUsFields["Opponent"] = "";
-		resetThemFields["themEE"] = "";
-	  
-		setFormData((prevFormData) => ({
-		  ...prevFormData,
-		  ...resetUsFields,
-		  ...resetThemFields,
-		}));
-	  };
-	  
+		resetUsFields["usEE"] = ""
+		resetUsFields["Opponent"] = ""
+		resetThemFields["themEE"] = ""
+
+		setFormData(prevFormData => ({
+			...prevFormData,
+			...resetUsFields,
+			...resetThemFields,
+		}))
+	}
 
 	useEffect(() => {
 		// Save form data to local storage whenever it changes
-		localStorage.setItem("formData", JSON.stringify(formData));
-	  }, [formData]);
+		localStorage.setItem("formData", JSON.stringify(formData))
+	}, [formData])
 
 	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
 
@@ -223,12 +221,12 @@ export default function Results() {
 						<>
 							<Flex direction={"column"} justifyContent={"space-between"}>
 								<Box>
-								<Text fontSize={"xl"} h="50px" textAlign={"center"} color={boxStyle.WebkitTextStrokeColor}>
-									 {formData.usEE === "" ? "0" : formData.usEE} 
+									<Text fontSize={"xl"} h="50px" textAlign={"center"} color={boxStyle.WebkitTextStrokeColor}>
+										{formData.usEE === "" ? "0" : formData.usEE}
 									</Text>
 								</Box>
 								<Text fontSize={"xl"} h="50px" textAlign={"center"} fontWeight={"bold"}>
-								EE
+									EE
 								</Text>
 
 								<Box>
@@ -251,20 +249,20 @@ export default function Results() {
 		const middle = "80px"
 
 		const calculateUsTotal = () => {
-			let usTotal = 0;
-		  
+			let usTotal = 0
+
 			// Include usEE in the loop
 			for (let i = 1; i <= 8; i++) {
-			  const key = `us${i}`;
-			  const value = parseInt(formData[key]) || 0;
-			  usTotal += value;
+				const key = `us${i}`
+				const value = parseInt(formData[key]) || 0
+				usTotal += value
 			}
-		  
+
 			// Add usEE to the total
-			usTotal += parseInt(formData.usEE) || 0;
-		  
-			return usTotal;
-		  };
+			usTotal += parseInt(formData.usEE) || 0
+
+			return usTotal
+		}
 
 		const calculateThemTotal = () => {
 			let usTotal = 0
@@ -274,7 +272,7 @@ export default function Results() {
 				const value = parseInt(formData[key]) || 0 // Parse value as integer or default to 0
 				usTotal += value
 			}
-			usTotal += parseInt(formData.themEE) || 0;
+			usTotal += parseInt(formData.themEE) || 0
 			return usTotal
 		}
 
@@ -299,8 +297,8 @@ export default function Results() {
 								</Heading>
 							</Box>
 
-							<Box >
-								<Heading
+							<Box>
+								{formData.Opponent === "" ? (<></>):(<><Heading
 									fontSize={"3xl"}
 									h="100px"
 									textAlign={"center"}
@@ -309,10 +307,11 @@ export default function Results() {
 										fontFamily: "sans-serif",
 										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
 									}}
-									// dangerouslySetInnerHTML={{
-									// 	__html: formData.Opponent.replace("/", "<br />"),
-									// }}
-								/>
+									dangerouslySetInnerHTML={{
+										__html: formData.Opponent.replace("/", "<br />"),
+									}}
+								/></>)}
+								
 							</Box>
 							<Box></Box>
 						</Flex>
@@ -362,9 +361,9 @@ export default function Results() {
 		<>
 			<Box p={3}>
 				<Stack w="400px">
-				<Button  colorScheme="orange" onClick={handleClearAll}>
-        New Event
-        </Button>
+					<Button colorScheme="orange" onClick={handleClearAll}>
+						New Event
+					</Button>
 					<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title" />
 					<NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name" />
 					<NameInput onInputChange={handleInputChange} label="Date" placeholder="Friday, October 20" />
@@ -383,8 +382,8 @@ export default function Results() {
 					<NameInput onInputChange={handleInputChange} label="UpNextDate" placeholder="Enter Next Date and time" />
 					<NameInput onInputChange={handleInputChange} label="UpNextOpponent" placeholder="Enter Next Opponent" />
 					<Button colorScheme="orange" onClick={handleResetScoreBoard}>
-          Reset scoreboard
-        </Button>
+						Reset scoreboard
+					</Button>
 					<VStack>
 						<HStack spacing={10}>
 							<Text> Us </Text>
@@ -399,12 +398,7 @@ export default function Results() {
 					</VStack>
 					<HStack>
 						<Text> Theme </Text>
-						<Select
-							value={selectedThemeChoice}
-							onChange={handleStyleThemeChange} // Fix the function name here
-							mb={4}
-							placeholder="Select option"
-						>
+						<Select value={selectedThemeChoice} onChange={handleStyleThemeChange} mb={4} placeholder="Select option">
 							<option value="blueGrey">Blue Gray</option>
 							<option value="blue">Blue</option>
 							<option value="charcoal">Charcoal</option>
@@ -417,12 +411,9 @@ export default function Results() {
 					</HStack>
 				</Stack>
 				<br />
-					<Button colorScheme="orange"  onClick={convertToJpg}>
+				<Button colorScheme="orange" onClick={convertToJpg}>
 					Convert to JPG
 				</Button>
-
-
-				
 
 				<Text>Note this preview is not 100% accurate and will center the text on conversion</Text>
 
