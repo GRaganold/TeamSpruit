@@ -32,7 +32,8 @@ export default function Results() {
 			Time: "",
 			OurScore: "",
 			OpponentScore: "",
-			Opponent: "",
+			Opponent1: "",
+			Opponent2 : "",
 			Date: "",
 			UpNextDate: "",
 			UpNextOpponent: "",
@@ -75,7 +76,8 @@ export default function Results() {
 			Time: "",
 			OurScore: "",
 			OpponentScore: "",
-			Opponent: "",
+			Opponent1 : "",
+			Opponent2: "",
 			Date: "",
 			UpNextDate: "",
 			UpNextOpponent: "",
@@ -116,6 +118,7 @@ export default function Results() {
 
 		// Reset usEE, Opponent and themEE fields
 		resetUsFields["usEE"] = ""
+		resetUsFields["Opponent1"] = ""
 		resetUsFields["Opponent"] = ""
 		resetThemFields["themEE"] = ""
 
@@ -298,7 +301,7 @@ export default function Results() {
 							</Box>
 
 							<Box>
-								{formData.Opponent === "" ? (<></>):(<><Heading
+								<Heading
 									fontSize={"3xl"}
 									h="100px"
 									textAlign={"center"}
@@ -307,10 +310,16 @@ export default function Results() {
 										fontFamily: "sans-serif",
 										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
 									}}
-									dangerouslySetInnerHTML={{
-									__html: formData.Opponent.replace("/", "<br />"),
-								}}
-								/></>)}
+					
+								>  
+						
+									{formData.Opponent1}
+								<br />
+								{formData.Opponent2  }
+								 </Heading>
+								
+								
+								
 								
 							</Box>
 							<Box></Box>
@@ -377,8 +386,8 @@ export default function Results() {
 						</Select>
 					</HStack>
 					<NameInput onInputChange={handleInputChange} label="Time" placeholder="Enter Time" />
-					<NameInput onInputChange={handleInputChange} label="Opponent" placeholder="Enter Opponent " />
-
+					<NameInput onInputChange={handleInputChange} label="Opponent1" placeholder="Enter Opponent 1" />
+                    <NameInput onInputChange={handleInputChange } label="Opponent2" placeholder="Enter Opponent 2" />
 					<NameInput onInputChange={handleInputChange} label="UpNextDate" placeholder="Enter Next Date and time" />
 					<NameInput onInputChange={handleInputChange} label="UpNextOpponent" placeholder="Enter Next Opponent" />
 					<Button colorScheme="orange" onClick={handleResetScoreBoard}>
