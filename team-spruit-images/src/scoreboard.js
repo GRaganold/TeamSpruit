@@ -3,7 +3,7 @@ import { Box, Button, Center, Flex, HStack, Heading, Image, Input, Select, Stack
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
-import { styleThemes } from "./StyleThemes"
+import { styleThemes } from "./styleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -307,9 +307,9 @@ export default function Results() {
 										fontFamily: "sans-serif",
 										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
 									}}
-									dangerouslySetInnerHTML={{
-										__html: formData.Opponent.replace("/", "<br />"),
-									}}
+									// dangerouslySetInnerHTML={{
+									//	__html: formData.Opponent.replace("/", "<br />"),
+								//	}}
 								/></>)}
 								
 							</Box>
