@@ -307,9 +307,9 @@ export default function Results() {
 										fontFamily: "sans-serif",
 										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
 									}}
-									// dangerouslySetInnerHTML={{
-									//	__html: formData.Opponent.replace("/", "<br />"),
-								//	}}
+									dangerouslySetInnerHTML={{
+									__html: formData.Opponent.replace("/", "<br />"),
+								}}
 								/></>)}
 								
 							</Box>
