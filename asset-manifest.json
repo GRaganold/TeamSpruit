@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/TeamSpruit/static/js/main.8b33e41e.js",
+    "main.js": "/TeamSpruit/static/js/main.d92670db.js",
     "static/media/logo2.png": "/TeamSpruit/static/media/logo2.f68e5f304099c93f7c74.png",
     "static/media/team_no_bg.png": "/TeamSpruit/static/media/team_no_bg.c1e052ba5eecdb9812dd.png",
     "static/media/logo-removebg-preview.png": "/TeamSpruit/static/media/logo-removebg-preview.701581fab7fb62cea0aa.png",
     "static/media/Curling_stone.svg-removebg-preview.png": "/TeamSpruit/static/media/Curling_stone.svg-removebg-preview.0d14056b2c8891e59bbe.png",
     "static/media/SponsorBanner2.jpg": "/TeamSpruit/static/media/SponsorBanner2.00a8c0a6004805913402.jpg",
     "index.html": "/TeamSpruit/index.html",
-    "main.8b33e41e.js.map": "/TeamSpruit/static/js/main.8b33e41e.js.map"
+    "main.d92670db.js.map": "/TeamSpruit/static/js/main.d92670db.js.map"
   },
   "entrypoints": [
-    "static/js/main.8b33e41e.js"
+    "static/js/main.d92670db.js"
   ]
 }
