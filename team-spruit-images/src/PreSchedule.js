@@ -41,7 +41,7 @@ export default function PreCompSchedule() {
 				minute: "",
 				amPm: "",
 				opponent: "",
-				gameType: "Round Robin",
+				gameType: "",
 			},
 		],
 	})
@@ -60,7 +60,7 @@ export default function PreCompSchedule() {
 					minute: "",
 					amPm: "",
 					opponent: "",
-					gameType: "Round Robin",
+					gameType: "",
 				},
 			],
 		})
@@ -121,12 +121,12 @@ export default function PreCompSchedule() {
 	}
 
 	const [opponentCount, setOpponentCount] = useState(1)
-	const [inputFields, setInputFields] = useState(Array.from({ length: opponentCount }, () => ({ day: "", time: "", opponent: "", gameType: "" })))
+	const [inputFields, setInputFields] = useState(Array.from({ length: opponentCount }, () => ({ day: "", time: "", opponent: "", gameType: "Round Robin" })))
 
 	const handleOpponentCountChange = e => {
 		const count = parseInt(e.target.value, 10) || 0
 		setOpponentCount(count)
-		setInputFields(Array.from({ length: count }, () => ({ day: "", time: "", opponent: "" })))
+		setInputFields(Array.from({ length: count }, () => ({ day: "", time: "", opponent: "", gameType: "Round Robin" })))
 	}
 
 	const handleInputChangeOpponent = (index, field, value) => {
@@ -278,10 +278,17 @@ export default function PreCompSchedule() {
 										<label htmlFor={`opponent-${index}`}>Opponent:</label>
 										<Input type="text" id={`opponent-${index}`} name={`opponent-${index}`} onChange={e => handleInputChangeOpponent(index, "opponent", e.target.value)} />
 									</HStack>
-									<Select id={`gameType-${index}`} onChange={e => handleInputChangeOpponent(index, "gameType", e.target.value)} value={formData.gameType } placeholder="---">
-										<option value="Playoffs">Playoffs</option>
-										<option value="Round Robin">Round Robin</option>
-									</Select>
+									<Select
+  id={`gameType`}
+  onChange={(e) => handleInputChangeOpponent(index, "gameType", e.target.value)}
+  value={formData.gameType} // Use formData[index] for each instance
+
+>
+
+  <option value="Round Robin">Round Robin</option>
+  <option value="Playoffs">Playoffs</option>
+</Select>
+
 								</VStack>
 							</>
 						))}
