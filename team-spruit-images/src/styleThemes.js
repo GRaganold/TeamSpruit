@@ -39,8 +39,8 @@ export const styleThemes = {
 	},
 	charcoal: {
 		backgroundColor: charcoal,
-		color: orange,
-		textShadow: `2px 2px ${green}`,
+		color: white,
+		textShadow: `2px 2px ${orange}`,
 		finalColor: green,
 		finalColorShadow: `3px 3px ${yellow}`,
 		gameTypeColor: yellow,

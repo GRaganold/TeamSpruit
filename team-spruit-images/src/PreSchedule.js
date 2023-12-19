@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from "react"
-import { Box, Button, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
+import { Box, Button, Center, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
 import sponsorBanner from "./SponsorBanner2.jpg"
+import TeamPhoto from "./team_no_bg.png"
+import TeamLogo from "./logo-removebg-preview.png"
+import TeamLogo2 from "./logo2.png"
 import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
-import { styleThemes } from "./styleThemes"
+import { styleThemes } from "./StyleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -30,6 +33,7 @@ export default function PreCompSchedule() {
 		Time: "",
 		Date: "",
 		ImageTitle: "noTitle",
+
 		opponentFields: [
 			{
 				day: "",
@@ -37,7 +41,7 @@ export default function PreCompSchedule() {
 				minute: "",
 				amPm: "",
 				opponent: "",
-				gameType: "",
+				gameType: "Round Robin",
 			},
 		],
 	})
@@ -48,6 +52,7 @@ export default function PreCompSchedule() {
 			Time: "",
 			Date: "",
 			ImageTitle: "noTitle",
+			TeamPic: "",
 			opponentFields: [
 				{
 					day: "",
@@ -55,7 +60,7 @@ export default function PreCompSchedule() {
 					minute: "",
 					amPm: "",
 					opponent: "",
-					gameType: "",
+					gameType: "Round Robin",
 				},
 			],
 		})
@@ -106,7 +111,7 @@ export default function PreCompSchedule() {
 
 	const divRef = useRef(null)
 	const convertToJpg = () => {
-		html2canvas(divRef.current).then(canvas => {
+		html2canvas(divRef.current, { scale: 2 }).then(canvas => {
 			const dataUrl = canvas.toDataURL("image/jpeg")
 			const link = document.createElement("a")
 			link.href = dataUrl
@@ -141,10 +146,26 @@ export default function PreCompSchedule() {
 						.filter(field => field.gameType === "Round Robin")
 						.map((field, index) => (
 							<>
-								<Text fontSize={"xl"} bg={boxStyle.teamNameBannerBG} w="60%" h="50px" mt={-2} key={index} textAlign={"top"} pl={2} color={boxStyle.teamNameBannerColor}>
-									{field.day} {field.hour}:{field.minute}
-									{field.amPm} VS {field.opponent}
-								</Text>
+								<Box
+									w="100%"
+									h="50px"
+									textAlign={"top"}
+									fontSize={"xl"}
+									mt={-2}
+									key={index}
+									pl={2}
+									color={boxStyle.teamNameBannerColor}
+									style={{
+										borderTop: `25px solid ${boxStyle.teamNameBannerBG}`, // Top side of the triangle
+										borderBottom: `25px solid ${boxStyle.teamNameBannerBG}`, // Bottom side of the triangle
+										borderRight: `30px solid ${boxStyle.backgroundColor}`, // Right side of the triangle
+									}}
+								>
+									<Text mt={-6} bg={boxStyle.teamNameBannerBG} w="100%">
+										{field.day} {field.hour}:{field.minute}
+										{field.amPm} VS {field.opponent}
+									</Text>
+								</Box>
 								<Box h={3}> </Box>
 							</>
 						))}
@@ -160,10 +181,26 @@ export default function PreCompSchedule() {
 						.filter(field => field.gameType === "Playoffs")
 						.map((field, index) => (
 							<>
-								<Text fontSize={"xl"} bg={boxStyle.teamNameBannerBG} w="60%" h="50px" mt={-2} key={index} textAlign={"top"} pl={2} color={boxStyle.teamNameBannerColor}>
-									{field.day} {field.hour}:{field.minute}
-									{field.amPm} {field.opponent} *
-								</Text>
+								<Box
+									w="100%"
+									h="50px"
+									textAlign={"top"}
+									fontSize={"xl"}
+									mt={-2}
+									key={index}
+									pl={2}
+									color={boxStyle.teamNameBannerColor}
+									style={{
+										borderTop: `25px solid ${boxStyle.teamNameBannerBG}`, // Top side of the triangle
+										borderBottom: `25px solid ${boxStyle.teamNameBannerBG}`, // Bottom side of the triangle
+										borderRight: `30px solid ${boxStyle.backgroundColor}`, // Right side of the triangle
+									}}
+								>
+									<Text mt={-6} bg={boxStyle.teamNameBannerBG} w="100%">
+										{field.day} {field.hour}:{field.minute}
+										{field.amPm} {field.opponent} *
+									</Text>
+								</Box>
 								<Box h={3}> </Box>
 							</>
 						))}
@@ -189,60 +226,63 @@ export default function PreCompSchedule() {
 						<HStack>
 							<label htmlFor="opponentCount">Select Opponent Count:</label>
 							<Select id="opponentCount" onChange={handleOpponentCountChange} value={opponentCount}>
-								{[1, 2, 3, 4, 5, 6, 7].map(count => (
+								{[1, 2, 3, 4, 5, 6, 7, 8].map(count => (
 									<option key={count} value={count}>
 										{count}
 									</option>
 								))}
 							</Select>
 						</HStack>
-						
+
 						{inputFields.map((_, index) => (
 							<>
-								
-							<VStack key={index} spacing={4} fontFamily="sans-serif" pb={1}>
-								<Box w="100%" textAlign={"center"} color="#fdfdfe"> <Text fontWeight={"bold"} bg="#00aa86">Game #{index+1}</Text></Box>
-								<HStack>
-									<label htmlFor={`day-${index}`}>Day:</label>
-									<Select w="100px" id={`day-${index}`} onChange={e => handleInputChangeOpponent(index, "day", e.target.value)} value={inputFields[index].day} placeholder="---">
-										{["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"].map(day => (
-											<option key={day} value={day}>
-												{day}
-											</option>
-										))}
-									</Select>
-
-									<label htmlFor={`time-${index}`}>Time:</label>
+								<VStack key={index} spacing={4} fontFamily="sans-serif" pb={1}>
+									<Box w="100%" textAlign={"center"} color="#fdfdfe">
+										<Text fontWeight={"bold"} bg="#00aa86">
+											Game #{index + 1}
+										</Text>
+									</Box>
 									<HStack>
-										<Select id={`hour-${index}`} onChange={e => handleInputChangeOpponent(index, "hour", e.target.value)} value={formData.hour} placeholder="---">
-											{hours.map(hour => (
-												<option key={hour} value={hour}>
-													{hour}
+										<label htmlFor={`day-${index}`}>Day:</label>
+										<Select w="100px" id={`day-${index}`} onChange={e => handleInputChangeOpponent(index, "day", e.target.value)} value={inputFields[index].day} placeholder="---">
+											{["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"].map(day => (
+												<option key={day} value={day}>
+													{day}
 												</option>
 											))}
 										</Select>
-										<Select id={`minute-${index}`} onChange={e => handleInputChangeOpponent(index, "minute", e.target.value)} value={formData.minute} placeholder="---">
-											{minutes.map(minute => (
-												<option key={minute} value={minute}>
-													{minute}
-												</option>
-											))}
-										</Select>
-										<Select id={`amPm-${index}`} onChange={e => handleInputChangeOpponent(index, "amPm", e.target.value)} value={formData.amPm} placeholder="---">
-											<option value="am">AM</option>
-											<option value="pm">PM</option>
-										</Select>
+
+										<label htmlFor={`time-${index}`}>Time:</label>
+										<HStack>
+											<Select id={`hour-${index}`} onChange={e => handleInputChangeOpponent(index, "hour", e.target.value)} value={formData.hour} placeholder="---">
+												{hours.map(hour => (
+													<option key={hour} value={hour}>
+														{hour}
+													</option>
+												))}
+											</Select>
+											<Select id={`minute-${index}`} onChange={e => handleInputChangeOpponent(index, "minute", e.target.value)} value={formData.minute} placeholder="---">
+												{minutes.map(minute => (
+													<option key={minute} value={minute}>
+														{minute}
+													</option>
+												))}
+											</Select>
+											<Select id={`amPm-${index}`} onChange={e => handleInputChangeOpponent(index, "amPm", e.target.value)} value={formData.amPm} placeholder="---">
+												<option value="am">AM</option>
+												<option value="pm">PM</option>
+											</Select>
+										</HStack>
 									</HStack>
-								</HStack>
-								<HStack w="100%">
-									<label htmlFor={`opponent-${index}`}>Opponent:</label>
-									<Input type="text" id={`opponent-${index}`} name={`opponent-${index}`} onChange={e => handleInputChangeOpponent(index, "opponent", e.target.value)} />
-								</HStack>
-								<Select id={`gameType-${index}`} onChange={e => handleInputChangeOpponent(index, "gameType", e.target.value)} value={formData.gameType} placeholder="---">
-									<option value="Playoffs">Playoffs</option>
-									<option value="Round Robin">Round Robin</option>
-								</Select>
-							</VStack>
+									<HStack w="100%">
+										<label htmlFor={`opponent-${index}`}>Opponent:</label>
+										<Input type="text" id={`opponent-${index}`} name={`opponent-${index}`} onChange={e => handleInputChangeOpponent(index, "opponent", e.target.value)} />
+									</HStack>
+									<Select id={`gameType-${index}`} onChange={e => handleInputChangeOpponent(index, "gameType", e.target.value)} value={formData.gameType } placeholder="---">
+										<option value="Playoffs">Playoffs</option>
+										<option value="Round Robin">Round Robin</option>
+									</Select>
+								</VStack>
 							</>
 						))}
 					</VStack>
@@ -266,6 +306,8 @@ export default function PreCompSchedule() {
 					</HStack>
 				</Stack>
 				<br />
+				<Text> {opponentCount} </Text>
+				<Text> {opponentCount === 8 ? "true" : "false"} </Text>
 
 				<Button m="6" colorScheme="orange" onClick={convertToJpg}>
 					Convert to JPG
@@ -279,12 +321,11 @@ export default function PreCompSchedule() {
 						style={{
 							height: "700px",
 							width: "700px",
-							border: "1px solid #000",
 						}}
 						bg={boxStyle.backgroundColor}
 						color={boxStyle.color}
 					>
-						<Box h="598px" pt={1}>
+						<Box h={opponentCount === 8 ? "610px" : "590px"} pt={1}>
 							<Flex justify="flex-end" w="100%" pb={6} pr={2}>
 								<HStack>
 									<VStack spacing={0} justify={"center"}>
@@ -300,49 +341,57 @@ export default function PreCompSchedule() {
 									<Image src={CurlingStone} h="85px" />
 								</HStack>
 							</Flex>
-
-							<Box w="100%">
-								<Heading
-									fontSize={"2xl"}
-									mt={"-20px"}
-									pl={2}
-									style={{
-										color: ` ${boxStyle.scoreColor}`,
-										fontFamily: "sans-serif",
-										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-									}}
-									fontWeight={"bold"}
-								>
-									Round Robin
-								</Heading>
-								<Box pb={5}> </Box>
-								<DisplayInputRoundRobin />
-								<br />
-								<Heading
-									fontSize={"2xl"}
-									mt={"-10px"}
-									pl={2}
-									style={{
-										color: ` ${boxStyle.scoreColor}`,
-										fontFamily: "sans-serif",
-										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-									}}
-									fontWeight={"bold"}
-								>
-									Playoffs
-								</Heading>
-								<Box pb={5}> </Box>
-
-								<DisplayInputPlayoffs />
-							</Box>
-							<Flex justify={"flex-end"} align={"flex-start"} pr={110} textAlign={"start"} mt={"-30px"}>
-								<Text fontSize={"xs"} color={boxStyle.teamNameBannerColor}>								
+							<HStack align={"flex-start"} h="full">
+								<Box w="60%">
+									<Box w="100%">
+										<Heading
+											fontSize={"2xl"}
+											mt={opponentCount === 8 ? "-25px" : "-20px"}
+											pl={2}
+											style={{
+												color: ` ${boxStyle.scoreColor}`,
+												fontFamily: "sans-serif",
+												WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+											}}
+											fontWeight={"bold"}
+											pb={5}
+										>
+											Round Robin
+										</Heading>
+										<DisplayInputRoundRobin />
+										<br />
+										<HStack pb={5}>
+											<Heading
+												fontSize={"2xl"}
+												mt={opponentCount === 8 ? "-30px" : "-20px"}
+												pl={2}
+												style={{
+													color: ` ${boxStyle.scoreColor}`,
+													fontFamily: "sans-serif",
+													WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+												}}
+												fontWeight={"bold"}
+											>
+												Playoffs
+											</Heading>
+										</HStack>
+										<DisplayInputPlayoffs />
+									</Box>
+								</Box>
+								{/* <Flex w="40%" h={"100%"} align={"flex-start"} >
+									<Center>
+										<Image src={TeamLogo2} h={"350px"} mt={6}   />
+									</Center>
+								</Flex> */}
+							</HStack>
+							<Flex justify={"flex-end"} align={"flex-start"} textAlign={"start"} w={"100%"} mt={opponentCount === 8 ? "-140px" : "-140px"}>
+								<Text fontSize={"xs"} color={boxStyle.color} w="200px">
 									* Pending Qualification
 								</Text>
 							</Flex>
 						</Box>
 
-						<Image src={sponsorBanner} h="100px" w="full" />
+						<Image src={sponsorBanner} h={opponentCount === 8 ? "90px" : "112px"} w="full" />
 					</Box>
 				</Box>
 

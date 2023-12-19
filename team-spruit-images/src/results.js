@@ -3,7 +3,7 @@ import { Box, Button, Center, Circle, Flex, HStack, Heading, Image, Input, Selec
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
-import { styleThemes } from "./styleThemes"
+import { styleThemes } from "./StyleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -180,7 +180,7 @@ export default function Results() {
 						style={{
 							height: "700px",
 							width: "700px",
-							border: "1px solid #000",
+							
 						}}
 						bg={boxStyle.backgroundColor}
 						color={boxStyle.color}
@@ -345,7 +345,7 @@ export default function Results() {
 							)}
 						</Box>
 
-						<Image src={sponsorBanner} h="140px" w="full" />
+						<Image src={sponsorBanner} h="145px" w="full" />
 					</Box>
 				</Box>
 

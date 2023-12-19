@@ -3,7 +3,7 @@ import { Box, Button, Center, Flex, HStack, Heading, Image, Input, Select, Stack
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
-import { styleThemes } from "./styleThemes"
+import { styleThemes } from "./StyleThemes"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -33,7 +33,7 @@ export default function Results() {
 			OurScore: "",
 			OpponentScore: "",
 			Opponent1: "",
-			Opponent2 : "",
+			Opponent2: "",
 			Date: "",
 			UpNextDate: "",
 			UpNextOpponent: "",
@@ -76,7 +76,7 @@ export default function Results() {
 			Time: "",
 			OurScore: "",
 			OpponentScore: "",
-			Opponent1 : "",
+			Opponent1: "",
 			Opponent2: "",
 			Date: "",
 			UpNextDate: "",
@@ -281,9 +281,9 @@ export default function Results() {
 
 		return (
 			<>
-				<Box h={height} bg={boxStyle.teamNameBannerBG} width="788px" justifyContent={"center"} color={boxStyle.scoreColor}>
-					<Flex direction={"row"} gap={1} alignContent={"center"} h={height} justifyContent={"space-evenly"} mt={-2}>
-						<Flex direction={"column"} justifyContent={"space-between"} h={height} align={"flex-end"}>
+				<Box h={height} bg={boxStyle.teamNameBannerBG} width="110%" justifyContent={"center"} color={boxStyle.scoreColor}>
+					<Flex direction={"row"} gap={1} alignContent={"center"} h={height} justifyContent={"space-around"} mt={-3} >
+						<Flex direction={"column"} justifyContent={"space-between"} h={height} align={"flex-end"}  >
 							<Box>
 								<Heading
 									fontSize={"3xl"}
@@ -304,23 +304,17 @@ export default function Results() {
 								<Heading
 									fontSize={"3xl"}
 									h="100px"
-									textAlign={"center"}
+									textAlign={"right"}
 									style={{
 										color: ` ${boxStyle.scoreColor}`,
 										fontFamily: "sans-serif",
 										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
 									}}
-					
-								>  
-						
+								>
 									{formData.Opponent1}
-								<br />
-								{formData.Opponent2  }
-								 </Heading>
-								
-								
-								
-								
+									<br />
+									{formData.Opponent2}
+								</Heading>
 							</Box>
 							<Box></Box>
 						</Flex>
@@ -387,7 +381,7 @@ export default function Results() {
 					</HStack>
 					<NameInput onInputChange={handleInputChange} label="Time" placeholder="Enter Time" />
 					<NameInput onInputChange={handleInputChange} label="Opponent1" placeholder="Enter Opponent 1" />
-                    <NameInput onInputChange={handleInputChange } label="Opponent2" placeholder="Enter Opponent 2" />
+					<NameInput onInputChange={handleInputChange} label="Opponent2" placeholder="Enter Opponent 2" />
 					<NameInput onInputChange={handleInputChange} label="UpNextDate" placeholder="Enter Next Date and time" />
 					<NameInput onInputChange={handleInputChange} label="UpNextOpponent" placeholder="Enter Next Opponent" />
 					<Button colorScheme="orange" onClick={handleResetScoreBoard}>
@@ -432,7 +426,6 @@ export default function Results() {
 						style={{
 							height: "700px",
 							width: "700px",
-							border: "1px solid #000",
 						}}
 						bg={boxStyle.backgroundColor}
 						color={boxStyle.color}
@@ -477,7 +470,7 @@ export default function Results() {
 								</Heading>
 							</Box>
 							<br />
-							<Flex justify={"center"} bg={boxStyle.teamNameBannerBG}>
+							<Flex justify={"center"} bg={boxStyle.teamNameBannerBG} w="100%">
 								<BoxSore />
 
 								<br />
@@ -486,7 +479,7 @@ export default function Results() {
 							<br />
 						</Box>
 
-						<Image src={sponsorBanner} h="140px" w="full" />
+						<Image src={sponsorBanner} h="145px" w="full" />
 					</Box>
 				</div>
 
