@@ -1,0 +1,819 @@
+import Ontario from "./flags/cad_on.png";
+import Alberta from "./flags/cad_ab.png";
+import BritishColumbia from "./flags/cad_bc.png";
+import Manitoba from "./flags/cad_mb.png";
+import NewBrunswick from "./flags/cad_nb.png";
+import NewfoundlandAndLabrador from "./flags/cad_nl.png";
+import NovaScotia from "./flags/cad_ns.png";
+import NorthwestTerritories from "./flags/cad_nt.png";
+import Nunavut from "./flags/cad_nu.png";
+import PrinceEdwardIsland from "./flags/cad_pe.png";
+import Quebec from "./flags/cad_qc.png";
+import Saskatchewan from "./flags/cad_sk.png";
+import Yukon from "./flags/cad_yt.png";
+
+
+import Andorra from "./flags/ad.png";
+import UnitedArabEmirates from "./flags/ae.png";
+import Afghanistan from "./flags/af.png";
+import AntiguaAndBarbuda from "./flags/ag.png";
+import Anguilla from "./flags/ai.png";
+import Albania from "./flags/al.png";
+import Armenia from "./flags/am.png";
+import Angola from "./flags/ao.png";
+import Antarctica from "./flags/aq.png";
+import Argentina from "./flags/ar.png";
+import AmericanSamoa from "./flags/as.png";
+import Austria from "./flags/at.png";
+import Australia from "./flags/au.png";
+import Aruba from "./flags/aw.png";
+import AlandIslands from "./flags/ax.png";
+import Azerbaijan from "./flags/az.png";
+import BosniaAndHerzegovina from "./flags/ba.png";
+import Barbados from "./flags/bb.png";
+import Bangladesh from "./flags/bd.png";
+import Belgium from "./flags/be.png";
+import BurkinaFaso from "./flags/bf.png";
+import Bulgaria from "./flags/bg.png";
+import Bahrain from "./flags/bh.png";
+import Burundi from "./flags/bi.png";
+import Benin from "./flags/bj.png";
+import SaintBarthelemy from "./flags/bl.png";
+import Bermuda from "./flags/bm.png";
+import BruneiDarussalam from "./flags/bn.png";
+import BoliviaPlurinationalStateOf from "./flags/bo.png";
+import CaribbeanNetherlands from "./flags/bq.png";
+import Brazil from "./flags/br.png";
+import Bahamas from "./flags/bs.png";
+import Bhutan from "./flags/bt.png";
+import BouvetIsland from "./flags/bv.png";
+import Botswana from "./flags/bw.png";
+import Belarus from "./flags/by.png";
+import Belize from "./flags/bz.png";
+import Canada from "./flags/ca.png";
+import CocosKeelingIslands from "./flags/cc.png";
+import CongoTheDemocraticRepublicOfThe from "./flags/cd.png";
+import CentralAfricanRepublic from "./flags/cf.png";
+import RepublicOfTheCongo from "./flags/cg.png";
+import Switzerland from "./flags/ch.png";
+import CoteDIvoire from "./flags/ci.png";
+import CookIslands from "./flags/ck.png";
+import Chile from "./flags/cl.png";
+import Cameroon from "./flags/cm.png";
+import ChinaPeoplesRepublicOfChina from "./flags/cn.png";
+import Colombia from "./flags/co.png";
+import CostaRica from "./flags/cr.png";
+import Cuba from "./flags/cu.png";
+import CapeVerde from "./flags/cv.png";
+import Curacao from "./flags/cw.png";
+import ChristmasIsland from "./flags/cx.png";
+import Cyprus from "./flags/cy.png";
+import CzechRepublic from "./flags/cz.png";
+import Germany from "./flags/de.png";
+import Djibouti from "./flags/dj.png";
+import Denmark from "./flags/dk.png";
+import Dominica from "./flags/dm.png";
+import DominicanRepublic from "./flags/do.png";
+import Algeria from "./flags/dz.png";
+import Ecuador from "./flags/ec.png";
+import Estonia from "./flags/ee.png";
+import Egypt from "./flags/eg.png";
+import WesternSahara from "./flags/eh.png";
+import Eritrea from "./flags/er.png";
+import Spain from "./flags/es.png";
+import Ethiopia from "./flags/et.png";
+import Europe from "./flags/eu.png";
+import Finland from "./flags/fi.png";
+import Fiji from "./flags/fj.png";
+import FalklandIslandsMalvinas from "./flags/fk.png";
+import MicronesiaFederatedStatesOf from "./flags/fm.png";
+import FaroeIslands from "./flags/fo.png";
+import France from "./flags/fr.png";
+import Gabon from "./flags/ga.png";
+import England from "./flags/gb-eng.png";
+import NorthernIreland from "./flags/gb-nir.png";
+import Scotland from "./flags/gb-sct.png";
+import Wales from "./flags/gb-wls.png";
+import UnitedKingdom from "./flags/gb.png";
+import Grenada from "./flags/gd.png";
+import Georgia from "./flags/ge.png";
+import FrenchGuiana from "./flags/gf.png";
+import Guernsey from "./flags/gg.png";
+import Ghana from "./flags/gh.png";
+import Gibraltar from "./flags/gi.png";
+import Greenland from "./flags/gl.png";
+import Gambia from "./flags/gm.png";
+import Guinea from "./flags/gn.png";
+import Guadeloupe from "./flags/gp.png";
+import EquatorialGuinea from "./flags/gq.png";
+import Greece from "./flags/gr.png";
+import SouthGeorgiaAndTheSouthSandwichIslands from "./flags/gs.png";
+import Guatemala from "./flags/gt.png";
+import Guam from "./flags/gu.png";
+import GuineaBissau from "./flags/gw.png";
+import Guyana from "./flags/gy.png";
+import HongKong from "./flags/hk.png";
+import HeardIslandAndMcDonaldIslands from "./flags/hm.png";
+import Honduras from "./flags/hn.png";
+import Croatia from "./flags/hr.png";
+import Haiti from "./flags/ht.png";
+import Hungary from "./flags/hu.png";
+import Indonesia from "./flags/id.png";
+import Ireland from "./flags/ie.png";
+import Israel from "./flags/il.png";
+import IsleOfMan from "./flags/im.png";
+import India from "./flags/in.png";
+import BritishIndianOceanTerritory from "./flags/io.png";
+import Iraq from "./flags/iq.png";
+import IranIslamicRepublicOf from "./flags/ir.png";
+import Iceland from "./flags/is.png";
+import Italy from "./flags/it.png";
+import Jersey from "./flags/je.png";
+import Jamaica from "./flags/jm.png";
+import Jordan from "./flags/jo.png";
+import Japan from "./flags/jp.png";
+import Kenya from "./flags/ke.png";
+import Kyrgyzstan from "./flags/kg.png";
+import Cambodia from "./flags/kh.png";
+import Kiribati from "./flags/ki.png";
+import Comoros from "./flags/km.png";
+import SaintKittsAndNevis from "./flags/kn.png";
+import KoreaDemocraticPeoplesRepublicOf from "./flags/kp.png";
+import KoreaRepublicOf from "./flags/kr.png";
+import Kuwait from "./flags/kw.png";
+import CaymanIslands from "./flags/ky.png";
+import Kazakhstan from "./flags/kz.png";
+import LaosLaoPeoplesDemocraticRepublic from "./flags/la.png";
+import Lebanon from "./flags/lb.png";
+import SaintLucia from "./flags/lc.png";
+import Liechtenstein from "./flags/li.png";
+import SriLanka from "./flags/lk.png";
+import Liberia from "./flags/lr.png";
+import Lesotho from "./flags/ls.png";
+import Lithuania from "./flags/lt.png";
+import Luxembourg from "./flags/lu.png";
+import Latvia from "./flags/lv.png";
+import Libya from "./flags/ly.png";
+import Morocco from "./flags/ma.png";
+import Monaco from "./flags/mc.png";
+import MoldovaRepublicOf from "./flags/md.png";
+import Montenegro from "./flags/me.png";
+import SaintMartin from "./flags/mf.png";
+import Madagascar from "./flags/mg.png";
+import MarshallIslands from "./flags/mh.png";
+import NorthMacedonia from "./flags/mk.png";
+import Mali from "./flags/ml.png";
+import Myanmar from "./flags/mm.png";
+import Mongolia from "./flags/mn.png";
+import Macao from "./flags/mo.png";
+import NorthernMarianaIslands from "./flags/mp.png";
+import Martinique from "./flags/mq.png";
+import Mauritania from "./flags/mr.png";
+import Montserrat from "./flags/ms.png";
+import Malta from "./flags/mt.png";
+import Mauritius from "./flags/mu.png";
+import Maldives from "./flags/mv.png";
+import Malawi from "./flags/mw.png";
+import Mexico from "./flags/mx.png";
+import Malaysia from "./flags/my.png";
+import Mozambique from "./flags/mz.png";
+import Namibia from "./flags/na.png";
+import NewCaledonia from "./flags/nc.png";
+import Niger from "./flags/ne.png";
+import NorfolkIsland from "./flags/nf.png";
+import Nigeria from "./flags/ng.png";
+import Nicaragua from "./flags/ni.png";
+import Netherlands from "./flags/nl.png";
+import Norway from "./flags/no.png";
+import Nepal from "./flags/np.png";
+import Nauru from "./flags/nr.png";
+import Niue from "./flags/nu.png";
+import NewZealand from "./flags/nz.png";
+import Oman from "./flags/om.png";
+import Panama from "./flags/pa.png";
+import Peru from "./flags/pe.png";
+import FrenchPolynesia from "./flags/pf.png";
+import PapuaNewGuinea from "./flags/pg.png";
+import Philippines from "./flags/ph.png";
+import Pakistan from "./flags/pk.png";
+import Poland from "./flags/pl.png";
+import SaintPierreAndMiquelon from "./flags/pm.png";
+import Pitcairn from "./flags/pn.png";
+import PuertoRico from "./flags/pr.png";
+import Palestine from "./flags/ps.png";
+import Portugal from "./flags/pt.png";
+import Palau from "./flags/pw.png";
+import Paraguay from "./flags/py.png";
+import Qatar from "./flags/qa.png";
+import Reunion from "./flags/re.png";
+import Romania from "./flags/ro.png";
+import Serbia from "./flags/rs.png";
+import RussianFederation from "./flags/ru.png";
+import Rwanda from "./flags/rw.png";
+import SaudiArabia from "./flags/sa.png";
+import SolomonIslands from "./flags/sb.png";
+import Seychelles from "./flags/sc.png";
+import Sudan from "./flags/sd.png";
+import Sweden from "./flags/se.png";
+import Singapore from "./flags/sg.png";
+import SaintHelenaAscensionAndTristanDaCunha from "./flags/sh.png";
+import Slovenia from "./flags/si.png";
+import SvalbardAndJanMayenIslands from "./flags/sj.png";
+import Slovakia from "./flags/sk.png";
+import SierraLeone from "./flags/sl.png";
+import SanMarino from "./flags/sm.png";
+import Senegal from "./flags/sn.png";
+import Somalia from "./flags/so.png";
+import Suriname from "./flags/sr.png";
+import SouthSudan from "./flags/ss.png";
+import SaoTomeAndPrincipe from "./flags/st.png";
+import ElSalvador from "./flags/sv.png";
+import SintMaartenDutchPart from "./flags/sx.png";
+import SyrianArabRepublic from "./flags/sy.png";
+import Swaziland from "./flags/sz.png";
+import TurksAndCaicosIslands from "./flags/tc.png";
+import Chad from "./flags/td.png";
+import FrenchSouthernTerritories from "./flags/tf.png";
+import Togo from "./flags/tg.png";
+import Thailand from "./flags/th.png";
+import Tajikistan from "./flags/tj.png";
+import Tokelau from "./flags/tk.png";
+import TimorLeste from "./flags/tl.png";
+import Turkmenistan from "./flags/tm.png";
+import Tunisia from "./flags/tn.png";
+import Tonga from "./flags/to.png";
+import Turkey from "./flags/tr.png";
+import TrinidadAndTobago from "./flags/tt.png";
+import Tuvalu from "./flags/tv.png";
+import TaiwanRepublicOfChina from "./flags/tw.png";
+import TanzaniaUnitedRepublicOf from "./flags/tz.png";
+import Ukraine from "./flags/ua.png";
+import Uganda from "./flags/ug.png";
+import USMinorOutlyingIslands from "./flags/um.png";
+import UnitedStates from "./flags/us.png";
+import Uruguay from "./flags/uy.png";
+import Uzbekistan from "./flags/uz.png";
+import HolySeeVaticanCityState from "./flags/va.png";
+import SaintVincentAndTheGrenadines from "./flags/vc.png";
+import VenezuelaBolivarianRepublicOf from "./flags/ve.png";
+import VirginIslandsBritish from "./flags/vg.png";
+import VirginIslandsUS from "./flags/vi.png";
+import Vietnam from "./flags/vn.png";
+import Vanuatu from "./flags/vu.png";
+import WallisAndFutunaIslands from "./flags/wf.png";
+import Samoa from "./flags/ws.png";
+import Kosovo from "./flags/xk.png";
+import Yemen from "./flags/ye.png";
+import Mayotte from "./flags/yt.png";
+import SouthAfrica from "./flags/za.png";
+import Zambia from "./flags/zm.png";
+import Zimbabwe from "./flags/zw.png";
+
+
+
+	const countryOptions = [
+		{ code: "cad_on", name: "Ontario" },
+		{ code: "cad_ab", name: "Alberta" },
+		{ code: "cad_bc", name: "British Columbia" },
+		{ code: "cad_mb", name: "Manitoba" },
+		{ code: "cad_nb", name: "New Brunswick" },
+		{ code: "cad_nl", name: "Newfoundland and Labrador" },
+		{ code: "cad_ns", name: "Nova Scotia" },
+		{ code: "cad_nt", name: "Northwest Territories" },
+		{ code: "cad_nu", name: "Nunavut" },
+		{ code: "cad_pe", name: "Prince Edward Island" },
+		{ code: "cad_qc", name: "Quebec" },
+		{ code: "cad_sk", name: "Saskatchewan" },
+		{ code: "cad_yt", name: "Yukon" },
+		{ code: "ad", name: "Andorra" },
+		{ code: "ae", name: "United Arab Emirates" },
+		{ code: "af", name: "Afghanistan" },
+		{ code: "ag", name: "Antigua and Barbuda" },
+		{ code: "ai", name: "Anguilla" },
+		{ code: "al", name: "Albania" },
+		{ code: "am", name: "Armenia" },
+		{ code: "ao", name: "Angola" },
+		{ code: "aq", name: "Antarctica" },
+		{ code: "ar", name: "Argentina" },
+		{ code: "as", name: "American Samoa" },
+		{ code: "at", name: "Austria" },
+		{ code: "au", name: "Australia" },
+		{ code: "aw", name: "Aruba" },
+		{ code: "ax", name: "Åland Islands" },
+		{ code: "az", name: "Azerbaijan" },
+		{ code: "ba", name: "Bosnia and Herzegovina" },
+		{ code: "bb", name: "Barbados" },
+		{ code: "bd", name: "Bangladesh" },
+		{ code: "be", name: "Belgium" },
+		{ code: "bf", name: "Burkina Faso" },
+		{ code: "bg", name: "Bulgaria" },
+		{ code: "bh", name: "Bahrain" },
+		{ code: "bi", name: "Burundi" },
+		{ code: "bj", name: "Benin" },
+		{ code: "bl", name: "Saint Barthélemy" },
+		{ code: "bm", name: "Bermuda" },
+		{ code: "bn", name: "Brunei Darussalam" },
+		{ code: "bo", name: "Bolivia, Plurinational State of" },
+		{ code: "bq", name: "Caribbean Netherlands" },
+		{ code: "br", name: "Brazil" },
+		{ code: "bs", name: "Bahamas" },
+		{ code: "bt", name: "Bhutan" },
+		{ code: "bv", name: "Bouvet Island" },
+		{ code: "bw", name: "Botswana" },
+		{ code: "by", name: "Belarus" },
+		{ code: "bz", name: "Belize" },
+		{ code: "ca", name: "Canada" },
+		{ code: "cc", name: "Cocos (Keeling) Islands" },
+		{ code: "cd", name: "Congo, the Democratic Republic of the" },
+		{ code: "cf", name: "Central African Republic" },
+		{ code: "cg", name: "Republic of the Congo" },
+		{ code: "ch", name: "Switzerland" },
+		{ code: "ci", name: "Côte d'Ivoire" },
+		{ code: "ck", name: "Cook Islands" },
+		{ code: "cl", name: "Chile" },
+		{ code: "cm", name: "Cameroon" },
+		{ code: "cn", name: "China (People's Republic of China)" },
+		{ code: "co", name: "Colombia" },
+		{ code: "cr", name: "Costa Rica" },
+		{ code: "cu", name: "Cuba" },
+		{ code: "cv", name: "Cape Verde" },
+		{ code: "cw", name: "Curaçao" },
+		{ code: "cx", name: "Christmas Island" },
+		{ code: "cy", name: "Cyprus" },
+		{ code: "cz", name: "Czech Republic" },
+		{ code: "de", name: "Germany" },
+		{ code: "dj", name: "Djibouti" },
+		{ code: "dk", name: "Denmark" },
+		{ code: "dm", name: "Dominica" },
+		{ code: "do", name: "Dominican Republic" },
+		{ code: "dz", name: "Algeria" },
+		{ code: "ec", name: "Ecuador" },
+		{ code: "ee", name: "Estonia" },
+		{ code: "eg", name: "Egypt" },
+		{ code: "eh", name: "Western Sahara" },
+		{ code: "er", name: "Eritrea" },
+		{ code: "es", name: "Spain" },
+		{ code: "et", name: "Ethiopia" },
+		{ code: "eu", name: "Europe" },
+		{ code: "fi", name: "Finland" },
+		{ code: "fj", name: "Fiji" },
+		{ code: "fk", name: "Falkland Islands (Malvinas)" },
+		{ code: "fm", name: "Micronesia, Federated States of" },
+		{ code: "fo", name: "Faroe Islands" },
+		{ code: "fr", name: "France" },
+		{ code: "ga", name: "Gabon" },
+		{ code: "gb-eng", name: "England" },
+		{ code: "gb-nir", name: "Northern Ireland" },
+		{ code: "gb-sct", name: "Scotland" },
+		{ code: "gb-wls", name: "Wales" },
+		{ code: "gb", name: "United Kingdom" },
+		{ code: "gd", name: "Grenada" },
+		{ code: "ge", name: "Georgia" },
+		{ code: "gf", name: "French Guiana" },
+		{ code: "gg", name: "Guernsey" },
+		{ code: "gh", name: "Ghana" },
+		{ code: "gi", name: "Gibraltar" },
+		{ code: "gl", name: "Greenland" },
+		{ code: "gm", name: "Gambia" },
+		{ code: "gn", name: "Guinea" },
+		{ code: "gp", name: "Guadeloupe" },
+		{ code: "gq", name: "Equatorial Guinea" },
+		{ code: "gr", name: "Greece" },
+		{ code: "gs", name: "South Georgia and the South Sandwich Islands" },
+		{ code: "gt", name: "Guatemala" },
+		{ code: "gu", name: "Guam" },
+		{ code: "gw", name: "Guinea-Bissau" },
+		{ code: "gy", name: "Guyana" },
+		{ code: "hk", name: "Hong Kong" },
+		{ code: "hm", name: "Heard Island and McDonald Islands" },
+		{ code: "hn", name: "Honduras" },
+		{ code: "hr", name: "Croatia" },
+		{ code: "ht", name: "Haiti" },
+		{ code: "hu", name: "Hungary" },
+		{ code: "id", name: "Indonesia" },
+		{ code: "ie", name: "Ireland" },
+		{ code: "il", name: "Israel" },
+		{ code: "im", name: "Isle of Man" },
+		{ code: "in", name: "India" },
+		{ code: "io", name: "British Indian Ocean Territory" },
+		{ code: "iq", name: "Iraq" },
+		{ code: "ir", name: "Iran, Islamic Republic of" },
+		{ code: "is", name: "Iceland" },
+		{ code: "it", name: "Italy" },
+		{ code: "je", name: "Jersey" },
+		{ code: "jm", name: "Jamaica" },
+		{ code: "jo", name: "Jordan" },
+		{ code: "jp", name: "Japan" },
+		{ code: "ke", name: "Kenya" },
+		{ code: "kg", name: "Kyrgyzstan" },
+		{ code: "kh", name: "Cambodia" },
+		{ code: "ki", name: "Kiribati" },
+		{ code: "km", name: "Comoros" },
+		{ code: "kn", name: "Saint Kitts and Nevis" },
+		{ code: "kp", name: "Korea, Democratic People's Republic of" },
+		{ code: "kr", name: "Korea, Republic of" },
+		{ code: "kw", name: "Kuwait" },
+		{ code: "ky", name: "Cayman Islands" },
+		{ code: "kz", name: "Kazakhstan" },
+		{ code: "la", name: "Laos (Lao People's Democratic Republic)" },
+		{ code: "lb", name: "Lebanon" },
+		{ code: "lc", name: "Saint Lucia" },
+		{ code: "li", name: "Liechtenstein" },
+		{ code: "lk", name: "Sri Lanka" },
+		{ code: "lr", name: "Liberia" },
+		{ code: "ls", name: "Lesotho" },
+		{ code: "lt", name: "Lithuania" },
+		{ code: "lu", name: "Luxembourg" },
+		{ code: "lv", name: "Latvia" },
+		{ code: "ly", name: "Libya" },
+		{ code: "ma", name: "Morocco" },
+		{ code: "mc", name: "Monaco" },
+		{ code: "md", name: "Moldova, Republic of" },
+		{ code: "me", name: "Montenegro" },
+		{ code: "mf", name: "Saint Martin" },
+		{ code: "mg", name: "Madagascar" },
+		{ code: "mh", name: "Marshall Islands" },
+		{ code: "mk", name: "North Macedonia" },
+		{ code: "ml", name: "Mali" },
+		{ code: "mm", name: "Myanmar" },
+		{ code: "mn", name: "Mongolia" },
+		{ code: "mo", name: "Macao" },
+		{ code: "mp", name: "Northern Mariana Islands" },
+		{ code: "mq", name: "Martinique" },
+		{ code: "mr", name: "Mauritania" },
+		{ code: "ms", name: "Montserrat" },
+		{ code: "mt", name: "Malta" },
+		{ code: "mu", name: "Mauritius" },
+		{ code: "mv", name: "Maldives" },
+		{ code: "mw", name: "Malawi" },
+		{ code: "mx", name: "Mexico" },
+		{ code: "my", name: "Malaysia" },
+		{ code: "mz", name: "Mozambique" },
+		{ code: "na", name: "Namibia" },
+		{ code: "nc", name: "New Caledonia" },
+		{ code: "ne", name: "Niger" },
+		{ code: "nf", name: "Norfolk Island" },
+		{ code: "ng", name: "Nigeria" },
+		{ code: "ni", name: "Nicaragua" },
+		{ code: "nl", name: "Netherlands" },
+		{ code: "no", name: "Norway" },
+		{ code: "np", name: "Nepal" },
+		{ code: "nr", name: "Nauru" },
+		{ code: "nu", name: "Niue" },
+		{ code: "nz", name: "New Zealand" },
+		{ code: "om", name: "Oman" },
+		{ code: "pa", name: "Panama" },
+		{ code: "pe", name: "Peru" },
+		{ code: "pf", name: "French Polynesia" },
+		{ code: "pg", name: "Papua New Guinea" },
+		{ code: "ph", name: "Philippines" },
+		{ code: "pk", name: "Pakistan" },
+		{ code: "pl", name: "Poland" },
+		{ code: "pm", name: "Saint Pierre and Miquelon" },
+		{ code: "pn", name: "Pitcairn" },
+		{ code: "pr", name: "Puerto Rico" },
+		{ code: "ps", name: "Palestine" },
+		{ code: "pt", name: "Portugal" },
+		{ code: "pw", name: "Palau" },
+		{ code: "py", name: "Paraguay" },
+		{ code: "qa", name: "Qatar" },
+		{ code: "re", name: "Réunion" },
+		{ code: "ro", name: "Romania" },
+		{ code: "rs", name: "Serbia" },
+		{ code: "ru", name: "Russian Federation" },
+		{ code: "rw", name: "Rwanda" },
+		{ code: "sa", name: "Saudi Arabia" },
+		{ code: "sb", name: "Solomon Islands" },
+		{ code: "sc", name: "Seychelles" },
+		{ code: "sd", name: "Sudan" },
+		{ code: "se", name: "Sweden" },
+		{ code: "sg", name: "Singapore" },
+		{ code: "sh", name: "Saint Helena, Ascension and Tristan da Cunha" },
+		{ code: "si", name: "Slovenia" },
+		{ code: "sj", name: "Svalbard and Jan Mayen Islands" },
+		{ code: "sk", name: "Slovakia" },
+		{ code: "sl", name: "Sierra Leone" },
+		{ code: "sm", name: "San Marino" },
+		{ code: "sn", name: "Senegal" },
+		{ code: "so", name: "Somalia" },
+		{ code: "sr", name: "Suriname" },
+		{ code: "ss", name: "South Sudan" },
+		{ code: "st", name: "Sao Tome and Principe" },
+		{ code: "sv", name: "El Salvador" },
+		{ code: "sx", name: "Sint Maarten (Dutch part)" },
+		{ code: "sy", name: "Syrian Arab Republic" },
+		{ code: "sz", name: "Swaziland" },
+		{ code: "tc", name: "Turks and Caicos Islands" },
+		{ code: "td", name: "Chad" },
+		{ code: "tf", name: "French Southern Territories" },
+		{ code: "tg", name: "Togo" },
+		{ code: "th", name: "Thailand" },
+		{ code: "tj", name: "Tajikistan" },
+		{ code: "tk", name: "Tokelau" },
+		{ code: "tl", name: "Timor-Leste" },
+		{ code: "tm", name: "Turkmenistan" },
+		{ code: "tn", name: "Tunisia" },
+		{ code: "to", name: "Tonga" },
+		{ code: "tr", name: "Turkey" },
+		{ code: "tt", name: "Trinidad and Tobago" },
+		{ code: "tv", name: "Tuvalu" },
+		{ code: "tw", name: "Taiwan (Republic of China)" },
+		{ code: "tz", name: "Tanzania, United Republic of" },
+		{ code: "ua", name: "Ukraine" },
+		{ code: "ug", name: "Uganda" },
+		{ code: "um", name: "US Minor Outlying Islands" },
+		{ code: "us", name: "United States" },
+		{ code: "uy", name: "Uruguay" },
+		{ code: "uz", name: "Uzbekistan" },
+		{ code: "va", name: "Holy See (Vatican City State)" },
+		{ code: "vc", name: "Saint Vincent and the Grenadines" },
+		{ code: "ve", name: "Venezuela, Bolivarian Republic of" },
+		{ code: "vg", name: "Virgin Islands, British" },
+		{ code: "vi", name: "Virgin Islands, U.S." },
+		{ code: "vn", name: "Vietnam" },
+		{ code: "vu", name: "Vanuatu" },
+		{ code: "wf", name: "Wallis and Futuna Islands" },
+		{ code: "ws", name: "Samoa" },
+		{ code: "xk", name: "Kosovo" },
+		{ code: "ye", name: "Yemen" },
+		{ code: "yt", name: "Mayotte" },
+		{ code: "za", name: "South Africa" },
+		{ code: "zm", name: "Zambia" },
+		{ code: "zw", name: "Zimbabwe" },
+	]
+
+
+
+Ontario
+Alberta
+British Columbia
+Manitoba
+New Brunswick
+Newfoundland and Labrador
+Nova Scotia
+Northwest Territories
+Nunavut
+Prince Edward Island
+Quebec
+Saskatchewan
+Yukon
+
+
+Andorra
+UnitedArabEmirates
+Afghanistan
+AntiguaandBarbuda
+Anguilla
+Albania
+Armenia
+Angola
+Antarctica
+Argentina
+AmericanSamoa
+Austria
+Australia
+Aruba
+ÅlandIslands
+Azerbaijan
+BosniaandHerzegovina
+Barbados
+Bangladesh
+Belgium
+BurkinaFaso
+Bulgaria
+Bahrain
+Burundi
+Benin
+SaintBarthélemy
+Bermuda
+BruneiDarussalam
+Bolivia,PlurinationalStateof
+CaribbeanNetherlands
+Brazil
+Bahamas
+Bhutan
+BouvetIsland
+Botswana
+Belarus
+Belize
+Canada
+Cocos(Keeling)Islands
+Congo,theDemocraticRepublicofthe
+CentralAfricanRepublic
+RepublicoftheCongo
+Switzerland
+Côted'Ivoire
+CookIslands
+Chile
+Cameroon
+China(People'sRepublicofChina)
+Colombia
+CostaRica
+Cuba
+CapeVerde
+Curaçao
+ChristmasIsland
+Cyprus
+CzechRepublic
+Germany
+Djibouti
+Denmark
+Dominica
+DominicanRepublic
+Algeria
+Ecuador
+Estonia
+Egypt
+WesternSahara
+Eritrea
+Spain
+Ethiopia
+Europe
+Finland
+Fiji
+FalklandIslands(Malvinas)
+Micronesia,FederatedStatesof
+FaroeIslands
+France
+Gabon
+England
+NorthernIreland
+Scotland
+Wales
+UnitedKingdom
+Grenada
+Georgia
+FrenchGuiana
+Guernsey
+Ghana
+Gibraltar
+Greenland
+Gambia
+Guinea
+Guadeloupe
+EquatorialGuinea
+Greece
+SouthGeorgiaandtheSouthSandwichIslands
+Guatemala
+Guam
+Guinea-Bissau
+Guyana
+HongKong
+HeardIslandandMcDonaldIslands
+Honduras
+Croatia
+Haiti
+Hungary
+Indonesia
+Ireland
+Israel
+IsleofMan
+India
+BritishIndianOceanTerritory
+Iraq
+Iran,IslamicRepublicof
+Iceland
+Italy
+Jersey
+Jamaica
+Jordan
+Japan
+Kenya
+Kyrgyzstan
+Cambodia
+Kiribati
+Comoros
+SaintKittsandNevis
+Korea,DemocraticPeople'sRepublicof
+Korea,Republicof
+Kuwait
+CaymanIslands
+Kazakhstan
+Laos(LaoPeople'sDemocraticRepublic)
+Lebanon
+SaintLucia
+Liechtenstein
+SriLanka
+Liberia
+Lesotho
+Lithuania
+Luxembourg
+Latvia
+Libya
+Morocco
+Monaco
+Moldova,Republicof
+Montenegro
+SaintMartin
+Madagascar
+MarshallIslands
+NorthMacedonia
+Mali
+Myanmar
+Mongolia
+Macao
+NorthernMarianaIslands
+Martinique
+Mauritania
+Montserrat
+Malta
+Mauritius
+Maldives
+Malawi
+Mexico
+Malaysia
+Mozambique
+Namibia
+NewCaledonia
+Niger
+NorfolkIsland
+Nigeria
+Nicaragua
+Netherlands
+Norway
+Nepal
+Nauru
+Niue
+NewZealand
+Oman
+Panama
+Peru
+FrenchPolynesia
+PapuaNewGuinea
+Philippines
+Pakistan
+Poland
+SaintPierreandMiquelon
+Pitcairn
+PuertoRico
+Palestine
+Portugal
+Palau
+Paraguay
+Qatar
+Réunion
+Romania
+Serbia
+RussianFederation
+Rwanda
+SaudiArabia
+SolomonIslands
+Seychelles
+Sudan
+Sweden
+Singapore
+SaintHelena,AscensionandTristandaCunha
+Slovenia
+SvalbardandJanMayenIslands
+Slovakia
+SierraLeone
+SanMarino
+Senegal
+Somalia
+Suriname
+SouthSudan
+SaoTomeandPrincipe
+ElSalvador
+SintMaarten(Dutchpart)
+SyrianArabRepublic
+Swaziland
+TurksandCaicosIslands
+Chad
+FrenchSouthernTerritories
+Togo
+Thailand
+Tajikistan
+Tokelau
+Timor-Leste
+Turkmenistan
+Tunisia
+Tonga
+Turkey
+TrinidadandTobago
+Tuvalu
+Taiwan(RepublicofChina)
+Tanzania,UnitedRepublicof
+Ukraine
+Uganda
+USMinorOutlyingIslands
+UnitedStates
+Uruguay
+Uzbekistan
+HolySee(VaticanCityState)
+SaintVincentandtheGrenadines
+Venezuela,BolivarianRepublicof
+VirginIslands,British
+VirginIslands,U.S.
+Vietnam
+Vanuatu
+WallisandFutunaIslands
+Samoa
+Kosovo
+Yemen
+Mayotte
+SouthAfrica
+Zambia
+Zimbabwe
+
+
+

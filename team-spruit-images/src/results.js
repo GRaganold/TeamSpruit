@@ -1,4 +1,4 @@
-import React, { useState, useRef,useEffect } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { Box, Button, Center, Circle, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
 import sponsorBanner from "./SponsorBanner2.jpg"
 import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
@@ -42,38 +42,38 @@ export default function Results() {
 		// Clear all form data
 		setFormData({
 			SpielName: "",
-		gameType: "",
-		Time: "",
-		isFinal: "false",
-		OurScore: "",
-		OpponentScore: "",
-		Opponent: "",
-		Date: "",
-		UpNextDate: "",
-		UpNextOpponent: "",
-		ImageTitle: "noTitle",
-		});
-	  };
+			gameType: "",
+			Time: "",
+			isFinal: "false",
+			OurScore: "",
+			OpponentScore: "",
+			Opponent: "",
+			Date: "",
+			UpNextDate: "",
+			UpNextOpponent: "",
+			ImageTitle: "noTitle",
+		})
+	}
 
 	useEffect(() => {
 		// Load data from local storage on component mount
-		const storedFormData = JSON.parse(localStorage.getItem("formData"));
+		const storedFormData = JSON.parse(localStorage.getItem("formData"))
 		if (storedFormData) {
-		  setFormData(storedFormData);
+			setFormData(storedFormData)
 		}
-	  }, []);
-	
-	  const handleInputChange = (label, newValue) => {
-		setFormData((prevFormData) => ({
-		  ...prevFormData,
-		  [label]: newValue,
-		}));
-	  };
-	
-	  useEffect(() => {
+	}, [])
+
+	const handleInputChange = (label, newValue) => {
+		setFormData(prevFormData => ({
+			...prevFormData,
+			[label]: newValue,
+		}))
+	}
+
+	useEffect(() => {
 		// Save form data to local storage whenever it changes
-		localStorage.setItem("formData", JSON.stringify(formData));
-	  }, [formData]);
+		localStorage.setItem("formData", JSON.stringify(formData))
+	}, [formData])
 
 	const [selectedThemeChoice, setSelectedThemeChoice] = useState("green") // Corrected theme name
 
@@ -117,11 +117,11 @@ export default function Results() {
 		<>
 			<Box p={3} fontFamily="sans-serif">
 				<Stack w="400px">
-				<Button  colorScheme="orange" onClick={handleClearAll}>
-        New Event
-        </Button>
-				<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title"  />
-          <NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name"  />
+					<Button colorScheme="orange" onClick={handleClearAll}>
+						New Event
+					</Button>
+					<NameInput onInputChange={handleInputChange} label="ImageTitle" placeholder="Enter Image Title" />
+					<NameInput onInputChange={handleInputChange} label="SpielName" placeholder="Enter Spiel Name" />
 					<NameInput onInputChange={handleInputChange} label="Date" placeholder="Friday, October 20" />
 					<HStack>
 						<Text> Game Type </Text>
@@ -180,7 +180,6 @@ export default function Results() {
 						style={{
 							height: "700px",
 							width: "700px",
-							
 						}}
 						bg={boxStyle.backgroundColor}
 						color={boxStyle.color}
@@ -217,7 +216,6 @@ export default function Results() {
 											textAlign={"left"}
 											fontSize={"6xl"}
 											position={"relative"}
-											
 											pl={9}
 											top={"-200px"}
 											style={{ transform: "rotate(-10deg)" }}
@@ -239,7 +237,6 @@ export default function Results() {
 											textAlign={"left"}
 											fontSize={"6xl"}
 											position={"relative"}
-											
 											pl={9}
 											style={{ transform: "rotate(-10deg)" }}
 										></Heading>
@@ -249,37 +246,43 @@ export default function Results() {
 							<VStack spacing={0}>
 								<HStack spacing={0} textAlign={"center"} w="100%">
 									<Flex w="350px" bg={boxStyle.teamNameBannerBG} zIndex={1} mr="-25px" h={"50px"} alignItems="center" justifyContent="center" textAlign={"top"}>
-										<Heading 
-                                        mt={"-10px"}
-                                        fontSize={"3xl"} h="100%"  
-										style={{
-											color: ` ${boxStyle.scoreColor}`,
-											fontFamily: "sans-serif",
-											WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-										}}
+										<Heading
+											mt={"-10px"}
+											fontSize={"3xl"}
+											h="100%"
+											style={{
+												color: ` ${boxStyle.scoreColor}`,
+												fontFamily: "sans-serif",
+												WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+											}}
 										>
 											Spruit/Spruit
 										</Heading>
 									</Flex>
 									<Circle zIndex={5} w={"100px"} h={"100px"} bg={boxStyle.teamNameBannerBG} alignItems="center" justifyContent="center" textAlign={"top"}>
-										<Text fontSize={"5xl"} fontWeight={"900"} h="110%"  style={{
-											color: ` ${boxStyle.scoreColor}`,
-											fontFamily: "sans-serif",
-											WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-										}}
+										<Text
+											fontSize={"5xl"}
+											fontWeight={"900"}
+											h="110%"
+											style={{
+												color: ` ${boxStyle.scoreColor}`,
+												fontFamily: "sans-serif",
+												WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+											}}
 										>
 											VS
 										</Text>
 									</Circle>
 									<Flex w="350px" bg={boxStyle.teamNameBannerBG} zIndex={0} ml="-15px" h={"50px"} alignItems="center" justifyContent="center" textAlign={"top"}>
-										<Heading mt={"-10px"} 
-										fontSize={"3xl"} h="100%"  
-										style={{
-											color: ` ${boxStyle.scoreColor}`,
-											fontFamily: "sans-serif",
-											WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-										}}
-										
+										<Heading
+											mt={"-10px"}
+											fontSize={"3xl"}
+											h="100%"
+											style={{
+												color: ` ${boxStyle.scoreColor}`,
+												fontFamily: "sans-serif",
+												WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+											}}
 										>
 											{formData.Opponent}
 										</Heading>
@@ -287,45 +290,59 @@ export default function Results() {
 								</HStack>
 
 								<Flex w="100%" justify="space-around" color={boxStyle.color} mt={"-25px"}>
-									
-                                    {parseInt(formData.OurScore) > parseInt(formData.OpponentScore)? (<>
-                                        <Heading fontSize={"4xl"} 
-                                        textDecor={"underline"}
-										
-                                        style={{
-											color: ` ${boxStyle.scoreColor}`,
-											fontFamily: "sans-serif",
-											WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-										}} pr={16}>
-										{formData.OurScore}
-									</Heading>
+									{parseInt(formData.OurScore) > parseInt(formData.OpponentScore) ? (
+										<>
+											<Heading
+												fontSize={"4xl"}
+												textDecor={"underline"}
+												style={{
+													color: ` ${boxStyle.scoreColor}`,
+													fontFamily: "sans-serif",
+													WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+												}}
+												pr={16}
+											>
+												{formData.OurScore}
+											</Heading>
 
-									<Heading fontSize={"4xl"} style={{
-											color: ` ${boxStyle.scoreColor}`,
-											fontFamily: "sans-serif",
-											WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-										}}>
-										{formData.OpponentScore}
-									</Heading>
-                                    
-                                    </>) : (<><Heading fontSize={"4xl"} style={{
-											color: ` ${boxStyle.scoreColor}`,
-											fontFamily: "sans-serif",
-											WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-										}} pr={16}>
-										{formData.OurScore}
-									</Heading>
+											<Heading
+												fontSize={"4xl"}
+												style={{
+													color: ` ${boxStyle.scoreColor}`,
+													fontFamily: "sans-serif",
+													WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+												}}
+											>
+												{formData.OpponentScore}
+											</Heading>
+										</>
+									) : (
+										<>
+											<Heading
+												fontSize={"4xl"}
+												style={{
+													color: ` ${boxStyle.scoreColor}`,
+													fontFamily: "sans-serif",
+													WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+												}}
+												pr={16}
+											>
+												{formData.OurScore}
+											</Heading>
 
-									<Heading fontSize={"4xl"} 
-                                    textDecor={"underline"}
-                                    style={{
-										color: ` ${boxStyle.scoreColor}`,
-										fontFamily: "sans-serif",
-										WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
-									}}>
-										{formData.OpponentScore}
-									</Heading></>)}
-                                    
+											<Heading
+												fontSize={"4xl"}
+												textDecor={"underline"}
+												style={{
+													color: ` ${boxStyle.scoreColor}`,
+													fontFamily: "sans-serif",
+													WebkitTextStroke: `1.5px ${boxStyle.WebkitTextStrokeColor}`,
+												}}
+											>
+												{formData.OpponentScore}
+											</Heading>
+										</>
+									)}
 								</Flex>
 							</VStack>
 

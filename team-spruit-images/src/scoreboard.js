@@ -390,7 +390,7 @@ export default function Results() {
 					<VStack>
 						<HStack spacing={10}>
 							<Text> Us </Text>
-							<Text> Them</Text>/
+							<Text> Them</Text>
 						</HStack>
 						{renderInputs4()}
 						<HStack spacing={4}>
