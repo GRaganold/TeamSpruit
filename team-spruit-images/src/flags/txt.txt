@@ -1,675 +1,814 @@
-case "Afghanistan":
-                    setFlag(Afghanistan);
-                    break;
-case "Albania":
-                    setFlag(Albania);
-                    break;
-case "Algeria":
-                    setFlag(Algeria
-case "AmericanSamoa":
-                    setFlag(American Samoa);
-                    break;
-case "Andorra":
-                    setFlag(Andorra);
-                    break;
-case "Angola":
-                    setFlag(Angola
-case "Anguilla":
-                    setFlag(Anguilla);
-                    break;
-case "Antarctica":
-                    setFlag(Antarctica);
-                    break;
-case "AntiguaAndBarbuda":
-                    setFlag(Antigua and Barbuda
-case "Argentina":
-                    setFlag(Argentina);
-                    break;
-case "Armenia":
-                    setFlag(Armenia);
-                    break;
-case "Aruba":
-                    setFlag(Aruba
-case "Australia":
-                    setFlag(Australia);
-                    break;
-case "Austria":
-                    setFlag(Austria);
-                    break;
-case "Azerbaijan":
-                    setFlag(Azerbaijan
-case "Bahamas":
-                    setFlag(Bahamas);
-                    break;
-case "Bahrain":
-                    setFlag(Bahrain);
-                    break;
-case "Bangladesh":
-                    setFlag(Bangladesh
-case "Barbados":
-                    setFlag(Barbados);
-                    break;
-case "Belarus":
-                    setFlag(Belarus);
-                    break;
-case "Belgium":
-                    setFlag(Belgium);
-                    break;
-case "Belize":
-                    setFlag(Belize
-case "Benin":
-                    setFlag(Benin);
-                    break;
-case "Bermuda":
-                    setFlag(Bermuda);
-                    break;
-case "Bhutan":
-                    setFlag(Bhutan
-case "BoliviaPlurinationalStateOf":
-                    setFlag(Bolivia, Plurinational State of);
-                    break;
-case "BosniaAndHerzegovina":
-                    setFlag(Bosnia and Herzegovina
-case "Botswana":
-                    setFlag(Botswana);
-                    break;
-case "BouvetIsland":
-                    setFlag(Bouvet Island);
-                    break;
-case "Brazil":
-                    setFlag(Brazil
-case "BritishIndianOceanTerritory":
-                    setFlag(British Indian Ocean Territory);
-                    break;
-case "BruneiDarussalam":
-                    setFlag(Brunei Darussalam
-case "Bulgaria":
-                    setFlag(Bulgaria);
-                    break;
-case "BurkinaFaso":
-                    setFlag(Burkina Faso);
-                    break;
-case "Burundi":
-                    setFlag(Burundi
-case "Cambodia":
-                    setFlag(Cambodia);
-                    break;
-case "Cameroon":
-                    setFlag(Cameroon);
-                    break;
-case "Canada":
-                    setFlag(Canada
-case "CapeVerde":
-                    setFlag(Cape Verde);
-                    break;
-case "CaribbeanNetherlands":
-                    setFlag(Caribbean Netherlands
-case "CaymanIslands":
-                    setFlag(Cayman Islands);
-                    break;
-case "CentralAfricanRepublic":
-                    setFlag(Central African Republic);
-                    break;
-case "Chad":
-                    setFlag(Chad
-case "Chile":
-                    setFlag(Chile);
-                    break;
-case "ChinaPeoplesRepublicOfChina":
-                    setFlag(China (People's Republic of China)
-case "ChristmasIsland":
-                    setFlag(Christmas Island);
-                    break;
-case "CocosKeelingIslands":
-                    setFlag(Cocos (Keeling) Islands
-case "Colombia":
-                    setFlag(Colombia);
-                    break;
-case "Comoros":
-                    setFlag(Comoros
-case "CongoTheDemocraticRepublicOfThe":
-                    setFlag(Congo, the Democratic Republic of the);
-                    break;
-case "CookIslands":
-                    setFlag(Cook Islands
-case "CostaRica":
-                    setFlag(Costa Rica);
-                    break;
-case "Croatia":
-                    setFlag(Croatia);
-                    break;
-case "Cuba":
-                    setFlag(Cuba);
-                    break;
-case "Curaçao":
-                    setFlag(Curaçao
-case "Cyprus":
-                    setFlag(Cyprus);
-                    break;
-case "CzechRepublic":
-                    setFlag(Czech Republic);
-                    break;
-case "CôteDIvoire":
-                    setFlag(Côte d'Ivoire
-case "Denmark":
-                    setFlag(Denmark);
-                    break;
-case "Djibouti":
-                    setFlag(Djibouti);
-                    break;
-case "Dominica":
-                    setFlag(Dominica
-case "DominicanRepublic":
-                    setFlag(Dominican Republic);
-                    break;
-case "Ecuador":
-                    setFlag(Ecuador);
-                    break;
-case "Egypt":
-                    setFlag(Egypt
-case "ElSalvador":
-                    setFlag(El Salvador);
-                    break;
-case "England":
-                    setFlag(England);
-                    break;
-case "EquatorialGuinea":
-                    setFlag(Equatorial Guinea
-case "Eritrea":
-                    setFlag(Eritrea);
-                    break;
-case "Estonia":
-                    setFlag(Estonia);
-                    break;
-case "Ethiopia":
-                    setFlag(Ethiopia);
-                    break;
-case "Europe":
-                    setFlag(Europe
-case "FalklandIslandsMalvinas":
-                    setFlag(Falkland Islands (Malvinas));
-                    break;
-case "FaroeIslands":
-                    setFlag(Faroe Islands);
-                    break;
-case "Fiji":
-                    setFlag(Fiji
-case "Finland":
-                    setFlag(Finland);
-                    break;
-case "France":
-                    setFlag(France);
-                    break;
-case "FrenchGuiana":
-                    setFlag(French Guiana
-case "FrenchPolynesia":
-                    setFlag(French Polynesia);
-                    break;
-case "FrenchSouthernTerritories":
-                    setFlag(French Southern Territories
-case "Gabon":
-                    setFlag(Gabon);
-                    break;
-case "Gambia":
-                    setFlag(Gambia);
-                    break;
-case "Georgia":
-                    setFlag(Georgia);
-                    break;
-case "Germany":
-                    setFlag(Germany
-case "Ghana":
-                    setFlag(Ghana);
-                    break;
-case "Gibraltar":
-                    setFlag(Gibraltar);
-                    break;
-case "Greece":
-                    setFlag(Greece
-case "Greenland":
-                    setFlag(Greenland);
-                    break;
-case "Grenada":
-                    setFlag(Grenada);
-                    break;
-case "Guadeloupe":
-                    setFlag(Guadeloupe
-case "Guam":
-                    setFlag(Guam);
-                    break;
-case "Guatemala":
-                    setFlag(Guatemala);
-                    break;
-case "Guernsey":
-                    setFlag(Guernsey);
-                    break;
-case "Guinea":
-                    setFlag(Guinea
-case "GuineaBissau":
-                    setFlag(Guinea-Bissau);
-                    break;
-case "Guyana":
-                    setFlag(Guyana);
-                    break;
-case "Haiti":
-                    setFlag(Haiti
-case "HeardIslandAndMcDonaldIslands":
-                    setFlag(Heard Island and McDonald Islands
-case "HolySeeVaticanCityState":
-                    setFlag(Holy See (Vatican City State));
-                    break;
-case "Honduras":
-                    setFlag(Honduras
-case "HongKong":
-                    setFlag(Hong Kong);
-                    break;
-case "Hungary":
-                    setFlag(Hungary);
-                    break;
-case "Iceland":
-                    setFlag(Iceland);
-                    break;
-case "India":
-                    setFlag(India
-case "Indonesia":
-                    setFlag(Indonesia);
-                    break;
-case "IranIslamicRepublicOf":
-                    setFlag(Iran, Islamic Republic of);
-                    break;
-case "Iraq":
-                    setFlag(Iraq
-case "Ireland":
-                    setFlag(Ireland);
-                    break;
-case "IsleOfMan":
-                    setFlag(Isle of Man);
-                    break;
-case "Israel":
-                    setFlag(Israel);
-                    break;
-case "Italy":
-                    setFlag(Italy
-case "Jamaica":
-                    setFlag(Jamaica);
-                    break;
-case "Japan":
-                    setFlag(Japan);
-                    break;
-case "Jersey":
-                    setFlag(Jersey);
-                    break;
-case "Jordan":
-                    setFlag(Jordan
-case "Kazakhstan":
-                    setFlag(Kazakhstan);
-                    break;
-case "Kenya":
-                    setFlag(Kenya);
-                    break;
-case "Kiribati":
-                    setFlag(Kiribati
-case "KoreaDemocraticPeoplesRepublicOf":
-                    setFlag(Korea, Democratic People's Republic of);
-                    break;
-case "KoreaRepublicOf":
-                    setFlag(Korea, Republic of
-case "Kosovo":
-                    setFlag(Kosovo);
-                    break;
-case "Kuwait":
-                    setFlag(Kuwait);
-                    break;
-case "Kyrgyzstan":
-                    setFlag(Kyrgyzstan
-case "LaosLaoPeoplesDemocraticRepublic":
-                    setFlag(Laos (Lao People's Democratic Republic));
-                    break;
-case "Latvia":
-                    setFlag(Latvia
-case "Lebanon":
-                    setFlag(Lebanon);
-                    break;
-case "Lesotho":
-                    setFlag(Lesotho);
-                    break;
-case "Liberia":
-                    setFlag(Liberia);
-                    break;
-case "Libya":
-                    setFlag(Libya
-case "Liechtenstein":
-                    setFlag(Liechtenstein);
-                    break;
-case "Lithuania":
-                    setFlag(Lithuania);
-                    break;
-case "Luxembourg":
-                    setFlag(Luxembourg
-case "Macao":
-                    setFlag(Macao);
-                    break;
-case "Madagascar":
-                    setFlag(Madagascar);
-                    break;
-case "Malawi":
-                    setFlag(Malawi
-case "Malaysia":
-                    setFlag(Malaysia);
-                    break;
-case "Maldives":
-                    setFlag(Maldives);
-                    break;
-case "Mali":
-                    setFlag(Mali);
-                    break;
-case "Malta":
-                    setFlag(Malta
-case "MarshallIslands":
-                    setFlag(Marshall Islands);
-                    break;
-case "Martinique":
-                    setFlag(Martinique);
-                    break;
-case "Mauritania":
-                    setFlag(Mauritania
-case "Mauritius":
-                    setFlag(Mauritius);
-                    break;
-case "Mayotte":
-                    setFlag(Mayotte);
-                    break;
-case "Mexico":
-                    setFlag(Mexico
-case "MicronesiaFederatedStatesOf":
-                    setFlag(Micronesia, Federated States of);
-                    break;
-case "MoldovaRepublicOf":
-                    setFlag(Moldova, Republic of
-case "Monaco":
-                    setFlag(Monaco);
-                    break;
-case "Mongolia":
-                    setFlag(Mongolia);
-                    break;
-case "Montenegro":
-                    setFlag(Montenegro
-case "Montserrat":
-                    setFlag(Montserrat);
-                    break;
-case "Morocco":
-                    setFlag(Morocco);
-                    break;
-case "Mozambique":
-                    setFlag(Mozambique
-case "Myanmar":
-                    setFlag(Myanmar);
-                    break;
-case "Namibia":
-                    setFlag(Namibia);
-                    break;
-case "Nauru":
-                    setFlag(Nauru);
-                    break;
-case "Nepal":
-                    setFlag(Nepal
-case "Netherlands":
-                    setFlag(Netherlands);
-                    break;
-case "NewCaledonia":
-                    setFlag(New Caledonia);
-                    break;
-case "NewZealand":
-                    setFlag(New Zealand
-case "Nicaragua":
-                    setFlag(Nicaragua);
-                    break;
-case "Niger":
-                    setFlag(Niger);
-                    break;
-case "Nigeria":
-                    setFlag(Nigeria);
-                    break;
-case "Niue":
-                    setFlag(Niue
-case "NorfolkIsland":
-                    setFlag(Norfolk Island);
-                    break;
-case "NorthMacedonia":
-                    setFlag(North Macedonia
-case "NorthernIreland":
-                    setFlag(Northern Ireland);
-                    break;
-case "NorthernMarianaIslands":
-                    setFlag(Northern Mariana Islands
-case "Norway":
-                    setFlag(Norway);
-                    break;
-case "Oman":
-                    setFlag(Oman);
-                    break;
-case "Pakistan":
-                    setFlag(Pakistan);
-                    break;
-case "Palau":
-                    setFlag(Palau
-case "Palestine":
-                    setFlag(Palestine);
-                    break;
-case "Panama":
-                    setFlag(Panama);
-                    break;
-case "PapuaNewGuinea":
-                    setFlag(Papua New Guinea
-case "Paraguay":
-                    setFlag(Paraguay);
-                    break;
-case "Peru":
-                    setFlag(Peru);
-                    break;
-case "Philippines":
-                    setFlag(Philippines
-case "Pitcairn":
-                    setFlag(Pitcairn);
-                    break;
-case "Poland":
-                    setFlag(Poland);
-                    break;
-case "Portugal":
-                    setFlag(Portugal
-case "PuertoRico":
-                    setFlag(Puerto Rico);
-                    break;
-case "Qatar":
-                    setFlag(Qatar);
-                    break;
-case "RepublicOfTheCongo":
-                    setFlag(Republic of the Congo
-case "Romania":
-                    setFlag(Romania);
-                    break;
-case "RussianFederation":
-                    setFlag(Russian Federation);
-                    break;
-case "Rwanda":
-                    setFlag(Rwanda
-case "Réunion":
-                    setFlag(Réunion);
-                    break;
-case "SaintBarthélemy":
-                    setFlag(Saint Barthélemy
-case "SaintHelenaAscensionAndTristandaCunha":
-                    setFlag(Saint Helena, Ascension and Tristan da Cunha
-case "SaintKittsAndNevis":
-                    setFlag(Saint Kitts and Nevis);
-                    break;
-case "SaintLucia":
-                    setFlag(Saint Lucia);
-                    break;
-case "SaintMartin":
-                    setFlag(Saint Martin
-case "SaintPierreAndMiquelon":
-                    setFlag(Saint Pierre and Miquelon);
-                    break;
-case "SaintVincentAndTheGrenadines":
-                    setFlag(Saint Vincent and the Grenadines
-case "Samoa":
-                    setFlag(Samoa);
-                    break;
-case "SanMarino":
-                    setFlag(San Marino);
-                    break;
-case "SaoTomeAndPrincipe":
-                    setFlag(Sao Tome and Principe
-case "SaudiArabia":
-                    setFlag(Saudi Arabia);
-                    break;
-case "Scotland":
-                    setFlag(Scotland);
-                    break;
-case "Senegal":
-                    setFlag(Senegal
-case "Serbia":
-                    setFlag(Serbia);
-                    break;
-case "Seychelles":
-                    setFlag(Seychelles);
-                    break;
-case "SierraLeone":
-                    setFlag(Sierra Leone
-case "Singapore":
-                    setFlag(Singapore);
-                    break;
-case "SintMaartenDutchPart":
-                    setFlag(Sint Maarten (Dutch part));
-                    break;
-case "Slovakia":
-                    setFlag(Slovakia
-case "Slovenia":
-                    setFlag(Slovenia);
-                    break;
-case "SolomonIslands":
-                    setFlag(Solomon Islands);
-                    break;
-case "Somalia":
-                    setFlag(Somalia
-case "SouthAfrica":
-                    setFlag(South Africa);
-                    break;
-case "SouthGeorgiaAndTheSouthSandwichIslands":
-                    setFlag(South Georgia and the South Sandwich Islands
-case "SouthSudan":
-                    setFlag(South Sudan);
-                    break;
-case "Spain":
-                    setFlag(Spain);
-                    break;
-case "SriLanka":
-                    setFlag(Sri Lanka
-case "Sudan":
-                    setFlag(Sudan);
-                    break;
-case "Suriname":
-                    setFlag(Suriname);
-                    break;
-case "SvalbardAndJanMayenIslands":
-                    setFlag(Svalbard and Jan Mayen Islands
-case "Swaziland":
-                    setFlag(Swaziland);
-                    break;
-case "Sweden":
-                    setFlag(Sweden);
-                    break;
-case "Switzerland":
-                    setFlag(Switzerland
-case "SyrianArabRepublic":
-                    setFlag(Syrian Arab Republic);
-                    break;
-case "TaiwanRepublicOfChina":
-                    setFlag(Taiwan (Republic of China)
-case "Tajikistan":
-                    setFlag(Tajikistan);
-                    break;
-case "TanzaniaUnitedRepublicOf":
-                    setFlag(Tanzania, United Republic of
-case "Thailand":
-                    setFlag(Thailand);
-                    break;
-case "TimorLeste":
-                    setFlag(Timor-Leste);
-                    break;
-case "Togo":
-                    setFlag(Togo
-case "Tokelau":
-                    setFlag(Tokelau);
-                    break;
-case "Tonga":
-                    setFlag(Tonga);
-                    break;
-case "TrinidadAndTobago":
-                    setFlag(Trinidad and Tobago
-case "Tunisia":
-                    setFlag(Tunisia);
-                    break;
-case "Turkey":
-                    setFlag(Turkey);
-                    break;
-case "Turkmenistan":
-                    setFlag(Turkmenistan
-case "TurksAndCaicosIslands":
-                    setFlag(Turks and Caicos Islands);
-                    break;
-case "Tuvalu":
-                    setFlag(Tuvalu
-case "USMinorOutlyingIslands":
-                    setFlag(US Minor Outlying Islands);
-                    break;
-case "Uganda":
-                    setFlag(Uganda);
-                    break;
-case "Ukraine":
-                    setFlag(Ukraine
-case "UnitedArabEmirates":
-                    setFlag(United Arab Emirates);
-                    break;
-case "UnitedKingdom":
-                    setFlag(United Kingdom
-case "UnitedStates":
-                    setFlag(United States);
-                    break;
-case "Uruguay":
-                    setFlag(Uruguay);
-                    break;
-case "Uzbekistan":
-                    setFlag(Uzbekistan
-case "Vanuatu":
-                    setFlag(Vanuatu);
-                    break;
-case "VenezuelaBolivarianRepublicOf":
-                    setFlag(Venezuela, Bolivarian Republic of
-case "Vietnam":
-                    setFlag(Vietnam);
-                    break;
-case "VirginIslandsBritish":
-                    setFlag(Virgin Islands, British
-case "VirginIslandsUS":
-                    setFlag(Virgin Islands, U.S.);
-                    break;
-case "Wales":
-                    setFlag(Wales
-case "WallisAndFutunaIslands":
-                    setFlag(Wallis and Futuna Islands);
-                    break;
-case "WesternSahara":
-                    setFlag(Western Sahara);
-                    break;
-case "Yemen":
-                    setFlag(Yemen
-case "Zambia":
-                    setFlag(Zambia);
-                    break;
-case "Zimbabwe":
-                    setFlag(Zimbabwe);
-                    break;
-case "ÅlandIslands":
-                    setFlag(Åland Islands</option>
+		switch (selectedFlag) {
+			// Province
+
+			
+			case "Ontario":
+				setFlag(Ontario)
+				break
+			case "Alberta":
+				setFlag(Alberta)
+				break
+			case "BritishColumbia":
+				setFlag(BritishColumbia)
+				break
+			case "Manitoba":
+				setFlag(Manitoba)
+				break
+			case "NewBrunswick":
+				setFlag(NewBrunswick)
+				break
+			case "NewfoundlandAndLabrador":
+				setFlag(NewfoundlandAndLabrador)
+				break
+			case "NovaScotia":
+				setFlag(NovaScotia)
+				break
+			case "NorthwestTerritories":
+				setFlag(NorthwestTerritories)
+				break
+			case "PrinceEdwardIsland":
+				setFlag(PrinceEdwardIsland)
+				break
+			case "Quebec":
+				setFlag(Quebec)
+				break
+			case "Nunavut":
+				setFlag(Nunavut)
+				break
+			case "Saskatchewan":
+				setFlag(Saskatchewan)
+				break
+			case "Yukon":
+				setFlag(Yukon)
+				break
+			// World
+			case "Afghanistan":
+				setFlag(Afghanistan)
+				break
+			case "AlandIslands":
+				setFlag(AlandIslands)
+				break
+			case "Albania":
+				setFlag(Albania)
+				break
+			case "Algeria":
+				setFlag(Algeria)
+				break
+			case "AmericanSamoa":
+				setFlag(AmericanSamoa)
+				break
+			case "Andorra":
+				setFlag(Andorra)
+				break
+			case "Angola":
+				setFlag(Angola)
+				break
+			case "Anguilla":
+				setFlag(Anguilla)
+				break
+			case "Antarctica":
+				setFlag(Antarctica)
+				break
+			case "AntiguaAndBarbuda":
+				setFlag(AntiguaAndBarbuda)
+				break
+			case "Argentina":
+				setFlag(Argentina)
+				break
+			case "Armenia":
+				setFlag(Armenia)
+				break
+			case "Aruba":
+				setFlag(Aruba)
+				break
+			case "Australia":
+				setFlag(Australia)
+				break
+			case "Austria":
+				setFlag(Austria)
+				break
+			case "Azerbaijan":
+				setFlag(Azerbaijan)
+				break
+			case "Bahamas":
+				setFlag(Bahamas)
+				break
+			case "Bahrain":
+				setFlag(Bahrain)
+				break
+			case "Bangladesh":
+				setFlag(Bangladesh)
+				break
+			case "Barbados":
+				setFlag(Barbados)
+				break
+			case "Belarus":
+				setFlag(Belarus)
+				break
+			case "Belgium":
+				setFlag(Belgium)
+				break
+			case "Belize":
+				setFlag(Belize)
+				break
+			case "Benin":
+				setFlag(Benin)
+				break
+			case "Bermuda":
+				setFlag(Bermuda)
+				break
+			case "Bhutan":
+				setFlag(Bhutan)
+				break
+			case "BoliviaPlurinationalStateOf":
+				setFlag(BoliviaPlurinationalStateOf)
+				break
+			case "BosniaAndHerzegovina":
+				setFlag(BosniaAndHerzegovina)
+				break
+			case "Botswana":
+				setFlag(Botswana)
+				break
+			case "BouvetIsland":
+				setFlag(BouvetIsland)
+				break
+			case "Brazil":
+				setFlag(Brazil)
+				break
+			case "BritishIndianOceanTerritory":
+				setFlag(BritishIndianOceanTerritory)
+				break
+			case "BruneiDarussalam":
+				setFlag(BruneiDarussalam)
+				break
+			case "Bulgaria":
+				setFlag(Bulgaria)
+				break
+			case "BurkinaFaso":
+				setFlag(BurkinaFaso)
+				break
+			case "Burundi":
+				setFlag(Burundi)
+				break
+			case "Cambodia":
+				setFlag(Cambodia)
+				break
+			case "Cameroon":
+				setFlag(Cameroon)
+				break
+			case "Canada":
+				setFlag(Canada)
+				break
+			case "CapeVerde":
+				setFlag(CapeVerde)
+				break
+			case "CaribbeanNetherlands":
+				setFlag(CaribbeanNetherlands)
+				break
+			case "CaymanIslands":
+				setFlag(CaymanIslands)
+				break
+			case "CentralAfricanRepublic":
+				setFlag(CentralAfricanRepublic)
+				break
+			case "Chad":
+				setFlag(Chad)
+				break
+			case "Chile":
+				setFlag(Chile)
+				break
+			case "ChinaPeoplesRepublicOfChina":
+				setFlag(ChinaPeoplesRepublicOfChina)
+				break
+			case "ChristmasIsland":
+				setFlag(ChristmasIsland)
+				break
+			case "CocosKeelingIslands":
+				setFlag(CocosKeelingIslands)
+				break
+			case "Colombia":
+				setFlag(Colombia)
+				break
+			case "Comoros":
+				setFlag(Comoros)
+				break
+			case "CongoTheDemocraticRepublicOfThe":
+				setFlag(CongoTheDemocraticRepublicOfThe)
+				break
+			case "CookIslands":
+				setFlag(CookIslands)
+				break
+			case "CostaRica":
+				setFlag(CostaRica)
+				break
+			case "CoteDIvoire":
+				setFlag(CoteDIvoire)
+				break
+			case "Croatia":
+				setFlag(Croatia)
+				break
+			case "Cuba":
+				setFlag(Cuba)
+				break
+			case "Curacao":
+				setFlag(Curacao)
+				break
+			case "Cyprus":
+				setFlag(Cyprus)
+				break
+			case "CzechRepublic":
+				setFlag(CzechRepublic)
+				break
+			case "Denmark":
+				setFlag(Denmark)
+				break
+			case "Djibouti":
+				setFlag(Djibouti)
+				break
+			case "Dominica":
+				setFlag(Dominica)
+				break
+			case "DominicanRepublic":
+				setFlag(DominicanRepublic)
+				break
+			case "Ecuador":
+				setFlag(Ecuador)
+				break
+			case "Egypt":
+				setFlag(Egypt)
+				break
+			case "ElSalvador":
+				setFlag(ElSalvador)
+				break
+			case "England":
+				setFlag(England)
+				break
+			case "EquatorialGuinea":
+				setFlag(EquatorialGuinea)
+				break
+			case "Eritrea":
+				setFlag(Eritrea)
+				break
+			case "Estonia":
+				setFlag(Estonia)
+				break
+			case "Ethiopia":
+				setFlag(Ethiopia)
+				break
+			case "Europe":
+				setFlag(Europe)
+				break
+			case "FalklandIslandsMalvinas":
+				setFlag(FalklandIslandsMalvinas)
+				break
+			case "FaroeIslands":
+				setFlag(FaroeIslands)
+				break
+			case "Fiji":
+				setFlag(Fiji)
+				break
+			case "Finland":
+				setFlag(Finland)
+				break
+			case "France":
+				setFlag(France)
+				break
+			case "FrenchGuiana":
+				setFlag(FrenchGuiana)
+				break
+			case "FrenchPolynesia":
+				setFlag(FrenchPolynesia)
+				break
+			case "FrenchSouthernTerritories":
+				setFlag(FrenchSouthernTerritories)
+				break
+			case "Gabon":
+				setFlag(Gabon)
+				break
+			case "Gambia":
+				setFlag(Gambia)
+				break
+			case "Georgia":
+				setFlag(Georgia)
+				break
+			case "Germany":
+				setFlag(Germany)
+				break
+			case "Ghana":
+				setFlag(Ghana)
+				break
+			case "Gibraltar":
+				setFlag(Gibraltar)
+				break
+			case "Greece":
+				setFlag(Greece)
+				break
+			case "Greenland":
+				setFlag(Greenland)
+				break
+			case "Grenada":
+				setFlag(Grenada)
+				break
+			case "Guadeloupe":
+				setFlag(Guadeloupe)
+				break
+			case "Guam":
+				setFlag(Guam)
+				break
+			case "Guatemala":
+				setFlag(Guatemala)
+				break
+			case "Guernsey":
+				setFlag(Guernsey)
+				break
+			case "Guinea":
+				setFlag(Guinea)
+				break
+			case "GuineaBissau":
+				setFlag(GuineaBissau)
+				break
+			case "Guyana":
+				setFlag(Guyana)
+				break
+			case "Haiti":
+				setFlag(Haiti)
+				break
+			case "HeardIslandAndMcDonaldIslands":
+				setFlag(HeardIslandAndMcDonaldIslands)
+				break
+			case "HolySeeVaticanCityState":
+				setFlag(HolySeeVaticanCityState)
+				break
+			case "Honduras":
+				setFlag(Honduras)
+				break
+			case "HongKong":
+				setFlag(HongKong)
+				break
+			case "Hungary":
+				setFlag(Hungary)
+				break
+			case "Iceland":
+				setFlag(Iceland)
+				break
+			case "India":
+				setFlag(India)
+				break
+			case "Indonesia":
+				setFlag(Indonesia)
+				break
+			case "IranIslamicRepublicOf":
+				setFlag(IranIslamicRepublicOf)
+				break
+			case "Iraq":
+				setFlag(Iraq)
+				break
+			case "Ireland":
+				setFlag(Ireland)
+				break
+			case "IsleOfMan":
+				setFlag(IsleOfMan)
+				break
+			case "Israel":
+				setFlag(Israel)
+				break
+			case "Italy":
+				setFlag(Italy)
+				break
+			case "Jamaica":
+				setFlag(Jamaica)
+				break
+			case "Japan":
+				setFlag(Japan)
+				break
+			case "Jersey":
+				setFlag(Jersey)
+				break
+			case "Jordan":
+				setFlag(Jordan)
+				break
+			case "Kazakhstan":
+				setFlag(Kazakhstan)
+				break
+			case "Kenya":
+				setFlag(Kenya)
+				break
+			case "Kiribati":
+				setFlag(Kiribati)
+				break
+			case "KoreaDemocraticPeoplesRepublicOf":
+				setFlag(KoreaDemocraticPeoplesRepublicOf)
+				break
+			case "KoreaRepublicOf":
+				setFlag(KoreaRepublicOf)
+				break
+			case "Kosovo":
+				setFlag(Kosovo)
+				break
+			case "Kuwait":
+				setFlag(Kuwait)
+				break
+			case "Kyrgyzstan":
+				setFlag(Kyrgyzstan)
+				break
+			case "LaosLaoPeoplesDemocraticRepublic":
+				setFlag(LaosLaoPeoplesDemocraticRepublic)
+				break
+			case "Latvia":
+				setFlag(Latvia)
+				break
+			case "Lebanon":
+				setFlag(Lebanon)
+				break
+			case "Lesotho":
+				setFlag(Lesotho)
+				break
+			case "Liberia":
+				setFlag(Liberia)
+				break
+			case "Libya":
+				setFlag(Libya)
+				break
+			case "Liechtenstein":
+				setFlag(Liechtenstein)
+				break
+			case "Lithuania":
+				setFlag(Lithuania)
+				break
+			case "Luxembourg":
+				setFlag(Luxembourg)
+				break
+			case "Macao":
+				setFlag(Macao)
+				break
+			case "Madagascar":
+				setFlag(Madagascar)
+				break
+			case "Malawi":
+				setFlag(Malawi)
+				break
+			case "Malaysia":
+				setFlag(Malaysia)
+				break
+			case "Maldives":
+				setFlag(Maldives)
+				break
+			case "Mali":
+				setFlag(Mali)
+				break
+			case "Malta":
+				setFlag(Malta)
+				break
+			case "MarshallIslands":
+				setFlag(MarshallIslands)
+				break
+			case "Martinique":
+				setFlag(Martinique)
+				break
+			case "Mauritania":
+				setFlag(Mauritania)
+				break
+			case "Mauritius":
+				setFlag(Mauritius)
+				break
+			case "Mayotte":
+				setFlag(Mayotte)
+				break
+			case "Mexico":
+				setFlag(Mexico)
+				break
+			case "MicronesiaFederatedStatesOf":
+				setFlag(MicronesiaFederatedStatesOf)
+				break
+			case "MoldovaRepublicOf":
+				setFlag(MoldovaRepublicOf)
+				break
+			case "Monaco":
+				setFlag(Monaco)
+				break
+			case "Mongolia":
+				setFlag(Mongolia)
+				break
+			case "Montenegro":
+				setFlag(Montenegro)
+				break
+			case "Montserrat":
+				setFlag(Montserrat)
+				break
+			case "Morocco":
+				setFlag(Morocco)
+				break
+			case "Mozambique":
+				setFlag(Mozambique)
+				break
+			case "Myanmar":
+				setFlag(Myanmar)
+				break
+			case "Namibia":
+				setFlag(Namibia)
+				break
+			case "Nauru":
+				setFlag(Nauru)
+				break
+			case "Nepal":
+				setFlag(Nepal)
+				break
+			case "Netherlands":
+				setFlag(Netherlands)
+				break
+			case "NewCaledonia":
+				setFlag(NewCaledonia)
+				break
+			case "NewZealand":
+				setFlag(NewZealand)
+				break
+			case "Nicaragua":
+				setFlag(Nicaragua)
+				break
+			case "Niger":
+				setFlag(Niger)
+				break
+			case "Nigeria":
+				setFlag(Nigeria)
+				break
+			case "Niue":
+				setFlag(Niue)
+				break
+			case "NorfolkIsland":
+				setFlag(NorfolkIsland)
+				break
+			case "NorthMacedonia":
+				setFlag(NorthMacedonia)
+				break
+			case "NorthernIreland":
+				setFlag(NorthernIreland)
+				break
+			case "NorthernMarianaIslands":
+				setFlag(NorthernMarianaIslands)
+				break
+			case "Norway":
+				setFlag(Norway)
+				break
+			case "Oman":
+				setFlag(Oman)
+				break
+			case "Pakistan":
+				setFlag(Pakistan)
+				break
+			case "Palau":
+				setFlag(Palau)
+				break
+			case "Palestine":
+				setFlag(Palestine)
+				break
+			case "Panama":
+				setFlag(Panama)
+				break
+			case "PapuaNewGuinea":
+				setFlag(PapuaNewGuinea)
+				break
+			case "Paraguay":
+				setFlag(Paraguay)
+				break
+			case "Peru":
+				setFlag(Peru)
+				break
+			case "Philippines":
+				setFlag(Philippines)
+				break
+			case "Pitcairn":
+				setFlag(Pitcairn)
+				break
+			case "Poland":
+				setFlag(Poland)
+				break
+			case "Portugal":
+				setFlag(Portugal)
+				break
+			case "PuertoRico":
+				setFlag(PuertoRico)
+				break
+			case "Qatar":
+				setFlag(Qatar)
+				break
+			case "RepublicOfTheCongo":
+				setFlag(RepublicOfTheCongo)
+				break
+			case "Reunion":
+				setFlag(Reunion)
+				break
+			case "Romania":
+				setFlag(Romania)
+				break
+			case "RussianFederation":
+				setFlag(RussianFederation)
+				break
+			case "Rwanda":
+				setFlag(Rwanda)
+				break
+			case "SaintBarthelemy":
+				setFlag(SaintBarthelemy)
+				break
+			case "SaintHelenaAscensionAndTristanDaCunha":
+				setFlag(SaintHelenaAscensionAndTristanDaCunha)
+				break
+			case "SaintKittsAndNevis":
+				setFlag(SaintKittsAndNevis)
+				break
+			case "SaintLucia":
+				setFlag(SaintLucia)
+				break
+			case "SaintMartin":
+				setFlag(SaintMartin)
+				break
+			case "SaintPierreAndMiquelon":
+				setFlag(SaintPierreAndMiquelon)
+				break
+			case "SaintVincentAndTheGrenadines":
+				setFlag(SaintVincentAndTheGrenadines)
+				break
+			case "Samoa":
+				setFlag(Samoa)
+				break
+			case "SanMarino":
+				setFlag(SanMarino)
+				break
+			case "SaoTomeAndPrincipe":
+				setFlag(SaoTomeAndPrincipe)
+				break
+			case "SaudiArabia":
+				setFlag(SaudiArabia)
+				break
+			case "Scotland":
+				setFlag(Scotland)
+				break
+			case "Senegal":
+				setFlag(Senegal)
+				break
+			case "Serbia":
+				setFlag(Serbia)
+				break
+			case "Seychelles":
+				setFlag(Seychelles)
+				break
+			case "SierraLeone":
+				setFlag(SierraLeone)
+				break
+			case "Singapore":
+				setFlag(Singapore)
+				break
+			case "SintMaartenDutchPart":
+				setFlag(SintMaartenDutchPart)
+				break
+			case "Slovakia":
+				setFlag(Slovakia)
+				break
+			case "Slovenia":
+				setFlag(Slovenia)
+				break
+			case "SolomonIslands":
+				setFlag(SolomonIslands)
+				break
+			case "Somalia":
+				setFlag(Somalia)
+				break
+			case "SouthAfrica":
+				setFlag(SouthAfrica)
+				break
+			case "SouthGeorgiaAndTheSouthSandwichIslands":
+				setFlag(SouthGeorgiaAndTheSouthSandwichIslands)
+				break
+			case "SouthSudan":
+				setFlag(SouthSudan)
+				break
+			case "Spain":
+				setFlag(Spain)
+				break
+			case "SriLanka":
+				setFlag(SriLanka)
+				break
+			case "Sudan":
+				setFlag(Sudan)
+				break
+			case "Suriname":
+				setFlag(Suriname)
+				break
+			case "SvalbardAndJanMayenIslands":
+				setFlag(SvalbardAndJanMayenIslands)
+				break
+			case "Swaziland":
+				setFlag(Swaziland)
+				break
+			case "Sweden":
+				setFlag(Sweden)
+				break
+			case "Switzerland":
+				setFlag(Switzerland)
+				break
+			case "SyrianArabRepublic":
+				setFlag(SyrianArabRepublic)
+				break
+			case "TaiwanRepublicOfChina":
+				setFlag(TaiwanRepublicOfChina)
+				break
+			case "Tajikistan":
+				setFlag(Tajikistan)
+				break
+			case "TanzaniaUnitedRepublicOf":
+				setFlag(TanzaniaUnitedRepublicOf)
+				break
+			case "Thailand":
+				setFlag(Thailand)
+				break
+			case "TimorLeste":
+				setFlag(TimorLeste)
+				break
+			case "Togo":
+				setFlag(Togo)
+				break
+			case "Tokelau":
+				setFlag(Tokelau)
+				break
+			case "Tonga":
+				setFlag(Tonga)
+				break
+			case "TrinidadAndTobago":
+				setFlag(TrinidadAndTobago)
+				break
+			case "Tunisia":
+				setFlag(Tunisia)
+				break
+			case "Turkey":
+				setFlag(Turkey)
+				break
+			case "Turkmenistan":
+				setFlag(Turkmenistan)
+				break
+			case "TurksAndCaicosIslands":
+				setFlag(TurksAndCaicosIslands)
+				break
+			case "Tuvalu":
+				setFlag(Tuvalu)
+				break
+			case "USMinorOutlyingIslands":
+				setFlag(USMinorOutlyingIslands)
+				break
+			case "Uganda":
+				setFlag(Uganda)
+				break
+			case "Ukraine":
+				setFlag(Ukraine)
+				break
+			case "UnitedArabEmirates":
+				setFlag(UnitedArabEmirates)
+				break
+			case "UnitedKingdom":
+				setFlag(UnitedKingdom)
+				break
+			case "UnitedStates":
+				setFlag(UnitedStates)
+				break
+			case "Uruguay":
+				setFlag(Uruguay)
+				break
+			case "Uzbekistan":
+				setFlag(Uzbekistan)
+				break
+			case "Vanuatu":
+				setFlag(Vanuatu)
+				break
+			case "VenezuelaBolivarianRepublicOf":
+				setFlag(VenezuelaBolivarianRepublicOf)
+				break
+			case "Vietnam":
+				setFlag(Vietnam)
+				break
+			case "VirginIslandsBritish":
+				setFlag(VirginIslandsBritish)
+				break
+			case "VirginIslandsUS":
+				setFlag(VirginIslandsUS)
+				break
+			case "Wales":
+				setFlag(Wales)
+				break
+			case "WallisAndFutunaIslands":
+				setFlag(WallisAndFutunaIslands)
+				break
+			case "WesternSahara":
+				setFlag(WesternSahara)
+				break
+			case "Yemen":
+				setFlag(Yemen)
+				break
+			case "Zambia":
+				setFlag(Zambia)
+				break
+			case "Zimbabwe":
+				setFlag(Zimbabwe)
+				break
+
+			default:
+				// Default case, you may handle it differently based on your requirements
+				break
+		

@@ -4,275 +4,274 @@ import { Box, Button, Card, Flex, HStack, Heading, Image, Input, Select, VStack,
 import sponsorBanner from "./SponsorBanner2.jpg"
 import backgroundBanner from "./bground2.jpg"
 
-import Ontario from "./flags/cad_on.png"
-import Alberta from "./flags/cad_ab.png"
-import BritishColumbia from "./flags/cad_bc.png"
-import Manitoba from "./flags/cad_mb.png"
-import NewBrunswick from "./flags/cad_nb.png"
-import NewfoundlandAndLabrador from "./flags/cad_nl.png"
-import NovaScotia from "./flags/cad_ns.png"
-import NorthwestTerritories from "./flags/cad_nt.png"
-import Nunavut from "./flags/cad_nu.png"
-import PrinceEdwardIsland from "./flags/cad_pe.png"
-import Quebec from "./flags/cad_qc.png"
-import Saskatchewan from "./flags/cad_sk.png"
-import Yukon from "./flags/cad_yt.png"
-
-import Afghanistan from "./flags/af.png"
-import AlandIslands from "./flags/ax.png"
-import Albania from "./flags/al.png"
-import Algeria from "./flags/dz.png"
-import AmericanSamoa from "./flags/as.png"
-import Andorra from "./flags/ad.png"
-import Angola from "./flags/ao.png"
-import Anguilla from "./flags/ai.png"
-import Antarctica from "./flags/aq.png"
-import AntiguaAndBarbuda from "./flags/ag.png"
-import Argentina from "./flags/ar.png"
-import Armenia from "./flags/am.png"
-import Aruba from "./flags/aw.png"
-import Australia from "./flags/au.png"
-import Austria from "./flags/at.png"
-import Azerbaijan from "./flags/az.png"
-import Bahamas from "./flags/bs.png"
-import Bahrain from "./flags/bh.png"
-import Bangladesh from "./flags/bd.png"
-import Barbados from "./flags/bb.png"
-import Belarus from "./flags/by.png"
-import Belgium from "./flags/be.png"
-import Belize from "./flags/bz.png"
-import Benin from "./flags/bj.png"
-import Bermuda from "./flags/bm.png"
-import Bhutan from "./flags/bt.png"
-import BoliviaPlurinationalStateOf from "./flags/bo.png"
-import BosniaAndHerzegovina from "./flags/ba.png"
-import Botswana from "./flags/bw.png"
-import BouvetIsland from "./flags/bv.png"
-import Brazil from "./flags/br.png"
-import BritishIndianOceanTerritory from "./flags/io.png"
-import BruneiDarussalam from "./flags/bn.png"
-import Bulgaria from "./flags/bg.png"
-import BurkinaFaso from "./flags/bf.png"
-import Burundi from "./flags/bi.png"
-import Cambodia from "./flags/kh.png"
-import Cameroon from "./flags/cm.png"
-import Canada from "./flags/ca.png"
-import CapeVerde from "./flags/cv.png"
-import CaribbeanNetherlands from "./flags/bq.png"
-import CaymanIslands from "./flags/ky.png"
-import CentralAfricanRepublic from "./flags/cf.png"
-import Chad from "./flags/td.png"
-import Chile from "./flags/cl.png"
-import ChinaPeoplesRepublicOfChina from "./flags/cn.png"
-import ChristmasIsland from "./flags/cx.png"
-import CocosKeelingIslands from "./flags/cc.png"
-import Colombia from "./flags/co.png"
-import Comoros from "./flags/km.png"
-import CongoTheDemocraticRepublicOfThe from "./flags/cd.png"
-import CookIslands from "./flags/ck.png"
-import CostaRica from "./flags/cr.png"
-import CoteDIvoire from "./flags/ci.png"
-import Croatia from "./flags/hr.png"
-import Cuba from "./flags/cu.png"
-import Curacao from "./flags/cw.png"
-import Cyprus from "./flags/cy.png"
-import CzechRepublic from "./flags/cz.png"
-import Denmark from "./flags/dk.png"
-import Djibouti from "./flags/dj.png"
-import Dominica from "./flags/dm.png"
-import DominicanRepublic from "./flags/do.png"
-import Ecuador from "./flags/ec.png"
-import Egypt from "./flags/eg.png"
-import ElSalvador from "./flags/sv.png"
-import England from "./flags/gb-eng.png"
-import EquatorialGuinea from "./flags/gq.png"
-import Eritrea from "./flags/er.png"
-import Estonia from "./flags/ee.png"
-import Ethiopia from "./flags/et.png"
-import Europe from "./flags/eu.png"
-import FalklandIslandsMalvinas from "./flags/fk.png"
-import FaroeIslands from "./flags/fo.png"
-import Fiji from "./flags/fj.png"
-import Finland from "./flags/fi.png"
-import France from "./flags/fr.png"
-import FrenchGuiana from "./flags/gf.png"
-import FrenchPolynesia from "./flags/pf.png"
-import FrenchSouthernTerritories from "./flags/tf.png"
-import Gabon from "./flags/ga.png"
-import Gambia from "./flags/gm.png"
-import Georgia from "./flags/ge.png"
-import Germany from "./flags/de.png"
-import Ghana from "./flags/gh.png"
-import Gibraltar from "./flags/gi.png"
-import Greece from "./flags/gr.png"
-import Greenland from "./flags/gl.png"
-import Grenada from "./flags/gd.png"
-import Guadeloupe from "./flags/gp.png"
-import Guam from "./flags/gu.png"
-import Guatemala from "./flags/gt.png"
-import Guernsey from "./flags/gg.png"
-import Guinea from "./flags/gn.png"
-import GuineaBissau from "./flags/gw.png"
-import Guyana from "./flags/gy.png"
-import Haiti from "./flags/ht.png"
-import HeardIslandAndMcDonaldIslands from "./flags/hm.png"
-import HolySeeVaticanCityState from "./flags/va.png"
-import Honduras from "./flags/hn.png"
-import HongKong from "./flags/hk.png"
-import Hungary from "./flags/hu.png"
-import Iceland from "./flags/is.png"
-import India from "./flags/in.png"
-import Indonesia from "./flags/id.png"
-import IranIslamicRepublicOf from "./flags/ir.png"
-import Iraq from "./flags/iq.png"
-import Ireland from "./flags/ie.png"
-import IsleOfMan from "./flags/im.png"
-import Israel from "./flags/il.png"
-import Italy from "./flags/it.png"
-import Jamaica from "./flags/jm.png"
-import Japan from "./flags/jp.png"
-import Jersey from "./flags/je.png"
-import Jordan from "./flags/jo.png"
-import Kazakhstan from "./flags/kz.png"
-import Kenya from "./flags/ke.png"
-import Kiribati from "./flags/ki.png"
-import KoreaDemocraticPeoplesRepublicOf from "./flags/kp.png"
-import KoreaRepublicOf from "./flags/kr.png"
-import Kosovo from "./flags/xk.png"
-import Kuwait from "./flags/kw.png"
-import Kyrgyzstan from "./flags/kg.png"
-import LaosLaoPeoplesDemocraticRepublic from "./flags/la.png"
-import Latvia from "./flags/lv.png"
-import Lebanon from "./flags/lb.png"
-import Lesotho from "./flags/ls.png"
-import Liberia from "./flags/lr.png"
-import Libya from "./flags/ly.png"
-import Liechtenstein from "./flags/li.png"
-import Lithuania from "./flags/lt.png"
-import Luxembourg from "./flags/lu.png"
-import Macao from "./flags/mo.png"
-import Madagascar from "./flags/mg.png"
-import Malawi from "./flags/mw.png"
-import Malaysia from "./flags/my.png"
-import Maldives from "./flags/mv.png"
-import Mali from "./flags/ml.png"
-import Malta from "./flags/mt.png"
-import MarshallIslands from "./flags/mh.png"
-import Martinique from "./flags/mq.png"
-import Mauritania from "./flags/mr.png"
-import Mauritius from "./flags/mu.png"
-import Mayotte from "./flags/yt.png"
-import Mexico from "./flags/mx.png"
-import MicronesiaFederatedStatesOf from "./flags/fm.png"
-import MoldovaRepublicOf from "./flags/md.png"
-import Monaco from "./flags/mc.png"
-import Mongolia from "./flags/mn.png"
-import Montenegro from "./flags/me.png"
-import Montserrat from "./flags/ms.png"
-import Morocco from "./flags/ma.png"
-import Mozambique from "./flags/mz.png"
-import Myanmar from "./flags/mm.png"
-import Namibia from "./flags/na.png"
-import Nauru from "./flags/nr.png"
-import Nepal from "./flags/np.png"
-import Netherlands from "./flags/nl.png"
-import NewCaledonia from "./flags/nc.png"
-import NewZealand from "./flags/nz.png"
-import Nicaragua from "./flags/ni.png"
-import Niger from "./flags/ne.png"
-import Nigeria from "./flags/ng.png"
-import Niue from "./flags/nu.png"
-import NorfolkIsland from "./flags/nf.png"
-import NorthMacedonia from "./flags/mk.png"
-import NorthernIreland from "./flags/gb-nir.png"
-import NorthernMarianaIslands from "./flags/mp.png"
-import Norway from "./flags/no.png"
-import Oman from "./flags/om.png"
-import Pakistan from "./flags/pk.png"
-import Palau from "./flags/pw.png"
-import Palestine from "./flags/ps.png"
-import Panama from "./flags/pa.png"
-import PapuaNewGuinea from "./flags/pg.png"
-import Paraguay from "./flags/py.png"
-import Peru from "./flags/pe.png"
-import Philippines from "./flags/ph.png"
-import Pitcairn from "./flags/pn.png"
-import Poland from "./flags/pl.png"
-import Portugal from "./flags/pt.png"
-import PuertoRico from "./flags/pr.png"
-import Qatar from "./flags/qa.png"
-import RepublicOfTheCongo from "./flags/cg.png"
-import Reunion from "./flags/re.png"
-import Romania from "./flags/ro.png"
-import RussianFederation from "./flags/ru.png"
-import Rwanda from "./flags/rw.png"
-import SaintBarthelemy from "./flags/bl.png"
-import SaintHelenaAscensionAndTristanDaCunha from "./flags/sh.png"
-import SaintKittsAndNevis from "./flags/kn.png"
-import SaintLucia from "./flags/lc.png"
-import SaintMartin from "./flags/mf.png"
-import SaintPierreAndMiquelon from "./flags/pm.png"
-import SaintVincentAndTheGrenadines from "./flags/vc.png"
-import Samoa from "./flags/ws.png"
-import SanMarino from "./flags/sm.png"
-import SaoTomeAndPrincipe from "./flags/st.png"
-import SaudiArabia from "./flags/sa.png"
-import Scotland from "./flags/gb-sct.png"
-import Senegal from "./flags/sn.png"
-import Serbia from "./flags/rs.png"
-import Seychelles from "./flags/sc.png"
-import SierraLeone from "./flags/sl.png"
-import Singapore from "./flags/sg.png"
-import SintMaartenDutchPart from "./flags/sx.png"
-import Slovakia from "./flags/sk.png"
-import Slovenia from "./flags/si.png"
-import SolomonIslands from "./flags/sb.png"
-import Somalia from "./flags/so.png"
-import SouthAfrica from "./flags/za.png"
-import SouthGeorgiaAndTheSouthSandwichIslands from "./flags/gs.png"
-import SouthSudan from "./flags/ss.png"
-import Spain from "./flags/es.png"
-import SriLanka from "./flags/lk.png"
-import Sudan from "./flags/sd.png"
-import Suriname from "./flags/sr.png"
-import SvalbardAndJanMayenIslands from "./flags/sj.png"
-import Swaziland from "./flags/sz.png"
-import Sweden from "./flags/se.png"
-import Switzerland from "./flags/ch.png"
-import SyrianArabRepublic from "./flags/sy.png"
-import TaiwanRepublicOfChina from "./flags/tw.png"
-import Tajikistan from "./flags/tj.png"
-import TanzaniaUnitedRepublicOf from "./flags/tz.png"
-import Thailand from "./flags/th.png"
-import TimorLeste from "./flags/tl.png"
-import Togo from "./flags/tg.png"
-import Tokelau from "./flags/tk.png"
-import Tonga from "./flags/to.png"
-import TrinidadAndTobago from "./flags/tt.png"
-import Tunisia from "./flags/tn.png"
-import Turkey from "./flags/tr.png"
-import Turkmenistan from "./flags/tm.png"
-import TurksAndCaicosIslands from "./flags/tc.png"
-import Tuvalu from "./flags/tv.png"
-import USMinorOutlyingIslands from "./flags/um.png"
-import Uganda from "./flags/ug.png"
-import Ukraine from "./flags/ua.png"
-import UnitedArabEmirates from "./flags/ae.png"
-import UnitedKingdom from "./flags/gb.png"
-import UnitedStates from "./flags/us.png"
-import Uruguay from "./flags/uy.png"
-import Uzbekistan from "./flags/uz.png"
-import Vanuatu from "./flags/vu.png"
-import VenezuelaBolivarianRepublicOf from "./flags/ve.png"
-import Vietnam from "./flags/vn.png"
-import VirginIslandsBritish from "./flags/vg.png"
-import VirginIslandsUS from "./flags/vi.png"
-import Wales from "./flags/gb-wls.png"
-import WallisAndFutunaIslands from "./flags/wf.png"
-import WesternSahara from "./flags/eh.png"
-import Yemen from "./flags/ye.png"
-import Zambia from "./flags/zm.png"
-import Zimbabwe from "./flags/zw.png"
+import Ontario from "./flags/flag/cad_on.png"
+import Alberta from "./flags/flag/cad_ab.png"
+import BritishColumbia from "./flags/flag/cad_bc.png"
+import Manitoba from "./flags/flag/cad_mb.png"
+import NewBrunswick from "./flags/flag/cad_nb.png"
+import NewfoundlandAndLabrador from "./flags/flag/cad_nl.png"
+import NovaScotia from "./flags/flag/cad_ns.png"
+import NorthwestTerritories from "./flags/flag/cad_nt.png"
+import Nunavut from "./flags/flag/cad_nu.png"
+import PrinceEdwardIsland from "./flags/flag/cad_pe.png"
+import Quebec from "./flags/flag/cad_qc.png"
+import Saskatchewan from "./flags/flag/cad_sk.png"
+import Yukon from "./flags/flag/cad_yt.png"
+import Afghanistan from "./flags/flag/af.png"
+import AlandIslands from "./flags/flag/ax.png"
+import Albania from "./flags/flag/al.png"
+import Algeria from "./flags/flag/dz.png"
+import AmericanSamoa from "./flags/flag/as.png"
+import Andorra from "./flags/flag/ad.png"
+import Angola from "./flags/flag/ao.png"
+import Anguilla from "./flags/flag/ai.png"
+import Antarctica from "./flags/flag/aq.png"
+import AntiguaAndBarbuda from "./flags/flag/ag.png"
+import Argentina from "./flags/flag/ar.png"
+import Armenia from "./flags/flag/am.png"
+import Aruba from "./flags/flag/aw.png"
+import Australia from "./flags/flag/au.png"
+import Austria from "./flags/flag/at.png"
+import Azerbaijan from "./flags/flag/az.png"
+import Bahamas from "./flags/flag/bs.png"
+import Bahrain from "./flags/flag/bh.png"
+import Bangladesh from "./flags/flag/bd.png"
+import Barbados from "./flags/flag/bb.png"
+import Belarus from "./flags/flag/by.png"
+import Belgium from "./flags/flag/be.png"
+import Belize from "./flags/flag/bz.png"
+import Benin from "./flags/flag/bj.png"
+import Bermuda from "./flags/flag/bm.png"
+import Bhutan from "./flags/flag/bt.png"
+import BoliviaPlurinationalStateOf from "./flags/flag/bo.png"
+import BosniaAndHerzegovina from "./flags/flag/ba.png"
+import Botswana from "./flags/flag/bw.png"
+import BouvetIsland from "./flags/flag/bv.png"
+import Brazil from "./flags/flag/br.png"
+import BritishIndianOceanTerritory from "./flags/flag/io.png"
+import BruneiDarussalam from "./flags/flag/bn.png"
+import Bulgaria from "./flags/flag/bg.png"
+import BurkinaFaso from "./flags/flag/bf.png"
+import Burundi from "./flags/flag/bi.png"
+import Cambodia from "./flags/flag/kh.png"
+import Cameroon from "./flags/flag/cm.png"
+import Canada from "./flags/flag/ca.png"
+import CapeVerde from "./flags/flag/cv.png"
+import CaribbeanNetherlands from "./flags/flag/bq.png"
+import CaymanIslands from "./flags/flag/ky.png"
+import CentralAfricanRepublic from "./flags/flag/cf.png"
+import Chad from "./flags/flag/td.png"
+import Chile from "./flags/flag/cl.png"
+import ChinaPeoplesRepublicOfChina from "./flags/flag/cn.png"
+import ChristmasIsland from "./flags/flag/cx.png"
+import CocosKeelingIslands from "./flags/flag/cc.png"
+import Colombia from "./flags/flag/co.png"
+import Comoros from "./flags/flag/km.png"
+import CongoTheDemocraticRepublicOfThe from "./flags/flag/cd.png"
+import CookIslands from "./flags/flag/ck.png"
+import CostaRica from "./flags/flag/cr.png"
+import CoteDIvoire from "./flags/flag/ci.png"
+import Croatia from "./flags/flag/hr.png"
+import Cuba from "./flags/flag/cu.png"
+import Curacao from "./flags/flag/cw.png"
+import Cyprus from "./flags/flag/cy.png"
+import CzechRepublic from "./flags/flag/cz.png"
+import Denmark from "./flags/flag/dk.png"
+import Djibouti from "./flags/flag/dj.png"
+import Dominica from "./flags/flag/dm.png"
+import DominicanRepublic from "./flags/flag/do.png"
+import Ecuador from "./flags/flag/ec.png"
+import Egypt from "./flags/flag/eg.png"
+import ElSalvador from "./flags/flag/sv.png"
+import England from "./flags/flag/gb-eng.png"
+import EquatorialGuinea from "./flags/flag/gq.png"
+import Eritrea from "./flags/flag/er.png"
+import Estonia from "./flags/flag/ee.png"
+import Ethiopia from "./flags/flag/et.png"
+import Europe from "./flags/flag/eu.png"
+import FalklandIslandsMalvinas from "./flags/flag/fk.png"
+import FaroeIslands from "./flags/flag/fo.png"
+import Fiji from "./flags/flag/fj.png"
+import Finland from "./flags/flag/fi.png"
+import France from "./flags/flag/fr.png"
+import FrenchGuiana from "./flags/flag/gf.png"
+import FrenchPolynesia from "./flags/flag/pf.png"
+import FrenchSouthernTerritories from "./flags/flag/tf.png"
+import Gabon from "./flags/flag/ga.png"
+import Gambia from "./flags/flag/gm.png"
+import Georgia from "./flags/flag/ge.png"
+import Germany from "./flags/flag/de.png"
+import Ghana from "./flags/flag/gh.png"
+import Gibraltar from "./flags/flag/gi.png"
+import Greece from "./flags/flag/gr.png"
+import Greenland from "./flags/flag/gl.png"
+import Grenada from "./flags/flag/gd.png"
+import Guadeloupe from "./flags/flag/gp.png"
+import Guam from "./flags/flag/gu.png"
+import Guatemala from "./flags/flag/gt.png"
+import Guernsey from "./flags/flag/gg.png"
+import Guinea from "./flags/flag/gn.png"
+import GuineaBissau from "./flags/flag/gw.png"
+import Guyana from "./flags/flag/gy.png"
+import Haiti from "./flags/flag/ht.png"
+import HeardIslandAndMcDonaldIslands from "./flags/flag/hm.png"
+import HolySeeVaticanCityState from "./flags/flag/va.png"
+import Honduras from "./flags/flag/hn.png"
+import HongKong from "./flags/flag/hk.png"
+import Hungary from "./flags/flag/hu.png"
+import Iceland from "./flags/flag/is.png"
+import India from "./flags/flag/in.png"
+import Indonesia from "./flags/flag/id.png"
+import IranIslamicRepublicOf from "./flags/flag/ir.png"
+import Iraq from "./flags/flag/iq.png"
+import Ireland from "./flags/flag/ie.png"
+import IsleOfMan from "./flags/flag/im.png"
+import Israel from "./flags/flag/il.png"
+import Italy from "./flags/flag/it.png"
+import Jamaica from "./flags/flag/jm.png"
+import Japan from "./flags/flag/jp.png"
+import Jersey from "./flags/flag/je.png"
+import Jordan from "./flags/flag/jo.png"
+import Kazakhstan from "./flags/flag/kz.png"
+import Kenya from "./flags/flag/ke.png"
+import Kiribati from "./flags/flag/ki.png"
+import KoreaDemocraticPeoplesRepublicOf from "./flags/flag/kp.png"
+import KoreaRepublicOf from "./flags/flag/kr.png"
+import Kosovo from "./flags/flag/xk.png"
+import Kuwait from "./flags/flag/kw.png"
+import Kyrgyzstan from "./flags/flag/kg.png"
+import LaosLaoPeoplesDemocraticRepublic from "./flags/flag/la.png"
+import Latvia from "./flags/flag/lv.png"
+import Lebanon from "./flags/flag/lb.png"
+import Lesotho from "./flags/flag/ls.png"
+import Liberia from "./flags/flag/lr.png"
+import Libya from "./flags/flag/ly.png"
+import Liechtenstein from "./flags/flag/li.png"
+import Lithuania from "./flags/flag/lt.png"
+import Luxembourg from "./flags/flag/lu.png"
+import Macao from "./flags/flag/mo.png"
+import Madagascar from "./flags/flag/mg.png"
+import Malawi from "./flags/flag/mw.png"
+import Malaysia from "./flags/flag/my.png"
+import Maldives from "./flags/flag/mv.png"
+import Mali from "./flags/flag/ml.png"
+import Malta from "./flags/flag/mt.png"
+import MarshallIslands from "./flags/flag/mh.png"
+import Martinique from "./flags/flag/mq.png"
+import Mauritania from "./flags/flag/mr.png"
+import Mauritius from "./flags/flag/mu.png"
+import Mayotte from "./flags/flag/yt.png"
+import Mexico from "./flags/flag/mx.png"
+import MicronesiaFederatedStatesOf from "./flags/flag/fm.png"
+import MoldovaRepublicOf from "./flags/flag/md.png"
+import Monaco from "./flags/flag/mc.png"
+import Mongolia from "./flags/flag/mn.png"
+import Montenegro from "./flags/flag/me.png"
+import Montserrat from "./flags/flag/ms.png"
+import Morocco from "./flags/flag/ma.png"
+import Mozambique from "./flags/flag/mz.png"
+import Myanmar from "./flags/flag/mm.png"
+import Namibia from "./flags/flag/na.png"
+import Nauru from "./flags/flag/nr.png"
+import Nepal from "./flags/flag/np.png"
+import Netherlands from "./flags/flag/nl.png"
+import NewCaledonia from "./flags/flag/nc.png"
+import NewZealand from "./flags/flag/nz.png"
+import Nicaragua from "./flags/flag/ni.png"
+import Niger from "./flags/flag/ne.png"
+import Nigeria from "./flags/flag/ng.png"
+import Niue from "./flags/flag/nu.png"
+import NorfolkIsland from "./flags/flag/nf.png"
+import NorthMacedonia from "./flags/flag/mk.png"
+import NorthernIreland from "./flags/flag/gb-nir.png"
+import NorthernMarianaIslands from "./flags/flag/mp.png"
+import Norway from "./flags/flag/no.png"
+import Oman from "./flags/flag/om.png"
+import Pakistan from "./flags/flag/pk.png"
+import Palau from "./flags/flag/pw.png"
+import Palestine from "./flags/flag/ps.png"
+import Panama from "./flags/flag/pa.png"
+import PapuaNewGuinea from "./flags/flag/pg.png"
+import Paraguay from "./flags/flag/py.png"
+import Peru from "./flags/flag/pe.png"
+import Philippines from "./flags/flag/ph.png"
+import Pitcairn from "./flags/flag/pn.png"
+import Poland from "./flags/flag/pl.png"
+import Portugal from "./flags/flag/pt.png"
+import PuertoRico from "./flags/flag/pr.png"
+import Qatar from "./flags/flag/qa.png"
+import RepublicOfTheCongo from "./flags/flag/cg.png"
+import Reunion from "./flags/flag/re.png"
+import Romania from "./flags/flag/ro.png"
+import RussianFederation from "./flags/flag/ru.png"
+import Rwanda from "./flags/flag/rw.png"
+import SaintBarthelemy from "./flags/flag/bl.png"
+import SaintHelenaAscensionAndTristanDaCunha from "./flags/flag/sh.png"
+import SaintKittsAndNevis from "./flags/flag/kn.png"
+import SaintLucia from "./flags/flag/lc.png"
+import SaintMartin from "./flags/flag/mf.png"
+import SaintPierreAndMiquelon from "./flags/flag/pm.png"
+import SaintVincentAndTheGrenadines from "./flags/flag/vc.png"
+import Samoa from "./flags/flag/ws.png"
+import SanMarino from "./flags/flag/sm.png"
+import SaoTomeAndPrincipe from "./flags/flag/st.png"
+import SaudiArabia from "./flags/flag/sa.png"
+import Scotland from "./flags/flag/gb-sct.png"
+import Senegal from "./flags/flag/sn.png"
+import Serbia from "./flags/flag/rs.png"
+import Seychelles from "./flags/flag/sc.png"
+import SierraLeone from "./flags/flag/sl.png"
+import Singapore from "./flags/flag/sg.png"
+import SintMaartenDutchPart from "./flags/flag/sx.png"
+import Slovakia from "./flags/flag/sk.png"
+import Slovenia from "./flags/flag/si.png"
+import SolomonIslands from "./flags/flag/sb.png"
+import Somalia from "./flags/flag/so.png"
+import SouthAfrica from "./flags/flag/za.png"
+import SouthGeorgiaAndTheSouthSandwichIslands from "./flags/flag/gs.png"
+import SouthSudan from "./flags/flag/ss.png"
+import Spain from "./flags/flag/es.png"
+import SriLanka from "./flags/flag/lk.png"
+import Sudan from "./flags/flag/sd.png"
+import Suriname from "./flags/flag/sr.png"
+import SvalbardAndJanMayenIslands from "./flags/flag/sj.png"
+import Swaziland from "./flags/flag/sz.png"
+import Sweden from "./flags/flag/se.png"
+import Switzerland from "./flags/flag/ch.png"
+import SyrianArabRepublic from "./flags/flag/sy.png"
+import TaiwanRepublicOfChina from "./flags/flag/tw.png"
+import Tajikistan from "./flags/flag/tj.png"
+import TanzaniaUnitedRepublicOf from "./flags/flag/tz.png"
+import Thailand from "./flags/flag/th.png"
+import TimorLeste from "./flags/flag/tl.png"
+import Togo from "./flags/flag/tg.png"
+import Tokelau from "./flags/flag/tk.png"
+import Tonga from "./flags/flag/to.png"
+import TrinidadAndTobago from "./flags/flag/tt.png"
+import Tunisia from "./flags/flag/tn.png"
+import Turkey from "./flags/flag/tr.png"
+import Turkmenistan from "./flags/flag/tm.png"
+import TurksAndCaicosIslands from "./flags/flag/tc.png"
+import Tuvalu from "./flags/flag/tv.png"
+import USMinorOutlyingIslands from "./flags/flag/um.png"
+import Uganda from "./flags/flag/ug.png"
+import Ukraine from "./flags/flag/ua.png"
+import UnitedArabEmirates from "./flags/flag/ae.png"
+import UnitedKingdom from "./flags/flag/gb.png"
+import UnitedStates from "./flags/flag/us.png"
+import Uruguay from "./flags/flag/uy.png"
+import Uzbekistan from "./flags/flag/uz.png"
+import Vanuatu from "./flags/flag/vu.png"
+import VenezuelaBolivarianRepublicOf from "./flags/flag/ve.png"
+import Vietnam from "./flags/flag/vn.png"
+import VirginIslandsBritish from "./flags/flag/vg.png"
+import VirginIslandsUS from "./flags/flag/vi.png"
+import Wales from "./flags/flag/gb-wls.png"
+import WallisAndFutunaIslands from "./flags/flag/wf.png"
+import WesternSahara from "./flags/flag/eh.png"
+import Yemen from "./flags/flag/ye.png"
+import Zambia from "./flags/flag/zm.png"
+import Zimbabwe from "./flags/flag/zw.png"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
@@ -329,12 +328,10 @@ export default function GraphicCard() {
 	}
 
 	useEffect(() => {
-		localStorage.setItem("formData", JSON.stringify(formData))
-	}, [formData])
+		localStorage.setItem("formData", JSON.stringify(formData));
+		setIsComponentReady(true);
+	  }, [formData]);
 
-	useEffect(() => {
-		setIsComponentReady(true)
-	}, [])
 
 	const divRef = useRef(null)
 
@@ -395,309 +392,556 @@ export default function GraphicCard() {
 		const selectedFlag = event.target.value
 
 		// Set the state to the corresponding flag image
-		switch (selectedFlag) {
-            // Province
-			case "Ontario":
-				setFlag(Ontario)
-				break
-			case "Alberta":
-				setFlag(Alberta)
-				break
-			case "BritishColumbia":
-				setFlag(BritishColumbia)
-				break
-                case "Manitoba":
-				setFlag(Manitoba)
-				break
-			case "NewBrunswick":
-				setFlag(NewBrunswick)
-				break
-			case "NewfoundlandAndLabrador":
-				setFlag(NewfoundlandAndLabrador)
-				break
-                case "NovaScotia":
-				setFlag(NovaScotia)
-				break
-			case "NorthwestTerritories":
-				setFlag(NorthwestTerritories)
-				break
-			case "PrinceEdwardIsland":
-				setFlag(PrinceEdwardIsland)
-				break
-			case "Quebec":
-				setFlag(Quebec)
-				break
-			case "Nunavut":
-				setFlag(Nunavut)
-				break
-                case "Saskatchewan":
-				setFlag(Saskatchewan)
-				break
-			case "Yukon":
-				setFlag(Yukon)
-				break
-// World
-                case "Afghanistan": setFlag(Afghanistan); break;
-                case "AlandIslands": setFlag(AlandIslands); break;
-                case "Albania": setFlag(Albania); break;
-                case "Algeria": setFlag(Algeria); break;
-                case "AmericanSamoa": setFlag(AmericanSamoa); break;
-                case "Andorra": setFlag(Andorra); break;
-                case "Angola": setFlag(Angola); break;
-                case "Anguilla": setFlag(Anguilla); break;
-                case "Antarctica": setFlag(Antarctica); break;
-                case "AntiguaAndBarbuda": setFlag(AntiguaAndBarbuda); break;
-                case "Argentina": setFlag(Argentina); break;
-                case "Armenia": setFlag(Armenia); break;
-                case "Aruba": setFlag(Aruba); break;
-                case "Australia": setFlag(Australia); break;
-                case "Austria": setFlag(Austria); break;
-                case "Azerbaijan": setFlag(Azerbaijan); break;
-                case "Bahamas": setFlag(Bahamas); break;
-                case "Bahrain": setFlag(Bahrain); break;
-                case "Bangladesh": setFlag(Bangladesh); break;
-                case "Barbados": setFlag(Barbados); break;
-                case "Belarus": setFlag(Belarus); break;
-                case "Belgium": setFlag(Belgium); break;
-                case "Belize": setFlag(Belize); break;
-                case "Benin": setFlag(Benin); break;
-                case "Bermuda": setFlag(Bermuda); break;
-                case "Bhutan": setFlag(Bhutan); break;
-                case "BoliviaPlurinationalStateOf": setFlag(BoliviaPlurinationalStateOf); break;
-                case "BosniaAndHerzegovina": setFlag(BosniaAndHerzegovina); break;
-                case "Botswana": setFlag(Botswana); break;
-                case "BouvetIsland": setFlag(BouvetIsland); break;
-                case "Brazil": setFlag(Brazil); break;
-                case "BritishIndianOceanTerritory": setFlag(BritishIndianOceanTerritory); break;
-                case "BruneiDarussalam": setFlag(BruneiDarussalam); break;
-                case "Bulgaria": setFlag(Bulgaria); break;
-                case "BurkinaFaso": setFlag(BurkinaFaso); break;
-                case "Burundi": setFlag(Burundi); break;
-                case "Cambodia": setFlag(Cambodia); break;
-                case "Cameroon": setFlag(Cameroon); break;
-                case "Canada": setFlag(Canada); break;
-                case "CapeVerde": setFlag(CapeVerde); break;
-                case "CaribbeanNetherlands": setFlag(CaribbeanNetherlands); break;
-                case "CaymanIslands": setFlag(CaymanIslands); break;
-                case "CentralAfricanRepublic": setFlag(CentralAfricanRepublic); break;
-                case "Chad": setFlag(Chad); break;
-                case "Chile": setFlag(Chile); break;
-                case "ChinaPeoplesRepublicOfChina": setFlag(ChinaPeoplesRepublicOfChina); break;
-                case "ChristmasIsland": setFlag(ChristmasIsland); break;
-                case "CocosKeelingIslands": setFlag(CocosKeelingIslands); break;
-                case "Colombia": setFlag(Colombia); break;
-                case "Comoros": setFlag(Comoros); break;
-                case "CongoTheDemocraticRepublicOfThe": setFlag(CongoTheDemocraticRepublicOfThe); break;
-                case "CookIslands": setFlag(CookIslands); break;
-                case "CostaRica": setFlag(CostaRica); break;
-                case "CoteDIvoire": setFlag(CoteDIvoire); break;
-                case "Croatia": setFlag(Croatia); break;
-                case "Cuba": setFlag(Cuba); break;
-                case "Curacao": setFlag(Curacao); break;
-                case "Cyprus": setFlag(Cyprus); break;
-                case "CzechRepublic": setFlag(CzechRepublic); break;
-                case "Denmark": setFlag(Denmark); break;
-                case "Djibouti": setFlag(Djibouti); break;
-                case "Dominica": setFlag(Dominica); break;
-                case "DominicanRepublic": setFlag(DominicanRepublic); break;
-                case "Ecuador": setFlag(Ecuador); break;
-                case "Egypt": setFlag(Egypt); break;
-                case "ElSalvador": setFlag(ElSalvador); break;
-                case "England": setFlag(England); break;
-                case "EquatorialGuinea": setFlag(EquatorialGuinea); break;
-                case "Eritrea": setFlag(Eritrea); break;
-                case "Estonia": setFlag(Estonia); break;
-                case "Ethiopia": setFlag(Ethiopia); break;
-                case "Europe": setFlag(Europe); break;
-                case "FalklandIslandsMalvinas": setFlag(FalklandIslandsMalvinas); break;
-                case "FaroeIslands": setFlag(FaroeIslands); break;
-                case "Fiji": setFlag(Fiji); break;
-                case "Finland": setFlag(Finland); break;
-                case "France": setFlag(France); break;
-                case "FrenchGuiana": setFlag(FrenchGuiana); break;
-                case "FrenchPolynesia": setFlag(FrenchPolynesia); break;
-                case "FrenchSouthernTerritories": setFlag(FrenchSouthernTerritories); break;
-                case "Gabon": setFlag(Gabon); break;
-                case "Gambia": setFlag(Gambia); break;
-                case "Georgia": setFlag(Georgia); break;
-                case "Germany": setFlag(Germany); break;
-                case "Ghana": setFlag(Ghana); break;
-                case "Gibraltar": setFlag(Gibraltar); break;
-                case "Greece": setFlag(Greece); break;
-                case "Greenland": setFlag(Greenland); break;
-                case "Grenada": setFlag(Grenada); break;
-                case "Guadeloupe": setFlag(Guadeloupe); break;
-                case "Guam": setFlag(Guam); break;
-                case "Guatemala": setFlag(Guatemala); break;
-                case "Guernsey": setFlag(Guernsey); break;
-                case "Guinea": setFlag(Guinea); break;
-                case "GuineaBissau": setFlag(GuineaBissau); break;
-                case "Guyana": setFlag(Guyana); break;
-                case "Haiti": setFlag(Haiti); break;
-                case "HeardIslandAndMcDonaldIslands": setFlag(HeardIslandAndMcDonaldIslands); break;
-                case "HolySeeVaticanCityState": setFlag(HolySeeVaticanCityState); break;
-                case "Honduras": setFlag(Honduras); break;
-                case "HongKong": setFlag(HongKong); break;
-                case "Hungary": setFlag(Hungary); break;
-                case "Iceland": setFlag(Iceland); break;
-                case "India": setFlag(India); break;
-                case "Indonesia": setFlag(Indonesia); break;
-                case "IranIslamicRepublicOf": setFlag(IranIslamicRepublicOf); break;
-                case "Iraq": setFlag(Iraq); break;
-                case "Ireland": setFlag(Ireland); break;
-                case "IsleOfMan": setFlag(IsleOfMan); break;
-                case "Israel": setFlag(Israel); break;
-                case "Italy": setFlag(Italy); break;
-                case "Jamaica": setFlag(Jamaica); break;
-                case "Japan": setFlag(Japan); break;
-                case "Jersey": setFlag(Jersey); break;
-                case "Jordan": setFlag(Jordan); break;
-                case "Kazakhstan": setFlag(Kazakhstan); break;
-                case "Kenya": setFlag(Kenya); break;
-                case "Kiribati": setFlag(Kiribati); break;
-                case "KoreaDemocraticPeoplesRepublicOf": setFlag(KoreaDemocraticPeoplesRepublicOf); break;
-                case "KoreaRepublicOf": setFlag(KoreaRepublicOf); break;
-                case "Kosovo": setFlag(Kosovo); break;
-                case "Kuwait": setFlag(Kuwait); break;
-                case "Kyrgyzstan": setFlag(Kyrgyzstan); break;
-                case "LaosLaoPeoplesDemocraticRepublic": setFlag(LaosLaoPeoplesDemocraticRepublic); break;
-                case "Latvia": setFlag(Latvia); break;
-                case "Lebanon": setFlag(Lebanon); break;
-                case "Lesotho": setFlag(Lesotho); break;
-                case "Liberia": setFlag(Liberia); break;
-                case "Libya": setFlag(Libya); break;
-                case "Liechtenstein": setFlag(Liechtenstein); break;
-                case "Lithuania": setFlag(Lithuania); break;
-                case "Luxembourg": setFlag(Luxembourg); break;
-                case "Macao": setFlag(Macao); break;
-                case "Madagascar": setFlag(Madagascar); break;
-                case "Malawi": setFlag(Malawi); break;
-                case "Malaysia": setFlag(Malaysia); break;
-                case "Maldives": setFlag(Maldives); break;
-                case "Mali": setFlag(Mali); break;
-                case "Malta": setFlag(Malta); break;
-                case "MarshallIslands": setFlag(MarshallIslands); break;
-                case "Martinique": setFlag(Martinique); break;
-                case "Mauritania": setFlag(Mauritania); break;
-                case "Mauritius": setFlag(Mauritius); break;
-                case "Mayotte": setFlag(Mayotte); break;
-                case "Mexico": setFlag(Mexico); break;
-                case "MicronesiaFederatedStatesOf": setFlag(MicronesiaFederatedStatesOf); break;
-                case "MoldovaRepublicOf": setFlag(MoldovaRepublicOf); break;
-                case "Monaco": setFlag(Monaco); break;
-                case "Mongolia": setFlag(Mongolia); break;
-                case "Montenegro": setFlag(Montenegro); break;
-                case "Montserrat": setFlag(Montserrat); break;
-                case "Morocco": setFlag(Morocco); break;
-                case "Mozambique": setFlag(Mozambique); break;
-                case "Myanmar": setFlag(Myanmar); break;
-                case "Namibia": setFlag(Namibia); break;
-                case "Nauru": setFlag(Nauru); break;
-                case "Nepal": setFlag(Nepal); break;
-                case "Netherlands": setFlag(Netherlands); break;
-                case "NewCaledonia": setFlag(NewCaledonia); break;
-                case "NewZealand": setFlag(NewZealand); break;
-                case "Nicaragua": setFlag(Nicaragua); break;
-                case "Niger": setFlag(Niger); break;
-                case "Nigeria": setFlag(Nigeria); break;
-                case "Niue": setFlag(Niue); break;
-                case "NorfolkIsland": setFlag(NorfolkIsland); break;
-                case "NorthMacedonia": setFlag(NorthMacedonia); break;
-                case "NorthernIreland": setFlag(NorthernIreland); break;
-                case "NorthernMarianaIslands": setFlag(NorthernMarianaIslands); break;
-                case "Norway": setFlag(Norway); break;
-                case "Oman": setFlag(Oman); break;
-                case "Pakistan": setFlag(Pakistan); break;
-                case "Palau": setFlag(Palau); break;
-                case "Palestine": setFlag(Palestine); break;
-                case "Panama": setFlag(Panama); break;
-                case "PapuaNewGuinea": setFlag(PapuaNewGuinea); break;
-                case "Paraguay": setFlag(Paraguay); break;
-                case "Peru": setFlag(Peru); break;
-                case "Philippines": setFlag(Philippines); break;
-                case "Pitcairn": setFlag(Pitcairn); break;
-                case "Poland": setFlag(Poland); break;
-                case "Portugal": setFlag(Portugal); break;
-                case "PuertoRico": setFlag(PuertoRico); break;
-                case "Qatar": setFlag(Qatar); break;
-                case "RepublicOfTheCongo": setFlag(RepublicOfTheCongo); break;
-                case "Reunion": setFlag(Reunion); break;
-                case "Romania": setFlag(Romania); break;
-                case "RussianFederation": setFlag(RussianFederation); break;
-                case "Rwanda": setFlag(Rwanda); break;
-                case "SaintBarthelemy": setFlag(SaintBarthelemy); break;
-                case "SaintHelenaAscensionAndTristanDaCunha": setFlag(SaintHelenaAscensionAndTristanDaCunha); break;
-                case "SaintKittsAndNevis": setFlag(SaintKittsAndNevis); break;
-                case "SaintLucia": setFlag(SaintLucia); break;
-                case "SaintMartin": setFlag(SaintMartin); break;
-                case "SaintPierreAndMiquelon": setFlag(SaintPierreAndMiquelon); break;
-                case "SaintVincentAndTheGrenadines": setFlag(SaintVincentAndTheGrenadines); break;
-                case "Samoa": setFlag(Samoa); break;
-                case "SanMarino": setFlag(SanMarino); break;
-                case "SaoTomeAndPrincipe": setFlag(SaoTomeAndPrincipe); break;
-                case "SaudiArabia": setFlag(SaudiArabia); break;
-                case "Scotland": setFlag(Scotland); break;
-                case "Senegal": setFlag(Senegal); break;
-                case "Serbia": setFlag(Serbia); break;
-                case "Seychelles": setFlag(Seychelles); break;
-                case "SierraLeone": setFlag(SierraLeone); break;
-                case "Singapore": setFlag(Singapore); break;
-                case "SintMaartenDutchPart": setFlag(SintMaartenDutchPart); break;
-                case "Slovakia": setFlag(Slovakia); break;
-                case "Slovenia": setFlag(Slovenia); break;
-                case "SolomonIslands": setFlag(SolomonIslands); break;
-                case "Somalia": setFlag(Somalia); break;
-                case "SouthAfrica": setFlag(SouthAfrica); break;
-                case "SouthGeorgiaAndTheSouthSandwichIslands": setFlag(SouthGeorgiaAndTheSouthSandwichIslands); break;
-                case "SouthSudan": setFlag(SouthSudan); break;
-                case "Spain": setFlag(Spain); break;
-                case "SriLanka": setFlag(SriLanka); break;
-                case "Sudan": setFlag(Sudan); break;
-                case "Suriname": setFlag(Suriname); break;
-                case "SvalbardAndJanMayenIslands": setFlag(SvalbardAndJanMayenIslands); break;
-                case "Swaziland": setFlag(Swaziland); break;
-                case "Sweden": setFlag(Sweden); break;
-                case "Switzerland": setFlag(Switzerland); break;
-                case "SyrianArabRepublic": setFlag(SyrianArabRepublic); break;
-                case "TaiwanRepublicOfChina": setFlag(TaiwanRepublicOfChina); break;
-                case "Tajikistan": setFlag(Tajikistan); break;
-                case "TanzaniaUnitedRepublicOf": setFlag(TanzaniaUnitedRepublicOf); break;
-                case "Thailand": setFlag(Thailand); break;
-                case "TimorLeste": setFlag(TimorLeste); break;
-                case "Togo": setFlag(Togo); break;
-                case "Tokelau": setFlag(Tokelau); break;
-                case "Tonga": setFlag(Tonga); break;
-                case "TrinidadAndTobago": setFlag(TrinidadAndTobago); break;
-                case "Tunisia": setFlag(Tunisia); break;
-                case "Turkey": setFlag(Turkey); break;
-                case "Turkmenistan": setFlag(Turkmenistan); break;
-                case "TurksAndCaicosIslands": setFlag(TurksAndCaicosIslands); break;
-                case "Tuvalu": setFlag(Tuvalu); break;
-                case "USMinorOutlyingIslands": setFlag(USMinorOutlyingIslands); break;
-                case "Uganda": setFlag(Uganda); break;
-                case "Ukraine": setFlag(Ukraine); break;
-                case "UnitedArabEmirates": setFlag(UnitedArabEmirates); break;
-                case "UnitedKingdom": setFlag(UnitedKingdom); break;
-                case "UnitedStates": setFlag(UnitedStates); break;
-                case "Uruguay": setFlag(Uruguay); break;
-                case "Uzbekistan": setFlag(Uzbekistan); break;
-                case "Vanuatu": setFlag(Vanuatu); break;
-                case "VenezuelaBolivarianRepublicOf": setFlag(VenezuelaBolivarianRepublicOf); break;
-                case "Vietnam": setFlag(Vietnam); break;
-                case "VirginIslandsBritish": setFlag(VirginIslandsBritish); break;
-                case "VirginIslandsUS": setFlag(VirginIslandsUS); break;
-                case "Wales": setFlag(Wales); break;
-                case "WallisAndFutunaIslands": setFlag(WallisAndFutunaIslands); break;
-                case "WesternSahara": setFlag(WesternSahara); break;
-                case "Yemen": setFlag(Yemen); break;
-                case "Zambia": setFlag(Zambia); break;
-                case "Zimbabwe": setFlag(Zimbabwe); break;
-
-			default:
-				// Default case, you may handle it differently based on your requirements
-				break
+		const countryFlagMap = {
+			// Province flags
+			Ontario: Ontario,
+			Alberta: Alberta,
+			BritishColumbia: BritishColumbia,
+			Manitoba: Manitoba,
+			NewBrunswick: NewBrunswick,
+			NewfoundlandAndLabrador: NewfoundlandAndLabrador,
+			NovaScotia: NovaScotia,
+			NorthwestTerritories: NorthwestTerritories,
+			PrinceEdwardIsland: PrinceEdwardIsland,
+			Quebec: Quebec,
+			Nunavut: Nunavut,
+			Saskatchewan: Saskatchewan,
+			Yukon: Yukon,
+			// World flags
+			Afghanistan: Afghanistan,
+			AlandIslands: AlandIslands,
+			Albania: Albania,
+			Algeria: Algeria,
+			AmericanSamoa: AmericanSamoa,
+			Andorra: Andorra,
+			Angola: Angola,
+			Anguilla: Anguilla,
+			Antarctica: Antarctica,
+			AntiguaAndBarbuda: AntiguaAndBarbuda,
+			Argentina: Argentina,
+			Armenia: Armenia,
+			Aruba: Aruba,
+			Australia: Australia,
+			Austria: Austria,
+			Azerbaijan: Azerbaijan,
+			Bahamas: Bahamas,
+			Bahrain: Bahrain,
+			Bangladesh: Bangladesh,
+			Barbados: Barbados,
+			Belarus: Belarus,
+			Belgium: Belgium,
+			Belize: Belize,
+			Benin: Benin,
+			Bermuda: Bermuda,
+			Bhutan: Bhutan,
+			BoliviaPlurinationalStateOf: BoliviaPlurinationalStateOf,
+			BosniaAndHerzegovina: BosniaAndHerzegovina,
+			Botswana: Botswana,
+			BouvetIsland: BouvetIsland,
+			Brazil: Brazil,
+			BritishIndianOceanTerritory: BritishIndianOceanTerritory,
+			BruneiDarussalam: BruneiDarussalam,
+			Bulgaria: Bulgaria,
+			BurkinaFaso: BurkinaFaso,
+			Burundi: Burundi,
+			Cambodia: Cambodia,
+			Cameroon: Cameroon,
+			Canada: Canada,
+			CapeVerde: CapeVerde,
+			CaribbeanNetherlands: CaribbeanNetherlands,
+			CaymanIslands: CaymanIslands,
+			CentralAfricanRepublic: CentralAfricanRepublic,
+			Chad: Chad,
+			Chile: Chile,
+			ChinaPeoplesRepublicOfChina: ChinaPeoplesRepublicOfChina,
+			ChristmasIsland: ChristmasIsland,
+			CocosKeelingIslands: CocosKeelingIslands,
+			Colombia: Colombia,
+			Comoros: Comoros,
+			CongoTheDemocraticRepublicOfThe: CongoTheDemocraticRepublicOfThe,
+			CookIslands: CookIslands,
+			CostaRica: CostaRica,
+			CoteDIvoire: CoteDIvoire,
+			Croatia: Croatia,
+			Cuba: Cuba,
+			Curacao: Curacao,
+			Cyprus: Cyprus,
+			CzechRepublic: CzechRepublic,
+			Denmark: Denmark,
+			Djibouti: Djibouti,
+			Dominica: Dominica,
+			DominicanRepublic: DominicanRepublic,
+			Ecuador: Ecuador,
+			Egypt: Egypt,
+			ElSalvador: ElSalvador,
+			England: England,
+			EquatorialGuinea: EquatorialGuinea,
+			Eritrea: Eritrea,
+			Estonia: Estonia,
+			Ethiopia: Ethiopia,
+			Europe: Europe,
+			FalklandIslandsMalvinas: FalklandIslandsMalvinas,
+			FaroeIslands: FaroeIslands,
+			Fiji: Fiji,
+			Finland: Finland,
+			France: France,
+			FrenchGuiana: FrenchGuiana,
+			FrenchPolynesia: FrenchPolynesia,
+			FrenchSouthernTerritories: FrenchSouthernTerritories,
+			Gabon: Gabon,
+			Gambia: Gambia,
+			Georgia: Georgia,
+			Germany: Germany,
+			Ghana: Ghana,
+			Gibraltar: Gibraltar,
+			Greece: Greece,
+			Greenland: Greenland,
+			Grenada: Grenada,
+			Guadeloupe: Guadeloupe,
+			Guam: Guam,
+			Guatemala: Guatemala,
+			Guernsey: Guernsey,
+			Guinea: Guinea,
+			GuineaBissau: GuineaBissau,
+			Guyana: Guyana,
+			Haiti: Haiti,
+			HeardIslandAndMcDonaldIslands: HeardIslandAndMcDonaldIslands,
+			HolySeeVaticanCityState: HolySeeVaticanCityState,
+			Honduras: Honduras,
+			HongKong: HongKong,
+			Hungary: Hungary,
+			Iceland: Iceland,
+			India: India,
+			Indonesia: Indonesia,
+			IranIslamicRepublicOf: IranIslamicRepublicOf,
+			Iraq: Iraq,
+			Ireland: Ireland,
+			IsleOfMan: IsleOfMan,
+			Israel: Israel,
+			Italy: Italy,
+			Jamaica: Jamaica,
+			Japan: Japan,
+			Jersey: Jersey,
+			Jordan: Jordan,
+			Kazakhstan: Kazakhstan,
+			Kenya: Kenya,
+			Kiribati: Kiribati,
+			KoreaDemocraticPeoplesRepublicOf: KoreaDemocraticPeoplesRepublicOf,
+			KoreaRepublicOf: KoreaRepublicOf,
+			Kosovo: Kosovo,
+			Kuwait: Kuwait,
+			Kyrgyzstan: Kyrgyzstan,
+			LaosLaoPeoplesDemocraticRepublic: LaosLaoPeoplesDemocraticRepublic,
+			Latvia: Latvia,
+			Lebanon: Lebanon,
+			Lesotho: Lesotho,
+			Liberia: Liberia,
+			Libya: Libya,
+			Liechtenstein: Liechtenstein,
+			Lithuania: Lithuania,
+			Luxembourg: Luxembourg,
+			Macao: Macao,
+			Madagascar: Madagascar,
+			Malawi: Malawi,
+			Malaysia: Malaysia,
+			Maldives: Maldives,
+			Mali: Mali,
+			Malta: Malta,
+			MarshallIslands: MarshallIslands,
+			Martinique: Martinique,
+			Mauritania: Mauritania,
+			Mauritius: Mauritius,
+			Mayotte: Mayotte,
+			Mexico: Mexico,
+			MicronesiaFederatedStatesOf: MicronesiaFederatedStatesOf,
+			MoldovaRepublicOf: MoldovaRepublicOf,
+			Monaco: Monaco,
+			Mongolia: Mongolia,
+			Montenegro: Montenegro,
+			Montserrat: Montserrat,
+			Morocco: Morocco,
+			Mozambique: Mozambique,
+			Myanmar: Myanmar,
+			Namibia: Namibia,
+			Nauru: Nauru,
+			Nepal: Nepal,
+			Netherlands: Netherlands,
+			NewCaledonia: NewCaledonia,
+			NewZealand: NewZealand,
+			Nicaragua: Nicaragua,
+			Niger: Niger,
+			Nigeria: Nigeria,
+			Niue: Niue,
+			NorfolkIsland: NorfolkIsland,
+			NorthMacedonia: NorthMacedonia,
+			NorthernIreland: NorthernIreland,
+			NorthernMarianaIslands: NorthernMarianaIslands,
+			Norway: Norway,
+			Oman: Oman,
+			Pakistan: Pakistan,
+			Palau: Palau,
+			Palestine: Palestine,
+			Panama: Panama,
+			PapuaNewGuinea: PapuaNewGuinea,
+			Paraguay: Paraguay,
+			Peru: Peru,
+			Philippines: Philippines,
+			Pitcairn: Pitcairn,
+			Poland: Poland,
+			Portugal: Portugal,
+			PuertoRico: PuertoRico,
+			Qatar: Qatar,
+			RepublicOfTheCongo: RepublicOfTheCongo,
+			Reunion: Reunion,
+			Romania: Romania,
+			RussianFederation: RussianFederation,
+			Rwanda: Rwanda,
+			SaintBarthelemy: SaintBarthelemy,
+			SaintHelenaAscensionAndTristanDaCunha: SaintHelenaAscensionAndTristanDaCunha,
+			SaintKittsAndNevis: SaintKittsAndNevis,
+			SaintLucia: SaintLucia,
+			SaintMartin: SaintMartin,
+			SaintPierreAndMiquelon: SaintPierreAndMiquelon,
+			SaintVincentAndTheGrenadines: SaintVincentAndTheGrenadines,
+			Samoa: Samoa,
+			SanMarino: SanMarino,
+			SaoTomeAndPrincipe: SaoTomeAndPrincipe,
+			SaudiArabia: SaudiArabia,
+			Scotland: Scotland,
+			Senegal: Senegal,
+			Serbia: Serbia,
+			Seychelles: Seychelles,
+			SierraLeone: SierraLeone,
+			Singapore: Singapore,
+			SintMaartenDutchPart: SintMaartenDutchPart,
+			Slovakia: Slovakia,
+			Slovenia: Slovenia,
+			SolomonIslands: SolomonIslands,
+			Somalia: Somalia,
+			SouthAfrica: SouthAfrica,
+			SouthGeorgiaAndTheSouthSandwichIslands: SouthGeorgiaAndTheSouthSandwichIslands,
+			SouthSudan: SouthSudan,
+			Spain: Spain,
+			SriLanka: SriLanka,
+			Sudan: Sudan,
+			Suriname: Suriname,
+			SvalbardAndJanMayenIslands: SvalbardAndJanMayenIslands,
+			Swaziland: Swaziland,
+			Sweden: Sweden,
+			Switzerland: Switzerland,
+			SyrianArabRepublic: SyrianArabRepublic,
+			TaiwanRepublicOfChina: TaiwanRepublicOfChina,
+			Tajikistan: Tajikistan,
+			TanzaniaUnitedRepublicOf: TanzaniaUnitedRepublicOf,
+			Thailand: Thailand,
+			TimorLeste: TimorLeste,
+			Togo: Togo,
+			Tokelau: Tokelau,
+			Tonga: Tonga,
+			TrinidadAndTobago: TrinidadAndTobago,
+			Tunisia: Tunisia,
+			Turkey: Turkey,
+			Turkmenistan: Turkmenistan,
+			TurksAndCaicosIslands: TurksAndCaicosIslands,
+			Tuvalu: Tuvalu,
+			USMinorOutlyingIslands: USMinorOutlyingIslands,
+			Uganda: Uganda,
+			Ukraine: Ukraine,
+			UnitedArabEmirates: UnitedArabEmirates,
+			UnitedKingdom: UnitedKingdom,
+			UnitedStates: UnitedStates,
+			Uruguay: Uruguay,
+			Uzbekistan: Uzbekistan,
+			Vanuatu: Vanuatu,
+			VenezuelaBolivarianRepublicOf: VenezuelaBolivarianRepublicOf,
+			Vietnam: Vietnam,
+			VirginIslandsBritish: VirginIslandsBritish,
+			VirginIslandsUS: VirginIslandsUS,
+			Wales: Wales,
+			WallisAndFutunaIslands: WallisAndFutunaIslands,
+			WesternSahara: WesternSahara,
+			Yemen: Yemen,
+			Zambia: Zambia,
+			Zimbabwe: Zimbabwe,
 		}
+		setFlag(countryFlagMap[selectedFlag] || Ontario)
 	}
+
+	const countries = [
+		"Afghanistan",
+		"AlandIslands",
+		"Albania",
+		"Algeria",
+		"AmericanSamoa",
+		"Andorra",
+		"Angola",
+		"Anguilla",
+		"Antarctica",
+		"AntiguaAndBarbuda",
+		"Argentina",
+		"Armenia",
+		"Aruba",
+		"Australia",
+		"Austria",
+		"Azerbaijan",
+		"Bahamas",
+		"Bahrain",
+		"Bangladesh",
+		"Barbados",
+		"Belarus",
+		"Belgium",
+		"Belize",
+		"Benin",
+		"Bermuda",
+		"Bhutan",
+		"BoliviaPlurinationalStateOf",
+		"BosniaAndHerzegovina",
+		"Botswana",
+		"BouvetIsland",
+		"Brazil",
+		"BritishIndianOceanTerritory",
+		"BruneiDarussalam",
+		"Bulgaria",
+		"BurkinaFaso",
+		"Burundi",
+		"Cambodia",
+		"Cameroon",
+		"Canada",
+		"CapeVerde",
+		"CaribbeanNetherlands",
+		"CaymanIslands",
+		"CentralAfricanRepublic",
+		"Chad",
+		"Chile",
+		"ChinaPeoplesRepublicOfChina",
+		"ChristmasIsland",
+		"CocosKeelingIslands",
+		"Colombia",
+		"Comoros",
+		"CongoTheDemocraticRepublicOfThe",
+		"CookIslands",
+		"CostaRica",
+		"CoteDIvoire",
+		"Croatia",
+		"Cuba",
+		"Curacao",
+		"Cyprus",
+		"CzechRepublic",
+		"Denmark",
+		"Djibouti",
+		"Dominica",
+		"DominicanRepublic",
+		"Ecuador",
+		"Egypt",
+		"ElSalvador",
+		"England",
+		"EquatorialGuinea",
+		"Eritrea",
+		"Estonia",
+		"Ethiopia",
+		"Europe",
+		"FalklandIslandsMalvinas",
+		"FaroeIslands",
+		"Fiji",
+		"Finland",
+		"France",
+		"FrenchGuiana",
+		"FrenchPolynesia",
+		"FrenchSouthernTerritories",
+		"Gabon",
+		"Gambia",
+		"Georgia",
+		"Germany",
+		"Ghana",
+		"Gibraltar",
+		"Greece",
+		"Greenland",
+		"Grenada",
+		"Guadeloupe",
+		"Guam",
+		"Guatemala",
+		"Guernsey",
+		"Guinea",
+		"GuineaBissau",
+		"Guyana",
+		"Haiti",
+		"HeardIslandAndMcDonaldIslands",
+		"HolySeeVaticanCityState",
+		"Honduras",
+		"HongKong",
+		"Hungary",
+		"Iceland",
+		"India",
+		"Indonesia",
+		"IranIslamicRepublicOf",
+		"Iraq",
+		"Ireland",
+		"IsleOfMan",
+		"Israel",
+		"Italy",
+		"Jamaica",
+		"Japan",
+		"Jersey",
+		"Jordan",
+		"Kazakhstan",
+		"Kenya",
+		"Kiribati",
+		"KoreaDemocraticPeoplesRepublicOf",
+		"KoreaRepublicOf",
+		"Kosovo",
+		"Kuwait",
+		"Kyrgyzstan",
+		"LaosLaoPeoplesDemocraticRepublic",
+		"Latvia",
+		"Lebanon",
+		"Lesotho",
+		"Liberia",
+		"Libya",
+		"Liechtenstein",
+		"Lithuania",
+		"Luxembourg",
+		"Macao",
+		"Madagascar",
+		"Malawi",
+		"Malaysia",
+		"Maldives",
+		"Mali",
+		"Malta",
+		"MarshallIslands",
+		"Martinique",
+		"Mauritania",
+		"Mauritius",
+		"Mayotte",
+		"Mexico",
+		"MicronesiaFederatedStatesOf",
+		"MoldovaRepublicOf",
+		"Monaco",
+		"Mongolia",
+		"Montenegro",
+		"Montserrat",
+		"Morocco",
+		"Mozambique",
+		"Myanmar",
+		"Namibia",
+		"Nauru",
+		"Nepal",
+		"Netherlands",
+		"NewCaledonia",
+		"NewZealand",
+		"Nicaragua",
+		"Niger",
+		"Nigeria",
+		"Niue",
+		"NorfolkIsland",
+		"NorthMacedonia",
+		"NorthernIreland",
+		"NorthernMarianaIslands",
+		"Norway",
+		"Oman",
+		"Pakistan",
+		"Palau",
+		"Palestine",
+		"Panama",
+		"PapuaNewGuinea",
+		"Paraguay",
+		"Peru",
+		"Philippines",
+		"Pitcairn",
+		"Poland",
+		"Portugal",
+		"PuertoRico",
+		"Qatar",
+		"RepublicOfTheCongo",
+		"Reunion",
+		"Romania",
+		"RussianFederation",
+		"Rwanda",
+		"SaintBarthelemy",
+		"SaintHelenaAscensionAndTristanDaCunha",
+		"SaintKittsAndNevis",
+		"SaintLucia",
+		"SaintMartin",
+		"SaintPierreAndMiquelon",
+		"SaintVincentAndTheGrenadines",
+		"Samoa",
+		"SanMarino",
+		"SaoTomeAndPrincipe",
+		"SaudiArabia",
+		"Scotland",
+		"Senegal",
+		"Serbia",
+		"Seychelles",
+		"SierraLeone",
+		"Singapore",
+		"SintMaartenDutchPart",
+		"Slovakia",
+		"Slovenia",
+		"SolomonIslands",
+		"Somalia",
+		"SouthAfrica",
+		"SouthGeorgiaAndTheSouthSandwichIslands",
+		"SouthSudan",
+		"Spain",
+		"SriLanka",
+		"Sudan",
+		"Suriname",
+		"SvalbardAndJanMayenIslands",
+		"Swaziland",
+		"Sweden",
+		"Switzerland",
+		"SyrianArabRepublic",
+		"TaiwanRepublicOfChina",
+		"Tajikistan",
+		"TanzaniaUnitedRepublicOf",
+		"Thailand",
+		"TimorLeste",
+		"Togo",
+		"Tokelau",
+		"Tonga",
+		"TrinidadAndTobago",
+		"Tunisia",
+		"Turkey",
+		"Turkmenistan",
+		"TurksAndCaicosIslands",
+		"Tuvalu",
+		"USMinorOutlyingIslands",
+		"Uganda",
+		"Ukraine",
+		"UnitedArabEmirates",
+		"UnitedKingdom",
+		"UnitedStates",
+		"Uruguay",
+		"Uzbekistan",
+		"Vanuatu",
+		"VenezuelaBolivarianRepublicOf",
+		"Vietnam",
+		"VirginIslandsBritish",
+		"VirginIslandsUS",
+		"Wales",
+		"WallisAndFutunaIslands",
+		"WesternSahara",
+		"Yemen",
+		"Zambia",
+		"Zimbabwe",
+	]
+
+	const provinces = [
+		"Ontario",
+		"Alberta",
+		"BritishColumbia",
+		"Manitoba",
+		"NewBrunswick",
+		"NewfoundlandAndLabrador",
+		"NovaScotia",
+		"NorthwestTerritories",
+		"Nunavut",
+		"PrinceEdwardIsland",
+		"Quebec",
+		"Saskatchewan",
+		"Yukon",
+	]
+	const CardWidth = "282px"
+	const CardImageWidth = "140px"
 
 	return (
 		<>
@@ -718,278 +962,19 @@ export default function GraphicCard() {
 								--- Select a country ---
 							</option>
 							<optgroup label="Provinces">
-								<option value="Ontario">Ontario</option>
-								<option value="alberta">Alberta</option>
-								<option value="BritishColumbia">British Columbia</option>
-								<option value="Manitoba">Manitoba</option>
-								<option value="NewBrunswick">New Brunswick</option>
-								<option value="NewfoundlandAndLabrador">Newfoundland and Labrador</option>
-								<option value="NovaScotia">Nova Scotia</option>
-								<option value="NorthwestTerritories">Northwest Territories</option>
-								<option value="Nunavut">Nunavut</option>
-								<option value="PrinceEdwardIsland">Prince Edward Island</option>
-								<option value="Quebec">Quebec</option>
-								<option value="Saskatchewan">Saskatchewan</option>
-								<option value="Yukon">Yukon</option>
+								{provinces.map((province, index) => (
+									<option key={index} value={province}>
+										{province}
+									</option>
+								))}
 							</optgroup>
 
 							<optgroup label="World">
-                            <option value="Afghanistan">Afghanistan</option> 
-<option value="AlandIslands">AlandIslands</option> 
-<option value="Albania">Albania</option> 
-<option value="Algeria">Algeria</option> 
-<option value="AmericanSamoa">AmericanSamoa</option> 
-<option value="Andorra">Andorra</option> 
-<option value="Angola">Angola</option> 
-<option value="Anguilla">Anguilla</option> 
-<option value="Antarctica">Antarctica</option> 
-<option value="AntiguaAndBarbuda">AntiguaAndBarbuda</option> 
-<option value="Argentina">Argentina</option> 
-<option value="Armenia">Armenia</option> 
-<option value="Aruba">Aruba</option> 
-<option value="Australia">Australia</option> 
-<option value="Austria">Austria</option> 
-<option value="Azerbaijan">Azerbaijan</option> 
-<option value="Bahamas">Bahamas</option> 
-<option value="Bahrain">Bahrain</option> 
-<option value="Bangladesh">Bangladesh</option> 
-<option value="Barbados">Barbados</option> 
-<option value="Belarus">Belarus</option> 
-<option value="Belgium">Belgium</option> 
-<option value="Belize">Belize</option> 
-<option value="Benin">Benin</option> 
-<option value="Bermuda">Bermuda</option> 
-<option value="Bhutan">Bhutan</option> 
-<option value="BoliviaPlurinationalStateOf">BoliviaPlurinationalStateOf</option> 
-<option value="BosniaAndHerzegovina">BosniaAndHerzegovina</option> 
-<option value="Botswana">Botswana</option> 
-<option value="BouvetIsland">BouvetIsland</option> 
-<option value="Brazil">Brazil</option> 
-<option value="BritishIndianOceanTerritory">BritishIndianOceanTerritory</option> 
-<option value="BruneiDarussalam">BruneiDarussalam</option> 
-<option value="Bulgaria">Bulgaria</option> 
-<option value="BurkinaFaso">BurkinaFaso</option> 
-<option value="Burundi">Burundi</option> 
-<option value="Cambodia">Cambodia</option> 
-<option value="Cameroon">Cameroon</option> 
-<option value="Canada">Canada</option> 
-<option value="CapeVerde">CapeVerde</option> 
-<option value="CaribbeanNetherlands">CaribbeanNetherlands</option> 
-<option value="CaymanIslands">CaymanIslands</option> 
-<option value="CentralAfricanRepublic">CentralAfricanRepublic</option> 
-<option value="Chad">Chad</option> 
-<option value="Chile">Chile</option> 
-<option value="ChinaPeoplesRepublicOfChina">ChinaPeoplesRepublicOfChina</option> 
-<option value="ChristmasIsland">ChristmasIsland</option> 
-<option value="CocosKeelingIslands">CocosKeelingIslands</option> 
-<option value="Colombia">Colombia</option> 
-<option value="Comoros">Comoros</option> 
-<option value="CongoTheDemocraticRepublicOfThe">CongoTheDemocraticRepublicOfThe</option> 
-<option value="CookIslands">CookIslands</option> 
-<option value="CostaRica">CostaRica</option> 
-<option value="CoteDIvoire">CoteDIvoire</option> 
-<option value="Croatia">Croatia</option> 
-<option value="Cuba">Cuba</option> 
-<option value="Curacao">Curacao</option> 
-<option value="Cyprus">Cyprus</option> 
-<option value="CzechRepublic">CzechRepublic</option> 
-<option value="Denmark">Denmark</option> 
-<option value="Djibouti">Djibouti</option> 
-<option value="Dominica">Dominica</option> 
-<option value="DominicanRepublic">DominicanRepublic</option> 
-<option value="Ecuador">Ecuador</option> 
-<option value="Egypt">Egypt</option> 
-<option value="ElSalvador">ElSalvador</option> 
-<option value="England">England</option> 
-<option value="EquatorialGuinea">EquatorialGuinea</option> 
-<option value="Eritrea">Eritrea</option> 
-<option value="Estonia">Estonia</option> 
-<option value="Ethiopia">Ethiopia</option> 
-<option value="Europe">Europe</option> 
-<option value="FalklandIslandsMalvinas">FalklandIslandsMalvinas</option> 
-<option value="FaroeIslands">FaroeIslands</option> 
-<option value="Fiji">Fiji</option> 
-<option value="Finland">Finland</option> 
-<option value="France">France</option> 
-<option value="FrenchGuiana">FrenchGuiana</option> 
-<option value="FrenchPolynesia">FrenchPolynesia</option> 
-<option value="FrenchSouthernTerritories">FrenchSouthernTerritories</option> 
-<option value="Gabon">Gabon</option> 
-<option value="Gambia">Gambia</option> 
-<option value="Georgia">Georgia</option> 
-<option value="Germany">Germany</option> 
-<option value="Ghana">Ghana</option> 
-<option value="Gibraltar">Gibraltar</option> 
-<option value="Greece">Greece</option> 
-<option value="Greenland">Greenland</option> 
-<option value="Grenada">Grenada</option> 
-<option value="Guadeloupe">Guadeloupe</option> 
-<option value="Guam">Guam</option> 
-<option value="Guatemala">Guatemala</option> 
-<option value="Guernsey">Guernsey</option> 
-<option value="Guinea">Guinea</option> 
-<option value="GuineaBissau">GuineaBissau</option> 
-<option value="Guyana">Guyana</option> 
-<option value="Haiti">Haiti</option> 
-<option value="HeardIslandAndMcDonaldIslands">HeardIslandAndMcDonaldIslands</option> 
-<option value="HolySeeVaticanCityState">HolySeeVaticanCityState</option> 
-<option value="Honduras">Honduras</option> 
-<option value="HongKong">HongKong</option> 
-<option value="Hungary">Hungary</option> 
-<option value="Iceland">Iceland</option> 
-<option value="India">India</option> 
-<option value="Indonesia">Indonesia</option> 
-<option value="IranIslamicRepublicOf">IranIslamicRepublicOf</option> 
-<option value="Iraq">Iraq</option> 
-<option value="Ireland">Ireland</option> 
-<option value="IsleOfMan">IsleOfMan</option> 
-<option value="Israel">Israel</option> 
-<option value="Italy">Italy</option> 
-<option value="Jamaica">Jamaica</option> 
-<option value="Japan">Japan</option> 
-<option value="Jersey">Jersey</option> 
-<option value="Jordan">Jordan</option> 
-<option value="Kazakhstan">Kazakhstan</option> 
-<option value="Kenya">Kenya</option> 
-<option value="Kiribati">Kiribati</option> 
-<option value="KoreaDemocraticPeoplesRepublicOf">KoreaDemocraticPeoplesRepublicOf</option> 
-<option value="KoreaRepublicOf">KoreaRepublicOf</option> 
-<option value="Kosovo">Kosovo</option> 
-<option value="Kuwait">Kuwait</option> 
-<option value="Kyrgyzstan">Kyrgyzstan</option> 
-<option value="LaosLaoPeoplesDemocraticRepublic">LaosLaoPeoplesDemocraticRepublic</option> 
-<option value="Latvia">Latvia</option> 
-<option value="Lebanon">Lebanon</option> 
-<option value="Lesotho">Lesotho</option> 
-<option value="Liberia">Liberia</option> 
-<option value="Libya">Libya</option> 
-<option value="Liechtenstein">Liechtenstein</option> 
-<option value="Lithuania">Lithuania</option> 
-<option value="Luxembourg">Luxembourg</option> 
-<option value="Macao">Macao</option> 
-<option value="Madagascar">Madagascar</option> 
-<option value="Malawi">Malawi</option> 
-<option value="Malaysia">Malaysia</option> 
-<option value="Maldives">Maldives</option> 
-<option value="Mali">Mali</option> 
-<option value="Malta">Malta</option> 
-<option value="MarshallIslands">MarshallIslands</option> 
-<option value="Martinique">Martinique</option> 
-<option value="Mauritania">Mauritania</option> 
-<option value="Mauritius">Mauritius</option> 
-<option value="Mayotte">Mayotte</option> 
-<option value="Mexico">Mexico</option> 
-<option value="MicronesiaFederatedStatesOf">MicronesiaFederatedStatesOf</option> 
-<option value="MoldovaRepublicOf">MoldovaRepublicOf</option> 
-<option value="Monaco">Monaco</option> 
-<option value="Mongolia">Mongolia</option> 
-<option value="Montenegro">Montenegro</option> 
-<option value="Montserrat">Montserrat</option> 
-<option value="Morocco">Morocco</option> 
-<option value="Mozambique">Mozambique</option> 
-<option value="Myanmar">Myanmar</option> 
-<option value="Namibia">Namibia</option> 
-<option value="Nauru">Nauru</option> 
-<option value="Nepal">Nepal</option> 
-<option value="Netherlands">Netherlands</option> 
-<option value="NewCaledonia">NewCaledonia</option> 
-<option value="NewZealand">NewZealand</option> 
-<option value="Nicaragua">Nicaragua</option> 
-<option value="Niger">Niger</option> 
-<option value="Nigeria">Nigeria</option> 
-<option value="Niue">Niue</option> 
-<option value="NorfolkIsland">NorfolkIsland</option> 
-<option value="NorthMacedonia">NorthMacedonia</option> 
-<option value="NorthernIreland">NorthernIreland</option> 
-<option value="NorthernMarianaIslands">NorthernMarianaIslands</option> 
-<option value="Norway">Norway</option> 
-<option value="Oman">Oman</option> 
-<option value="Pakistan">Pakistan</option> 
-<option value="Palau">Palau</option> 
-<option value="Palestine">Palestine</option> 
-<option value="Panama">Panama</option> 
-<option value="PapuaNewGuinea">PapuaNewGuinea</option> 
-<option value="Paraguay">Paraguay</option> 
-<option value="Peru">Peru</option> 
-<option value="Philippines">Philippines</option> 
-<option value="Pitcairn">Pitcairn</option> 
-<option value="Poland">Poland</option> 
-<option value="Portugal">Portugal</option> 
-<option value="PuertoRico">PuertoRico</option> 
-<option value="Qatar">Qatar</option> 
-<option value="RepublicOfTheCongo">RepublicOfTheCongo</option> 
-<option value="Reunion">Reunion</option> 
-<option value="Romania">Romania</option> 
-<option value="RussianFederation">RussianFederation</option> 
-<option value="Rwanda">Rwanda</option> 
-<option value="SaintBarthelemy">SaintBarthelemy</option> 
-<option value="SaintHelenaAscensionAndTristanDaCunha">SaintHelenaAscensionAndTristanDaCunha</option> 
-<option value="SaintKittsAndNevis">SaintKittsAndNevis</option> 
-<option value="SaintLucia">SaintLucia</option> 
-<option value="SaintMartin">SaintMartin</option> 
-<option value="SaintPierreAndMiquelon">SaintPierreAndMiquelon</option> 
-<option value="SaintVincentAndTheGrenadines">SaintVincentAndTheGrenadines</option> 
-<option value="Samoa">Samoa</option> 
-<option value="SanMarino">SanMarino</option> 
-<option value="SaoTomeAndPrincipe">SaoTomeAndPrincipe</option> 
-<option value="SaudiArabia">SaudiArabia</option> 
-<option value="Scotland">Scotland</option> 
-<option value="Senegal">Senegal</option> 
-<option value="Serbia">Serbia</option> 
-<option value="Seychelles">Seychelles</option> 
-<option value="SierraLeone">SierraLeone</option> 
-<option value="Singapore">Singapore</option> 
-<option value="SintMaartenDutchPart">SintMaartenDutchPart</option> 
-<option value="Slovakia">Slovakia</option> 
-<option value="Slovenia">Slovenia</option> 
-<option value="SolomonIslands">SolomonIslands</option> 
-<option value="Somalia">Somalia</option> 
-<option value="SouthAfrica">SouthAfrica</option> 
-<option value="SouthGeorgiaAndTheSouthSandwichIslands">SouthGeorgiaAndTheSouthSandwichIslands</option> 
-<option value="SouthSudan">SouthSudan</option> 
-<option value="Spain">Spain</option> 
-<option value="SriLanka">SriLanka</option> 
-<option value="Sudan">Sudan</option> 
-<option value="Suriname">Suriname</option> 
-<option value="SvalbardAndJanMayenIslands">SvalbardAndJanMayenIslands</option> 
-<option value="Swaziland">Swaziland</option> 
-<option value="Sweden">Sweden</option> 
-<option value="Switzerland">Switzerland</option> 
-<option value="SyrianArabRepublic">SyrianArabRepublic</option> 
-<option value="TaiwanRepublicOfChina">TaiwanRepublicOfChina</option> 
-<option value="Tajikistan">Tajikistan</option> 
-<option value="TanzaniaUnitedRepublicOf">TanzaniaUnitedRepublicOf</option> 
-<option value="Thailand">Thailand</option> 
-<option value="TimorLeste">TimorLeste</option> 
-<option value="Togo">Togo</option> 
-<option value="Tokelau">Tokelau</option> 
-<option value="Tonga">Tonga</option> 
-<option value="TrinidadAndTobago">TrinidadAndTobago</option> 
-<option value="Tunisia">Tunisia</option> 
-<option value="Turkey">Turkey</option> 
-<option value="Turkmenistan">Turkmenistan</option> 
-<option value="TurksAndCaicosIslands">TurksAndCaicosIslands</option> 
-<option value="Tuvalu">Tuvalu</option> 
-<option value="USMinorOutlyingIslands">USMinorOutlyingIslands</option> 
-<option value="Uganda">Uganda</option> 
-<option value="Ukraine">Ukraine</option> 
-<option value="UnitedArabEmirates">UnitedArabEmirates</option> 
-<option value="UnitedKingdom">UnitedKingdom</option> 
-<option value="UnitedStates">UnitedStates</option> 
-<option value="Uruguay">Uruguay</option> 
-<option value="Uzbekistan">Uzbekistan</option> 
-<option value="Vanuatu">Vanuatu</option> 
-<option value="VenezuelaBolivarianRepublicOf">VenezuelaBolivarianRepublicOf</option> 
-<option value="Vietnam">Vietnam</option> 
-<option value="VirginIslandsBritish">VirginIslandsBritish</option> 
-<option value="VirginIslandsUS">VirginIslandsUS</option> 
-<option value="Wales">Wales</option> 
-<option value="WallisAndFutunaIslands">WallisAndFutunaIslands</option> 
-<option value="WesternSahara">WesternSahara</option> 
-<option value="Yemen">Yemen</option> 
-<option value="Zambia">Zambia</option> 
-<option value="Zimbabwe">Zimbabwe</option> 
-
+								{countries.map((country, index) => (
+									<option key={index} value={country}>
+										{country}
+									</option>
+								))}
 							</optgroup>
 						</Select>
 					</HStack>
@@ -1057,281 +1042,21 @@ export default function GraphicCard() {
 								--- Select a country ---
 							</option>
 							<optgroup label="Provinces">
-								<option value="Ontario">Ontario</option>
-								<option value="alberta">Alberta</option>
-								<option value="BritishColumbia">British Columbia</option>
-								<option value="Manitoba">Manitoba</option>
-								<option value="NewBrunswick">New Brunswick</option>
-								<option value="NewfoundlandAndLabrador">Newfoundland and Labrador</option>
-								<option value="NovaScotia">Nova Scotia</option>
-								<option value="NorthwestTerritories">Northwest Territories</option>
-								<option value="Nunavut">Nunavut</option>
-								<option value="PrinceEdwardIsland">Prince Edward Island</option>
-								<option value="Quebec">Quebec</option>
-								<option value="Saskatchewan">Saskatchewan</option>
-								<option value="Yukon">Yukon</option>
+								{provinces.map((province, index) => (
+									<option key={index} value={province}>
+										{province}
+									</option>
+								))}
 							</optgroup>
 
 							<optgroup label="World">
-                            <option value="Afghanistan">Afghanistan</option> 
-<option value="AlandIslands">AlandIslands</option> 
-<option value="Albania">Albania</option> 
-<option value="Algeria">Algeria</option> 
-<option value="AmericanSamoa">AmericanSamoa</option> 
-<option value="Andorra">Andorra</option> 
-<option value="Angola">Angola</option> 
-<option value="Anguilla">Anguilla</option> 
-<option value="Antarctica">Antarctica</option> 
-<option value="AntiguaAndBarbuda">AntiguaAndBarbuda</option> 
-<option value="Argentina">Argentina</option> 
-<option value="Armenia">Armenia</option> 
-<option value="Aruba">Aruba</option> 
-<option value="Australia">Australia</option> 
-<option value="Austria">Austria</option> 
-<option value="Azerbaijan">Azerbaijan</option> 
-<option value="Bahamas">Bahamas</option> 
-<option value="Bahrain">Bahrain</option> 
-<option value="Bangladesh">Bangladesh</option> 
-<option value="Barbados">Barbados</option> 
-<option value="Belarus">Belarus</option> 
-<option value="Belgium">Belgium</option> 
-<option value="Belize">Belize</option> 
-<option value="Benin">Benin</option> 
-<option value="Bermuda">Bermuda</option> 
-<option value="Bhutan">Bhutan</option> 
-<option value="BoliviaPlurinationalStateOf">BoliviaPlurinationalStateOf</option> 
-<option value="BosniaAndHerzegovina">BosniaAndHerzegovina</option> 
-<option value="Botswana">Botswana</option> 
-<option value="BouvetIsland">BouvetIsland</option> 
-<option value="Brazil">Brazil</option> 
-<option value="BritishIndianOceanTerritory">BritishIndianOceanTerritory</option> 
-<option value="BruneiDarussalam">BruneiDarussalam</option> 
-<option value="Bulgaria">Bulgaria</option> 
-<option value="BurkinaFaso">BurkinaFaso</option> 
-<option value="Burundi">Burundi</option> 
-<option value="Cambodia">Cambodia</option> 
-<option value="Cameroon">Cameroon</option> 
-<option value="Canada">Canada</option> 
-<option value="CapeVerde">CapeVerde</option> 
-<option value="CaribbeanNetherlands">CaribbeanNetherlands</option> 
-<option value="CaymanIslands">CaymanIslands</option> 
-<option value="CentralAfricanRepublic">CentralAfricanRepublic</option> 
-<option value="Chad">Chad</option> 
-<option value="Chile">Chile</option> 
-<option value="ChinaPeoplesRepublicOfChina">ChinaPeoplesRepublicOfChina</option> 
-<option value="ChristmasIsland">ChristmasIsland</option> 
-<option value="CocosKeelingIslands">CocosKeelingIslands</option> 
-<option value="Colombia">Colombia</option> 
-<option value="Comoros">Comoros</option> 
-<option value="CongoTheDemocraticRepublicOfThe">CongoTheDemocraticRepublicOfThe</option> 
-<option value="CookIslands">CookIslands</option> 
-<option value="CostaRica">CostaRica</option> 
-<option value="CoteDIvoire">CoteDIvoire</option> 
-<option value="Croatia">Croatia</option> 
-<option value="Cuba">Cuba</option> 
-<option value="Curacao">Curacao</option> 
-<option value="Cyprus">Cyprus</option> 
-<option value="CzechRepublic">CzechRepublic</option> 
-<option value="Denmark">Denmark</option> 
-<option value="Djibouti">Djibouti</option> 
-<option value="Dominica">Dominica</option> 
-<option value="DominicanRepublic">DominicanRepublic</option> 
-<option value="Ecuador">Ecuador</option> 
-<option value="Egypt">Egypt</option> 
-<option value="ElSalvador">ElSalvador</option> 
-<option value="England">England</option> 
-<option value="EquatorialGuinea">EquatorialGuinea</option> 
-<option value="Eritrea">Eritrea</option> 
-<option value="Estonia">Estonia</option> 
-<option value="Ethiopia">Ethiopia</option> 
-<option value="Europe">Europe</option> 
-<option value="FalklandIslandsMalvinas">FalklandIslandsMalvinas</option> 
-<option value="FaroeIslands">FaroeIslands</option> 
-<option value="Fiji">Fiji</option> 
-<option value="Finland">Finland</option> 
-<option value="France">France</option> 
-<option value="FrenchGuiana">FrenchGuiana</option> 
-<option value="FrenchPolynesia">FrenchPolynesia</option> 
-<option value="FrenchSouthernTerritories">FrenchSouthernTerritories</option> 
-<option value="Gabon">Gabon</option> 
-<option value="Gambia">Gambia</option> 
-<option value="Georgia">Georgia</option> 
-<option value="Germany">Germany</option> 
-<option value="Ghana">Ghana</option> 
-<option value="Gibraltar">Gibraltar</option> 
-<option value="Greece">Greece</option> 
-<option value="Greenland">Greenland</option> 
-<option value="Grenada">Grenada</option> 
-<option value="Guadeloupe">Guadeloupe</option> 
-<option value="Guam">Guam</option> 
-<option value="Guatemala">Guatemala</option> 
-<option value="Guernsey">Guernsey</option> 
-<option value="Guinea">Guinea</option> 
-<option value="GuineaBissau">GuineaBissau</option> 
-<option value="Guyana">Guyana</option> 
-<option value="Haiti">Haiti</option> 
-<option value="HeardIslandAndMcDonaldIslands">HeardIslandAndMcDonaldIslands</option> 
-<option value="HolySeeVaticanCityState">HolySeeVaticanCityState</option> 
-<option value="Honduras">Honduras</option> 
-<option value="HongKong">HongKong</option> 
-<option value="Hungary">Hungary</option> 
-<option value="Iceland">Iceland</option> 
-<option value="India">India</option> 
-<option value="Indonesia">Indonesia</option> 
-<option value="IranIslamicRepublicOf">IranIslamicRepublicOf</option> 
-<option value="Iraq">Iraq</option> 
-<option value="Ireland">Ireland</option> 
-<option value="IsleOfMan">IsleOfMan</option> 
-<option value="Israel">Israel</option> 
-<option value="Italy">Italy</option> 
-<option value="Jamaica">Jamaica</option> 
-<option value="Japan">Japan</option> 
-<option value="Jersey">Jersey</option> 
-<option value="Jordan">Jordan</option> 
-<option value="Kazakhstan">Kazakhstan</option> 
-<option value="Kenya">Kenya</option> 
-<option value="Kiribati">Kiribati</option> 
-<option value="KoreaDemocraticPeoplesRepublicOf">KoreaDemocraticPeoplesRepublicOf</option> 
-<option value="KoreaRepublicOf">KoreaRepublicOf</option> 
-<option value="Kosovo">Kosovo</option> 
-<option value="Kuwait">Kuwait</option> 
-<option value="Kyrgyzstan">Kyrgyzstan</option> 
-<option value="LaosLaoPeoplesDemocraticRepublic">LaosLaoPeoplesDemocraticRepublic</option> 
-<option value="Latvia">Latvia</option> 
-<option value="Lebanon">Lebanon</option> 
-<option value="Lesotho">Lesotho</option> 
-<option value="Liberia">Liberia</option> 
-<option value="Libya">Libya</option> 
-<option value="Liechtenstein">Liechtenstein</option> 
-<option value="Lithuania">Lithuania</option> 
-<option value="Luxembourg">Luxembourg</option> 
-<option value="Macao">Macao</option> 
-<option value="Madagascar">Madagascar</option> 
-<option value="Malawi">Malawi</option> 
-<option value="Malaysia">Malaysia</option> 
-<option value="Maldives">Maldives</option> 
-<option value="Mali">Mali</option> 
-<option value="Malta">Malta</option> 
-<option value="MarshallIslands">MarshallIslands</option> 
-<option value="Martinique">Martinique</option> 
-<option value="Mauritania">Mauritania</option> 
-<option value="Mauritius">Mauritius</option> 
-<option value="Mayotte">Mayotte</option> 
-<option value="Mexico">Mexico</option> 
-<option value="MicronesiaFederatedStatesOf">MicronesiaFederatedStatesOf</option> 
-<option value="MoldovaRepublicOf">MoldovaRepublicOf</option> 
-<option value="Monaco">Monaco</option> 
-<option value="Mongolia">Mongolia</option> 
-<option value="Montenegro">Montenegro</option> 
-<option value="Montserrat">Montserrat</option> 
-<option value="Morocco">Morocco</option> 
-<option value="Mozambique">Mozambique</option> 
-<option value="Myanmar">Myanmar</option> 
-<option value="Namibia">Namibia</option> 
-<option value="Nauru">Nauru</option> 
-<option value="Nepal">Nepal</option> 
-<option value="Netherlands">Netherlands</option> 
-<option value="NewCaledonia">NewCaledonia</option> 
-<option value="NewZealand">NewZealand</option> 
-<option value="Nicaragua">Nicaragua</option> 
-<option value="Niger">Niger</option> 
-<option value="Nigeria">Nigeria</option> 
-<option value="Niue">Niue</option> 
-<option value="NorfolkIsland">NorfolkIsland</option> 
-<option value="NorthMacedonia">NorthMacedonia</option> 
-<option value="NorthernIreland">NorthernIreland</option> 
-<option value="NorthernMarianaIslands">NorthernMarianaIslands</option> 
-<option value="Norway">Norway</option> 
-<option value="Oman">Oman</option> 
-<option value="Pakistan">Pakistan</option> 
-<option value="Palau">Palau</option> 
-<option value="Palestine">Palestine</option> 
-<option value="Panama">Panama</option> 
-<option value="PapuaNewGuinea">PapuaNewGuinea</option> 
-<option value="Paraguay">Paraguay</option> 
-<option value="Peru">Peru</option> 
-<option value="Philippines">Philippines</option> 
-<option value="Pitcairn">Pitcairn</option> 
-<option value="Poland">Poland</option> 
-<option value="Portugal">Portugal</option> 
-<option value="PuertoRico">PuertoRico</option> 
-<option value="Qatar">Qatar</option> 
-<option value="RepublicOfTheCongo">RepublicOfTheCongo</option> 
-<option value="Reunion">Reunion</option> 
-<option value="Romania">Romania</option> 
-<option value="RussianFederation">RussianFederation</option> 
-<option value="Rwanda">Rwanda</option> 
-<option value="SaintBarthelemy">SaintBarthelemy</option> 
-<option value="SaintHelenaAscensionAndTristanDaCunha">SaintHelenaAscensionAndTristanDaCunha</option> 
-<option value="SaintKittsAndNevis">SaintKittsAndNevis</option> 
-<option value="SaintLucia">SaintLucia</option> 
-<option value="SaintMartin">SaintMartin</option> 
-<option value="SaintPierreAndMiquelon">SaintPierreAndMiquelon</option> 
-<option value="SaintVincentAndTheGrenadines">SaintVincentAndTheGrenadines</option> 
-<option value="Samoa">Samoa</option> 
-<option value="SanMarino">SanMarino</option> 
-<option value="SaoTomeAndPrincipe">SaoTomeAndPrincipe</option> 
-<option value="SaudiArabia">SaudiArabia</option> 
-<option value="Scotland">Scotland</option> 
-<option value="Senegal">Senegal</option> 
-<option value="Serbia">Serbia</option> 
-<option value="Seychelles">Seychelles</option> 
-<option value="SierraLeone">SierraLeone</option> 
-<option value="Singapore">Singapore</option> 
-<option value="SintMaartenDutchPart">SintMaartenDutchPart</option> 
-<option value="Slovakia">Slovakia</option> 
-<option value="Slovenia">Slovenia</option> 
-<option value="SolomonIslands">SolomonIslands</option> 
-<option value="Somalia">Somalia</option> 
-<option value="SouthAfrica">SouthAfrica</option> 
-<option value="SouthGeorgiaAndTheSouthSandwichIslands">SouthGeorgiaAndTheSouthSandwichIslands</option> 
-<option value="SouthSudan">SouthSudan</option> 
-<option value="Spain">Spain</option> 
-<option value="SriLanka">SriLanka</option> 
-<option value="Sudan">Sudan</option> 
-<option value="Suriname">Suriname</option> 
-<option value="SvalbardAndJanMayenIslands">SvalbardAndJanMayenIslands</option> 
-<option value="Swaziland">Swaziland</option> 
-<option value="Sweden">Sweden</option> 
-<option value="Switzerland">Switzerland</option> 
-<option value="SyrianArabRepublic">SyrianArabRepublic</option> 
-<option value="TaiwanRepublicOfChina">TaiwanRepublicOfChina</option> 
-<option value="Tajikistan">Tajikistan</option> 
-<option value="TanzaniaUnitedRepublicOf">TanzaniaUnitedRepublicOf</option> 
-<option value="Thailand">Thailand</option> 
-<option value="TimorLeste">TimorLeste</option> 
-<option value="Togo">Togo</option> 
-<option value="Tokelau">Tokelau</option> 
-<option value="Tonga">Tonga</option> 
-<option value="TrinidadAndTobago">TrinidadAndTobago</option> 
-<option value="Tunisia">Tunisia</option> 
-<option value="Turkey">Turkey</option> 
-<option value="Turkmenistan">Turkmenistan</option> 
-<option value="TurksAndCaicosIslands">TurksAndCaicosIslands</option> 
-<option value="Tuvalu">Tuvalu</option> 
-<option value="USMinorOutlyingIslands">USMinorOutlyingIslands</option> 
-<option value="Uganda">Uganda</option> 
-<option value="Ukraine">Ukraine</option> 
-<option value="UnitedArabEmirates">UnitedArabEmirates</option> 
-<option value="UnitedKingdom">UnitedKingdom</option> 
-<option value="UnitedStates">UnitedStates</option> 
-<option value="Uruguay">Uruguay</option> 
-<option value="Uzbekistan">Uzbekistan</option> 
-<option value="Vanuatu">Vanuatu</option> 
-<option value="VenezuelaBolivarianRepublicOf">VenezuelaBolivarianRepublicOf</option> 
-<option value="Vietnam">Vietnam</option> 
-<option value="VirginIslandsBritish">VirginIslandsBritish</option> 
-<option value="VirginIslandsUS">VirginIslandsUS</option> 
-<option value="Wales">Wales</option> 
-<option value="WallisAndFutunaIslands">WallisAndFutunaIslands</option> 
-<option value="WesternSahara">WesternSahara</option> 
-<option value="Yemen">Yemen</option> 
-<option value="Zambia">Zambia</option> 
-<option value="Zimbabwe">Zimbabwe</option> 
-
+								{countries.map((country, index) => (
+									<option key={index} value={country}>
+										{country}
+									</option>
+								))}
 							</optgroup>
 						</Select>
-					
 					</HStack>
 				</Stack>
 			</Box>
@@ -1340,12 +1065,7 @@ export default function GraphicCard() {
 				Convert to JPG
 			</Button>
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<br />			
 			<Box
 				ref={divRef}
 				style={{
@@ -1363,8 +1083,8 @@ export default function GraphicCard() {
 							{formData.SpielName}
 						</Heading>
 						<HStack justify={"space-between"} px="10px" w="100%">
-							<Card w="300" mx="10px" bg="#ffe40199" border={"1px groove #ffe40199"} variant="elevated">
-								<Image src={usFlag} alt="{formData.usFlag}" h="140" borderRadius="lg" mb={4} border={"5px outset #ffe40199"} />
+							<Card mx="6px" bg="#ffe40199" border={"1px groove #ffe40199"} variant="elevated" minW={CardWidth} maxW={CardWidth}>
+								<Image minH={CardImageWidth} maxH={CardImageWidth} src={usFlag} alt="{formData.usFlag}" borderRadius="lg" mb={4} border={"5px outset #ffe40199"} />
 								<Flex h="100px" align={"center"} justify={"center"} borderRadius="md">
 									<Heading textAlign="center" mt="-40px" color="white" textShadow={"5px 5px 10px #052939"}>
 										{formData.us1} <br />
@@ -1373,8 +1093,8 @@ export default function GraphicCard() {
 								</Flex>
 							</Card>
 							<Box> </Box>
-							<Card w="300" mx="10px" bg="#00de7199" border={"1px groove #00de7199"} variant="elevated">
-								<Image src={themFlag} h="140" borderRadius="lg" mb={4} border={"5px outset #00de7199"} />
+							<Card mx="6px" bg="#00de7199" border={"1px groove #00de7199"} variant="elevated" minW={CardWidth} maxW={CardWidth}>
+								<Image src={themFlag} minH={CardImageWidth} maxH={CardImageWidth} borderRadius="lg" mb={4} border={"5px outset #00de7199"} />
 								<Flex h="100px" align={"center"} justify={"center"} borderRadius="md">
 									<Heading textAlign="center" mt="-40px" color="white" textShadow={"5px 5px 10px #052939"}>
 										{formData.Opponent1} <br />
