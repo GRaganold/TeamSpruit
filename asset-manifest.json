@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/TeamSpruit/static/js/main.b0cf1847.js",
+    "main.js": "/TeamSpruit/static/js/main.848c0601.js",
     "static/media/bground2.jpg": "/TeamSpruit/static/media/bground2.1fa17e7a625f3930450b.jpg",
     "static/media/logo2.png": "/TeamSpruit/static/media/logo2.f68e5f304099c93f7c74.png",
     "static/media/team_no_bg.png": "/TeamSpruit/static/media/team_no_bg.c1e052ba5eecdb9812dd.png",
@@ -127,9 +127,9 @@
     "static/media/cu.png": "/TeamSpruit/static/media/cu.50ed66312f0df4b20935.png",
     "static/media/uy.png": "/TeamSpruit/static/media/uy.5744dc0d296e110b9a56.png",
     "index.html": "/TeamSpruit/index.html",
-    "main.b0cf1847.js.map": "/TeamSpruit/static/js/main.b0cf1847.js.map"
+    "main.848c0601.js.map": "/TeamSpruit/static/js/main.848c0601.js.map"
   },
   "entrypoints": [
-    "static/js/main.b0cf1847.js"
+    "static/js/main.848c0601.js"
   ]
 }
