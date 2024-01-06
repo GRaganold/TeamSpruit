@@ -1,9 +1,10 @@
 import html2canvas from "html2canvas"
 import React, { useState, useRef, useEffect } from "react"
 import { Box, Button, Card, Flex, HStack, Heading, Image, Input, Select, VStack, Text, Stack } from "@chakra-ui/react"
-import sponsorBanner from "./SponsorBanner2.jpg"
-import backgroundBanner from "./bground2.jpg"
+import sponsorBanner from "./images/SponsorBanner2.jpg"
+import backgroundBanner from "./images/bground2.jpg"
 
+// Provincial Flag imports
 import Ontario from "./flags/flag/cad_on.png"
 import Alberta from "./flags/flag/cad_ab.png"
 import BritishColumbia from "./flags/flag/cad_bc.png"
@@ -17,6 +18,7 @@ import PrinceEdwardIsland from "./flags/flag/cad_pe.png"
 import Quebec from "./flags/flag/cad_qc.png"
 import Saskatchewan from "./flags/flag/cad_sk.png"
 import Yukon from "./flags/flag/cad_yt.png"
+// World Flag imports
 import Afghanistan from "./flags/flag/af.png"
 import AlandIslands from "./flags/flag/ax.png"
 import Albania from "./flags/flag/al.png"
@@ -328,10 +330,9 @@ export default function GraphicCard() {
 	}
 
 	useEffect(() => {
-		localStorage.setItem("formData", JSON.stringify(formData));
-		setIsComponentReady(true);
-	  }, [formData]);
-
+		localStorage.setItem("formData", JSON.stringify(formData))
+		setIsComponentReady(true)
+	}, [formData])
 
 	const divRef = useRef(null)
 
@@ -1065,7 +1066,7 @@ export default function GraphicCard() {
 				Convert to JPG
 			</Button>
 			<br />
-			<br />			
+			<br />
 			<Box
 				ref={divRef}
 				style={{
@@ -1117,11 +1118,7 @@ export default function GraphicCard() {
 				<Image src={sponsorBanner} h="125px" w="full" alt="Background" mt="20px" />
 			</Box>
 			<br />
-			<br /> <br />
-			<br /> <br />
-			<br /> <br />
-			<br /> <br />
-			<br /> <br />
+			<br />
 			<br />
 			<br />
 		</>

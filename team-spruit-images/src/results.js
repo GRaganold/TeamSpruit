@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react"
 import { Box, Button, Center, Circle, Flex, HStack, Heading, Image, Input, Select, Stack, Text, VStack } from "@chakra-ui/react"
-import sponsorBanner from "./SponsorBanner2.jpg"
-import CurlingStone from "./Curling_stone.svg-removebg-preview.png"
+import sponsorBanner from "./images/SponsorBanner2.jpg"
+import CurlingStone from "./images/Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
 import { styleThemes } from "./StyleThemes"
 
