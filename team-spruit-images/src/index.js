@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App"
 
-import { ChakraProvider, extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
+import { ChakraProvider, ColorModeScript, extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
 const theme = extendTheme(withDefaultColorScheme({ colorScheme: "blue" }), {
 	styles: {
@@ -10,7 +10,7 @@ const theme = extendTheme(withDefaultColorScheme({ colorScheme: "blue" }), {
 			p: {
 				fontFamily: "Sans-Serif",
 			},
-			
+
 			colors: {
 				orange: "#fd8050",
 				white: "#fdfdfe",
@@ -23,13 +23,15 @@ const theme = extendTheme(withDefaultColorScheme({ colorScheme: "blue" }), {
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-	<ChakraProvider theme={theme}>
-		<React.StrictMode>
+	<React.StrictMode>
+		<ColorModeScript initialColorMode="light" />
+		<ChakraProvider theme={theme}>
 			<App />
-		</React.StrictMode>
-	</ChakraProvider>
+		</ChakraProvider>
+	</React.StrictMode>
 )
 // orange: "#fd8050",
 // white: "#fdfdfe",
 // black: "#000000",
 // green: "00aa86"
+// import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
