@@ -3,7 +3,7 @@ import { Box, Button, Center, Flex, HStack, Heading, Image, Input, Select, Stack
 import sponsorBanner from "./images/SponsorBanner2.jpg"
 import CurlingStone from "./images/Curling_stone.svg-removebg-preview.png"
 import html2canvas from "html2canvas"
-import { styleThemes } from "./StyleThemes"
+import { styleThemes } from "./styleThemesStylings"
 
 function NameInput({ onInputChange, label, placeholder }) {
 	const [value, setValue] = useState("")
